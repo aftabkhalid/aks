@@ -53,7 +53,7 @@ const arr = [
   // {to: 'css', from: ['node_modules/fullpage.js/dist/fullpage.css']},
   {to: 'sass/material-icons', from: ['node_modules/@mdi/font/scss/*.scss']},
   {to: 'fonts', from: ['node_modules/@mdi/font/fonts/**']},
-  // {to: 'js', from: ['node_modules/fullpage.js/vendors/easings.min.js', 'node_modules/fullpage.js/vendors/scrolloverflow.min.js','node_modules/fullpage.js/dist/fullpage.min.js']}
+  {to: 'js', from: ['node_modules/skrollr/dist/skrollr.min.js']}
 ];
 
 function copyFiles(arr) {
