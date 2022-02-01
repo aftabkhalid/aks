@@ -6,29 +6,10 @@ body {
   color: #3a3f42;
 }
 
-.introduction {
-  padding: 0 130px 0 0;
-}
-
-.navbar-theme {
-  .nav-item {
-    .nav-link {
-      color: $mk-dark-blue;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
-  }
-}
-
-header[role="site-header"] {
-  //position: relative;
-}
-
 // Logo
 .ak-logo {
   text-align: center;
+  fill: #fff;
   a {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
@@ -36,10 +17,6 @@ header[role="site-header"] {
 
     text-decoration: none;
     color: $mk-dark-blue;
-    position: absolute;
-    top: 2em;
-    left: 2.5em;
-    z-index: 1;
     width: 110px;
     img {
       width: 60px;
@@ -65,91 +42,7 @@ header[role="site-header"] {
   100%    {opacity: 0;}
 }
 
-.big-name {
-  h1 {
-    font-size: 215px;
-  }
-  span {
-    margin-top: -40px;
-    display: block;
-    font-size: 34px;
-  }
-}
-
-// Section Gradients
-.remote {
-  //background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
-}
-
-.freelance {
-  //background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-}
-
-.talk {
-  background: linear-gradient(to top, #D5DEE7 0%, #E8EBF2 75%, #fff 100%)
-}
-
-.hm-portfolio {
-  padding: 100px 0;
-
-  img {
-    width: 100%;
-    margin-bottom: 80px;
-  }
-}
-
-
 //
-// Portfolio Grid
-
-.portfolio-grid {
-	column-width: 320px;
-	column-gap: 15px;
-	padding-top: 50px;
-
-  figure {
-  	transition: opacity .4s ease-in-out;
-    display: inline-block;
-    column-break-inside: avoid;
-    border-radius: 12px;
-    margin: 15px 0;
-
-    img {
-    	width: 100%;
-      height: auto;
-    }
-
-    &:hover {
-      box-shadow: 0px 40px 28px -22px rgba(33,42,54,.25);
-      transition: .4s ease-in-out;
-    }
-  }
-
-  &:hover figure:not(:hover) {
-  	opacity: 0.6;
-  }
-
-  .portflio-caption {
-    padding: 40px;
-
-    h6 {
-      font-size: 14px;
-      color: #919EAB;
-      letter-spacing: 2px;
-    }
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .portfolio-grid {
-    column-gap: 0px;
-
-    figure {
-      width: 100%;
-    }
-  }
-}
-
 // Theme buttons
 
 .btn-theme {
@@ -222,78 +115,13 @@ header[role="site-header"] {
   }
 }
 
-//
-////
 
-.blockquote-footer {
-  margin-top: 20px;
-}
-
-//
-////
 // Custom Container for portfolio page
-
-.container-custom {
-  max-width: 1430px;
-  @include make-container();
-}
-
-.portfolio-pg {
-  padding-top: 170px;
-  img {
-    width: 100%;
-  }
-}
-
-//
-//// Overrides
-
-.badge {
-  font-weight: normal;
-}
 
 //
 //// Responsive layout
 
-@include media-breakpoint-down(md) {
-  .section {
-    padding: 50px 30px 0 30px;
-  }
-
-  .introduction {
-    padding: 0 0 0 0;
-  }
-
-  .big-name {
-    h1 {
-      font-size: 100px;
-    }
-    span {
-      margin-top: -20px;
-      display: block;
-      font-size: 34px;
-    }
-  }
-
-  .mouse-indicator {
-    svg {
-      height: inherit;
-      width: inherit;
-    }
-  }
-
-  .container-custom {
-    max-width: 100%;
-    @include make-container();
-  }
-
-  .btn-resume {
-    margin-left: 0px;
-    margin-top: 20px;
-  }
-
-
-}
+@include media-breakpoint-down(md) {}
 
 // Blog
 
@@ -324,10 +152,6 @@ header[role="site-header"] {
   }
 }
 
-footer[role="footer"] {
-  padding: 30px 0;
-}
-
 .stamp {
   .author-avatar {
     margin-bottom: 30px;
@@ -344,5 +168,13 @@ footer[role="footer"] {
   p {
     line-height: .5;
     font-size: 15px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    color: #000;
   }
 }

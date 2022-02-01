@@ -1,15 +1,14 @@
 // Import font from google
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
 
 //Heading h1
 h1,
 .h1 {
   font-size: $h1-font-size;
-  font-family: $theme-font-family-heading;
-  font-weight: 900;
-  color: $black;
+  //font-family: $theme-font-family-heading;
+  font-weight: 100;
 }
 
 h1.huge,
@@ -35,22 +34,23 @@ h1.small,
 // Heading h2
 h2, .h2 {
   font-size: $h2-font-size;
-  font-family: $theme-font-family-heading;
   color: $black;
+  font-weight: 100;
 }
 
 // Heading h3
 h3, .h3 {
   font-size: $h3-font-size;
-  font-family: $theme-font-family-heading;
+  //font-family: $theme-font-family-heading;
   color: $black;
 }
 
 // Heading h4
 h4, .h4 {
   font-size: $h4-font-size;
-  font-family: $theme-font-family-heading;
+  //font-family: $theme-font-family-heading;
   color: $black;
+  font-weight: 100;
 }
 
 // Heading h5

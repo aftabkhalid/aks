@@ -50,10 +50,10 @@ function style() {
 // Copy file from node_modules
 
 const arr = [
-  // {to: 'css', from: ['node_modules/fullpage.js/dist/fullpage.css']},
+  {to: 'css', from: ['node_modules/locomotive-scroll/dist/locomotive-scroll.css']},
   {to: 'sass/material-icons', from: ['node_modules/@mdi/font/scss/*.scss']},
   {to: 'fonts', from: ['node_modules/@mdi/font/fonts/**']},
-  {to: 'js', from: ['node_modules/skrollr/dist/skrollr.min.js']}
+  {to: 'js', from: ['node_modules/locomotive-scroll/dist/locomotive-scroll.js']}
 ];
 
 function copyFiles(arr) {
