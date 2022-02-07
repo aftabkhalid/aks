@@ -1,14 +1,39 @@
 // Import font from google
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
+
+@font-face {
+font-family: 'GorditaRegular';
+src: url('../fonts/GorditaRegular.eot');
+src: url('../fonts/GorditaRegular.svg') format('embedded-opentype'),
+url('../fonts/GorditaRegular.woff2') format('woff2'),
+url('../fonts/GorditaRegular.woff') format('woff'),
+url('../fonts/GorditaRegular.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Gordita-Medium';
+src: url('../fonts/Gordita-Medium.eot');
+src: url('../fonts/Gordita-Medium.svg') format('embedded-opentype'),
+url('../fonts/Gordita-Medium.woff2') format('woff2'),
+url('../fonts/Gordita-Medium.woff') format('woff'),
+url('../fonts/Gordita-Medium.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Gordita-Bold';
+src: url('../fonts/Gordita-Bold.eot');
+src: url('../fonts/Gordita-Bold.svg') format('embedded-opentype'),
+url('../fonts/Gordita-Bold.woff2') format('woff2'),
+url('../fonts/Gordita-Bold.woff') format('woff'),
+url('../fonts/Gordita-Bold.ttf') format('truetype');
+}
 
 //Heading h1
 h1,
 .h1 {
   font-size: $h1-font-size;
-  //font-family: $theme-font-family-heading;
-  font-weight: 100;
+  font-family: $theme-font-family-heading-bold;
+  font-weight: 900;
 }
 
 h1.huge,
@@ -33,36 +58,43 @@ h1.small,
 
 // Heading h2
 h2, .h2 {
+  font-family: $theme-font-family-heading-bold;
   font-size: $h2-font-size;
-  color: $black;
-  font-weight: 100;
+  //font-weight: 100;
 }
 
 // Heading h3
 h3, .h3 {
   font-size: $h3-font-size;
-  //font-family: $theme-font-family-heading;
-  color: $black;
+  font-family: $theme-font-family-heading-bold;
+  //font-weight: 100;
 }
 
 // Heading h4
 h4, .h4 {
   font-size: $h4-font-size;
-  //font-family: $theme-font-family-heading;
+  font-family: $theme-font-family-heading-medium;
   color: $black;
-  font-weight: 100;
+  //font-weight: 100;
 }
 
 // Heading h5
 h5, .h5 {
   font-size: $h5-font-size;
+  font-family: $theme-font-family-heading-regular;
   color: $black;
 }
 
 // Heading h6
 h6, .h6 {
-  font-size: $h6-font-size;
+  font-size: $h6-font-size * fontSize(75);;
+  font-family: $theme-font-family-heading-regular;
   color: $black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  &:before {
+    content: "/"
+  }
 }
 
 //
@@ -77,5 +109,17 @@ p {
   h1.huge,
   .h1.huge {
     font-size: $h1-font-size * fontSize(120); // Defined in Sass function
+  }
+}
+
+header[role="site-header"] {
+  h1{
+    &.huge {
+      font-size: $h1-font-size * fontSize(300); // Defined in Sass function
+      line-height: 120px;
+    }
+    &.small {
+      font-size: $h1-font-size * fontSize(175);
+    }
   }
 }

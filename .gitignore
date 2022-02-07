@@ -39,3 +39,4 @@ bower_components
 node_modules
 .jekyll-metadata
 _ak_pages
+dist

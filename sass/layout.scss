@@ -4,6 +4,7 @@ body {
   font-size: ($font-size-base * 1.125);
   font-weight: 300;
   color: #3a3f42;
+  //background-color: #000;
 }
 
 // Logo
@@ -81,6 +82,18 @@ body {
 .btn-resume {
   margin-left: 10px;
 }
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+  &:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+  }
+}
+
+
 
 // .outline {
 //   background-color: $white;

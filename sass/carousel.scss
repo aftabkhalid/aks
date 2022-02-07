@@ -5,6 +5,7 @@
     width: 34%;
     height: 615px;
     margin-right: 40px;
+    overflow: hidden;
 
     /* cell number */
     // &::before {
@@ -19,18 +20,26 @@
     .carousel-image {
       img {
         width: 100%;
+        display: block;
       }
     }
 
     .carousel-text {
-      color: #fff;
       margin-top: 2rem;
       padding-right: 14rem;
-
-      h4 {
-        color: #fff;
-      }
     }
 
+  }
+
+  &.dark {
+    .carousel-cell {
+      .carousel-text {
+        color: #fff;
+
+        h4 {
+          color: #fff;
+        }
+      }
+    }
   }
 }

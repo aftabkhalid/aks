@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
 	{% include head.html %}
 </head>
 
-<body>
+<body class="loading">
 
-	{% include header.html %}
+	<div data-scroll-container>
+    <div data-scroll-section>
+			{% include header.html %}
 
-	{{ content }}
+			{{ content }}
 
-	{% include footer.html %}
-
+			{% include footer.html %}
+		</div>
+	</div>
 	{% include analytics.html %}
 </body>
 
