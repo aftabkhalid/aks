@@ -74,19 +74,29 @@ function copyFiles(arr) {
 //
 
 // A simple task to reload the page
-function reload() {
-  browserSync.reload();
+function browsersyncReload(cb){
+  browsersync.reload();
+  cb();
 }
 
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "./",
+      baseDir: "_ak_pages/",
     }
   });
   gulp.watch("sass/**/*.scss", style);
   gulp.watch('_ak_pages/*.html').on('change', browserSync.reload)
 }
+
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
 
 exports.style = style;
 exports.watch = watch;
