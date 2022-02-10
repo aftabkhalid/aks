@@ -9,12 +9,12 @@ export default class Cursor {
     constructor(el) {
         this.DOM = {el: el};
         this.DOM.el.style.opacity = 0;
-        
+
         this.bounds = this.DOM.el.getBoundingClientRect();
-        
+
         this.renderedStyles = {
-            tx: {previous: 0, current: 0, amt: 0.2},
-            ty: {previous: 0, current: 0, amt: 0.2}
+            tx: {previous: 0, current: 0, amt: 0.08},
+            ty: {previous: 0, current: 0, amt: 0.08}
         };
 
         this.onMouseMoveEv = () => {
@@ -33,9 +33,9 @@ export default class Cursor {
         for (const key in this.renderedStyles ) {
             this.renderedStyles[key].previous = lerp(this.renderedStyles[key].previous, this.renderedStyles[key].current, this.renderedStyles[key].amt);
         }
-                    
+
         this.DOM.el.style.transform = `translateX(${(this.renderedStyles['tx'].previous)}px) translateY(${this.renderedStyles['ty'].previous}px)`;
-        
+
         requestAnimationFrame(() => this.render());
     }
 }

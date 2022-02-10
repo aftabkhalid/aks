@@ -5,9 +5,13 @@ var swiper = new Swiper(".swiper", {
   grabCursor: true,
   allowTouchMove: true,
   centerInsufficientSlides: true,
-  longSwipes: false,
-  //parallax: true,
+  simulateTouch: true,
+  followFinger: true,
+  //longSwipes: false,
+  parallax: true,
   speed: 500,
+  //loop: true,
+
   // pagination: {
   //   el: ".swiper-pagination",
   //   //type: "fraction",
@@ -17,6 +21,6 @@ var swiper = new Swiper(".swiper", {
   // },
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
 });

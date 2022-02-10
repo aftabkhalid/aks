@@ -46,6 +46,7 @@ canvas{
 
 .section {
   padding: 10rem 0 10rem 0;
+  position: relative;
 
   &.dark {
     background-color: $mk-section-bg;
@@ -205,19 +206,19 @@ footer #inner_footer a.main_link.mobile {
 
 .sliding-text-wrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 250px;
+  //display: flex;
+  //justify-content: center;
+  padding-bottom: 350px;
 }
 
 .sliding-text {
-  position: absolute;
-  left: 0;
-  top: 0px;
+  // position: absolute;
+  // left: 0;
+  // top: 0px;
   white-space: nowrap;
-  -webkit-animation: sliding-text 8s linear infinite;
-  animation: sliding-text 8s linear infinite;
-  transition-property: color;
+  //-webkit-animation: sliding-text 4s linear infinite;
+  //animation: sliding-text 4s linear infinite;
+  //transition-property: color;
   font-size: 8rem;
   font-family: $theme-font-family-heading-bold;
   line-height: .91667em;
@@ -226,19 +227,35 @@ footer #inner_footer a.main_link.mobile {
 
 //
 
-@-webkit-keyframes sliding-text {
-  0% {
-    transform: translateX(-25%);
-  }
-  to {
-    transform: translateX(-45%);
-  }
-}
-@keyframes sliding-text {
-  0% {
-    transform: translateX(-25%);
-  }
-  to {
-    transform: translateX(-45%);
+// @-webkit-keyframes sliding-text {
+//   0% {
+//     transform: translateX(-25%);
+//   }
+//   to {
+//     transform: translateX(-45%);
+//   }
+// }
+// @keyframes sliding-text {
+//   0% {
+//     transform: translateX(-25%);
+//   }
+//   to {
+//     transform: translateX(-45%);
+//   }
+// }
+
+
+.design-process {
+  width: 50%;
+  position: absolute;
+  top: 500px;
+  right: 14%;
+  z-index: 10;
+  h1 {
+    font-size: 8rem;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 15px 20px rgba($mk-silver, 0.3);
   }
 }

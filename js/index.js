@@ -5844,12 +5844,12 @@ var Cursor = /*#__PURE__*/function () {
       tx: {
         previous: 0,
         current: 0,
-        amt: 0.2
+        amt: 0.08
       },
       ty: {
         previous: 0,
         current: 0,
-        amt: 0.2
+        amt: 0.08
       }
     };
 

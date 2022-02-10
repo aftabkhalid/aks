@@ -199,12 +199,13 @@
 		left: 0;
 		display: block;
 		pointer-events: none;
+		mix-blend-mode: difference;
 	}
 	.cursor__inner {
-		fill: var(--cursor-fill);
-		stroke: var(--cursor-stroke);
-		stroke-width: var(--cursor-stroke-width);
-		opacity: 0.3;
+		//opacity: 0.3;
+		stroke: #fff;
+		stroke-width: 1px;
+		fill: none;
 	}
 	.credits {
 		padding-left: 25vw;
