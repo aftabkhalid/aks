@@ -16,8 +16,8 @@ destination:      _ak_pages
 
 # host:             0.0.0.0
 # port:             9001
-baseurl:          ""
-url:              "https://aftabkhalid.github.io/aks" #remove /aks while pushing code
+baseurl:          "/aks" #addd aks
+url:              "https://aftabkhalid.github.io" #remove /aks while pushing code
 encoding:         UTF-8
 
 
