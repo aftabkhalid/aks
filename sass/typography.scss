@@ -56,6 +56,12 @@ h1.small,
   font-size: $h1-font-size * fontSize(125);
 }
 
+h1 {
+  &.normal {
+    font-family: $theme-font-family-heading-regular;
+  }
+}
+
 // Heading h2
 h2, .h2 {
   font-family: $theme-font-family-heading-bold;
