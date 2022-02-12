@@ -1,0 +1,46 @@
+# Dependencies
+markdown:         kramdown
+
+kramdown:
+  auto_ids: true
+
+# Permalinks
+permalink:        pretty
+
+# Core
+title:            Aftab Khalid
+description:      Personal static website.
+email:            xeeafui@gmail.com
+
+destination:      _ak_pages
+
+# host:             0.0.0.0
+# port:             9001
+baseurl:          "" #addd /aks while pusing the code
+url:              "https://aftabkhalid.github.io"
+encoding:         UTF-8
+
+
+# Custom vars
+current_version:  1.0.0
+repo:             git@github.com:aftabkhalid/aks.git
+
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
