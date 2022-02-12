@@ -37,8 +37,8 @@ function draw() {
     f[i].move();
     f[i].show();
     if(f[i].x < 0 || f[i].x > w || f[i].y < 0 || f[i].y > h){
-       f.splice(i,1);
-       }
+      f.splice(i,4);
+     }
   }
 }
 
