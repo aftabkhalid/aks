@@ -357,4 +357,22 @@ footer #inner_footer a.main_link.mobile {
     100% { bottom: -11%; }
   }
 
+  .shopify {
+    position: absolute;
+    top: -20%;
+    left: 8%;
+  }
+
+  .woocommerce {
+    position: absolute;
+    right: -10%;
+    top: 20%;
+  }
+
+  .squarespace {
+    position: absolute;
+    left: 30%;
+    bottom: -16%;
+  }
+
 }
