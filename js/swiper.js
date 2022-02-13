@@ -26,26 +26,12 @@ var swiper = new Swiper(".swiper", {
 });
 
 // Loader
-function introLoader(element,delay) {
-  this.open = function(callback) {
-    setTimeout(function() {
-      $(element).fadeIn(500, function() {
-        if(callback !== undefined) callback();
-      });
-    }, delay);
+document.body.onload = function() {
 
-  };
-  this.close = function(callback) {
-    setTimeout(function() {
-      $(element).fadeOut(500, function() {
-        if(callback !== undefined) callback();
-      });
-    }, delay);
-  };
-}
-var LOADER = new introLoader('#introLoader',500);
-$(window).on('load', function() {
-  LOADER.close(function() {
-    alert('Page Loaded!')
-  });
-});
+  setTimeout(function() {
+    var preloader = document.getElementById('page-preloader');
+    if( !preloader.classList.contains('done') ) {
+      preloader.classList.add('done');
+    }
+  },1000);
+};
