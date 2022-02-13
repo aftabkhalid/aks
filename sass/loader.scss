@@ -4,7 +4,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: cyan;
+  background: $black;
+  z-index: 100;
 
   .spinner {
     position: absolute;
@@ -13,7 +14,7 @@
     margin: -25px 0 0 -25px;
     width: 50px;
     height: 50px;
-    border: 5px solid #efefef;
+    border: 5px solid #fff;
     border-radius: 50%;
 
     .spinner-inner {
@@ -25,9 +26,9 @@
       border-radius: 50%;
       border-width: 5px;
       border-style: solid;
-      border-color: #333 transparent transparent transparent;
+      border-color: #efe5df transparent transparent transparent;
       border-radius: 50%;
-      animation: infinite-spinning 1s linear infinite;
+      animation: infinite-spinning 60s linear infinite;
     }
   }
 }
