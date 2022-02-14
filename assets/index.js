@@ -15,17 +15,6 @@ preloader('.menu__item').then(() => {
       smooth: true
     });
 
-    // const lscroll = new LocomotiveScroll({
-    //   el: document.querySelector('.gallery'),
-    //   smooth: true,
-    //   direction: 'horizontal'
-    // });
-
-    // const scroll = new LocomotiveScroll({
-    //     el: document.querySelector('[data-scroll-container]'),
-    //     smooth: true
-    // });
-
     // initialize custom cursor
     const cursor = new Cursor(document.querySelector('.cursor'));
 

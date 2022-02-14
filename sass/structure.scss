@@ -3,22 +3,9 @@ header[role="site-header"] {
   height: 100vh;
   color: #fff;
   padding-top: 4rem;
-
   background-image: url('../images/header-bg-1.jpg');
   background-size: cover;
   position: relative;
-
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0px;
-  //   right: 0px;
-  //   bottom: 0px;
-  //   left: 0px;
-  //   //background-color: rgba(0,0,0,0.25);
-  //   background-color: rgba(0, 0, 0, 0.5);
-  // }
 
   .nav {
     .nav-link {
@@ -30,7 +17,7 @@ header[role="site-header"] {
 canvas{
   filter: blur(1px);
   position: absolute;
-  //z-index: -10;
+  top: 0;
 }
 
 .header-slide {
@@ -374,5 +361,12 @@ footer #inner_footer a.main_link.mobile {
     left: 30%;
     bottom: -16%;
   }
+
+}
+
+//
+//// Responsive layout
+
+@include media-breakpoint-down(md) {
 
 }

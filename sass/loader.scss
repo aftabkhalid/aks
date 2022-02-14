@@ -14,30 +14,6 @@
   }
 }
 
-// .loader {
-//   height: 76px;
-//   width: 76px;
-//   position: absolute;
-//   border: 12px solid #fff;
-//   left: 50%;
-//   top: 50%;
-//   border-radius: 50%;
-//   border-top-color: $mk-yellow;
-//   transform: translate(-50%, -50%);
-//   animation: 2s spin infinite linear;
-// }
-
-// @keyframes spin {
-//   from {
-//     transform: translate(-50%, -50%) rotate(0deg);
-//   }
-//   to {
-//     transform: translate(-50%, -50%) rotate(360deg);
-//   }
-// }
-
-//
-
 @property --num {
   syntax: "<integer>";
   initial-value: 100;
