@@ -1,3 +1,44 @@
+// Swiper slider
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  allowTouchMove: true,
+  centerInsufficientSlides: true,
+  simulateTouch: true,
+  followFinger: true,
+  //longSwipes: false,
+  parallax: true,
+  speed: 500,
+  //loop: true,
+
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   //type: "fraction",
+  //   clickable: true,
+  //   //dynamicBullets: true,
+  //   //dynamicMainBullets: 1,
+  // },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+});
+
+// Page loader
+document.body.onload = function() {
+
+  setTimeout(function() {
+    var preloader = document.getElementById('preloader');
+    if( !preloader.classList.contains('done') ) {
+      preloader.classList.add('done');
+    }
+  },1000);
+};
+
+// Particals for canvas
+
 let c = init("canvas"),
   w = (canvas.width = window.innerWidth),
   h = (canvas.height = window.innerHeight);
@@ -92,4 +133,4 @@ window.addEventListener("resize", function() {
 });
 
 loop();
-setInterval(loop, 1000 / 60);
+setInterval(loop, 1000 / 60) 

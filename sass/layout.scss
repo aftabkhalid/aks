@@ -3,7 +3,7 @@ body {
   font-family: $theme-font-family-primary;
   font-size: ($font-size-base * 1.125);
   font-weight: 300;
-  color: #3a3f42;
+  color: $black;
   //background-color: #000;
 }
 
@@ -13,7 +13,6 @@ body {
   fill: #fff;
   a {
     font-size: 18px;
-    font-family: 'Rubik', sans-serif;
     font-weight: 700;
 
     text-decoration: none;
@@ -93,8 +92,6 @@ body {
   }
 }
 
-
-
 // .outline {
 //   background-color: $white;
 //   border: 2px solid $mk-blue;
@@ -127,14 +124,6 @@ body {
     100%  {transform: translateY(0px)}
   }
 }
-
-
-// Custom Container for portfolio page
-
-//
-//// Responsive layout
-
-@include media-breakpoint-down(md) {}
 
 // Blog
 
