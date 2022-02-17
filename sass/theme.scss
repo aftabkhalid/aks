@@ -13,9 +13,11 @@
 // Theme
 @import "typography";
 @import "layout";
-@import "structure";
 @import "carousel";
 @import "coderop";
 @import "portfolio";
 @import "swiper";
 @import "loader";
+
+// New styles and Overrides
+@import "structure";
