@@ -9680,7 +9680,7 @@ var MenuItem = /*#__PURE__*/function () {
       this.DOM.revealInner.className = 'hover-reveal__inner';
       this.DOM.revealImage = document.createElement('div');
       this.DOM.revealImage.className = 'hover-reveal__img';
-      this.DOM.revealImage.style.backgroundImage = "url(../images/".concat(images[this.inMenuPosition][1], ")");
+      this.DOM.revealImage.style.backgroundImage = "url(images/".concat(images[this.inMenuPosition][1], ")");
       this.DOM.revealInner.appendChild(this.DOM.revealImage);
       this.DOM.reveal.appendChild(this.DOM.revealInner);
       this.DOM.el.appendChild(this.DOM.reveal);
