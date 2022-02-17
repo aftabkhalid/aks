@@ -24,6 +24,24 @@ var swiper = new Swiper(".swiper", {
     enabled: true,
     onlyInViewport: true,
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 1.25,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 1.53,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 2.325,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
 });
 
 // Page loader
@@ -71,8 +89,8 @@ function draw() {
   if(f.length < 100){
     for(let j = 0; j < 500; j++){
      f.push(new firefly());
+    }
   }
-     }
   //animation
   for(let i = 0; i < f.length; i++){
     f[i].move();
@@ -102,9 +120,9 @@ function init(elemid) {
     c = canvas.getContext("2d"),
     w = (canvas.width = window.innerWidth),
     h = (canvas.height = window.innerHeight);
-  c.fillStyle = "rgba(30,30,30,1)";
-  c.fillRect(0, 0, w, h);
-  return c;
+    c.fillStyle = "rgba(30,30,30,1)";
+    c.fillRect(0, 0, w, h);
+    return c;
 }
 
 window.requestAnimFrame = (function() {
@@ -133,4 +151,4 @@ window.addEventListener("resize", function() {
 });
 
 loop();
-setInterval(loop, 1000 / 60) 
+setInterval(loop, 1000 / 60);

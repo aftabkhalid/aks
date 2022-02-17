@@ -16,12 +16,11 @@
         padding-right: 8rem;
       }
 
-      img {
-        width: 100%;
-        text-align: center!important;
-        border-radius: 12px;
-      }
-
+    }
+    img {
+      width: 100%;
+      text-align: center!important;
+      border-radius: 12px;
     }
 
     .swiper-text {
@@ -44,10 +43,52 @@
 
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-    bottom: -50px;
-    position: absolute;
+
+// Breakpoints
+@include media-breakpoint-down(sm) {
+  .swiper {
+    .swiper-slide {
+      width: 350px!important;
+
+      .swiper-text {
+        padding-right: 0rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .swiper {
+    .swiper-slide {
+      width: 500px!important;
+
+      .swiper-text {
+        padding-right: 3rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .swiper {
+    .swiper-slide {
+      width: 588px!important;
+
+      .swiper-text {
+        padding-right: 10rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .swiper {
+    .swiper-slide {
+      width: 588px!important;
+
+      .swiper-text {
+        padding-right: 10rem;
+      }
+    }
+  }
 }
