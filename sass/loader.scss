@@ -6,11 +6,11 @@
   width: 100%;
   background: #000;
   z-index: 2;
-  transition: 1s all;
-  visibility: visible;
 
   &.done {
-    display: none;
+    animation-name: doAnimStay;
+  	animation-duration: 5s;
+  	animation-fill-mode: forwards;/* Makes it stay after animation */
   }
 }
 
@@ -50,4 +50,10 @@
     --num: 99;
   }
 
+}
+
+@keyframes doAnimStay {
+  0%   {transform: translateY(0px); opacity: 1; }
+  50% {transform: translateY(0px); opacity: 0;;}
+  100% {transform: translateY(-9999px); opacity: 0;}
 }
