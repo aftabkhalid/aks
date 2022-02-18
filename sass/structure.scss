@@ -500,6 +500,12 @@ footer #inner_footer a.main_link.mobile {
   footer #inner_footer a.main_link {
     font: 100 normal 65px/65px $theme-font-family-base;
   }
+
+  .project {
+    width: 100%;
+    margin-top: 0rem;
+  }
+
 }
 @include media-breakpoint-up(xxl) {
   footer #inner_footer {
@@ -509,4 +515,10 @@ footer #inner_footer a.main_link.mobile {
   footer #inner_footer a.main_link {
     font: 100 normal 65px/65px $theme-font-family-base;
   }
+
+  .project {
+    width: 100%;
+    margin-top: 0rem;
+  }
+  
 }
