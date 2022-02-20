@@ -5,12 +5,13 @@
   top: 0;
   width: 100%;
   background: #000;
-  z-index: 2;
+  z-index: 1010;
 
   &.done {
-    animation-name: doAnimStay;
-  	animation-duration: 5s;
-  	animation-fill-mode: forwards;/* Makes it stay after animation */
+    display: none;
+    // animation-name: doAnimStay;
+  	// animation-duration: 5s;
+  	// animation-fill-mode: forwards;/* Makes it stay after animation */
   }
 }
 

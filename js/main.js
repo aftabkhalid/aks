@@ -52,7 +52,7 @@ document.body.onload = function() {
     if( !preloader.classList.contains('done') ) {
       preloader.classList.add('done');
     }
-  },5000);
+  },1000);
 
 };
 
@@ -153,3 +153,38 @@ window.addEventListener("resize", function() {
 
 loop();
 setInterval(loop, 1000 / 60);
+
+//
+// Full screen menu
+
+$(function() {
+
+  /* LOCAL STORAGE START */
+  // To reset your local storage
+  localStorage.removeItem('learnMenu');
+
+  //check if menu-pulses are required
+  function checkMenuPulseState() {
+    if(localStorage.getItem('learnMenu') == 'learned') {
+      var $menuPulse = $('.menu-pulse');
+      $menuPulse.addClass('is-learned');
+    }
+  }
+  checkMenuPulseState();
+  /* LOCAL STORAGE END */
+
+
+  $(".menu-link").click(function(e) {
+    e.preventDefault();
+
+    /* LOCAL STORAGE START */
+    localStorage.setItem('learnMenu', 'learned');
+    checkMenuPulseState();
+    /* LOCAL STORAGE END */
+
+    $(".menu-overlay").toggleClass("menu-open");
+    $(".menu-toggle").toggleClass("menu-open");
+  });
+});
+
+//
