@@ -18,16 +18,16 @@
 		<div class="container footer-area">
 			<div class="row">
 				<div class="col-3">
-					<img class="ak-logo-footer" src="images/ak-logo.svg" alt="">
+					<img class="ak-logo-footer" src="{{ site.baseurl }}/images/ak-logo.svg" alt="">
 				</div>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
 					<span class="nav-head">Quick Links</span>
 					<nav class="nav flex-column">
-					  <a class="nav-link active" aria-current="page" href="#">Home</a>
-					  <a class="nav-link" href="#">About</a>
-					  <a class="nav-link" href="#">Services</a>
-					  <a class="nav-link" href="#">Work</a>
-						<a class="nav-link" href="#">Contact</a>
+            {% for link in site.data.main-menu %}
+              <a class="nav-link" data-text='{{ link.title }}' aria-current="page" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
+                {{ link.title }}
+              </a>
+            {% endfor %}
 					</nav>
 				</div>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
@@ -36,11 +36,11 @@
 				</div>
 				<div class="col-12">
           <nav class="nav small">
-						<a class="nav-link" href="https://www.facebook.com/aftabkhalid/" target="_blank" rel="noopener noreferrer" title="Aftab Khalid on Facebook">Fb</a>
-	          <a class="nav-link" href="https://www.instagram.com/aftabkhalid/" target="_blank" rel="noopener noreferrer" title="Aftab Khalid on Instagram">Ig</a>
-	          <a class="nav-link" href="https://twitter.com/aftabkhalid" target="_blank" rel="noopener noreferrer" title="Aftab Khalid on Twitter">Tw</a>
-	          <a class="nav-link" href="https://www.linkedin.com/in/aftabkhalid/" target="_blank" rel="noopener noreferrer" title="Aftab Khalid on LinkedIn">In</a>
-	          <a class="nav-link" href="https://www.behance.net/aftabkhalid" target="_blank" rel="noopener noreferrer" title="Aftab Khalid on Behance">Bē</a>
+            {% for link in site.data.social %}
+              <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
+                {{ link.platform }}
+              </a>
+            {% endfor %}
           </nav>
 
           <span class="small">© 2022 <a href="https://www.aftabkhalid.com" title="AK Studio">AK Studio.</a></span>

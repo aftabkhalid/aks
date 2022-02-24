@@ -52,10 +52,56 @@ document.body.onload = function() {
     if( !preloader.classList.contains('done') ) {
       preloader.classList.add('done');
     }
-  },1000);
+  },2000);
+
+  $(preloader).on('scroll touchmove mousewheel keydown keypress keyup',function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+  });
 
 };
 
+//
+// Full screen menu
+
+$(function() {
+
+  /* LOCAL STORAGE START */
+  // To reset your local storage
+  localStorage.removeItem('learnMenu');
+
+  //check if menu-pulses are required
+  function checkMenuPulseState() {
+    if(localStorage.getItem('learnMenu') == 'learned') {
+      var $menuPulse = $('.menu-pulse');
+      $menuPulse.addClass('is-learned');
+    }
+  }
+  checkMenuPulseState();
+  /* LOCAL STORAGE END */
+
+
+  $(".menu-link").click(function(e) {
+    e.preventDefault();
+
+    /* LOCAL STORAGE START */
+    localStorage.setItem('learnMenu', 'learned');
+    checkMenuPulseState();
+    /* LOCAL STORAGE END */
+    $(".menu-overlay").toggleClass("menu-open");
+    $(".menu-toggle").toggleClass("menu-open");
+
+    $(".menu-open").on('scroll touchmove mousewheel keydown keypress keyup',function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    });
+
+  });
+});
+
+//
 // Particals for canvas
 
 let c = init("canvas"),
@@ -153,38 +199,3 @@ window.addEventListener("resize", function() {
 
 loop();
 setInterval(loop, 1000 / 60);
-
-//
-// Full screen menu
-
-$(function() {
-
-  /* LOCAL STORAGE START */
-  // To reset your local storage
-  localStorage.removeItem('learnMenu');
-
-  //check if menu-pulses are required
-  function checkMenuPulseState() {
-    if(localStorage.getItem('learnMenu') == 'learned') {
-      var $menuPulse = $('.menu-pulse');
-      $menuPulse.addClass('is-learned');
-    }
-  }
-  checkMenuPulseState();
-  /* LOCAL STORAGE END */
-
-
-  $(".menu-link").click(function(e) {
-    e.preventDefault();
-
-    /* LOCAL STORAGE START */
-    localStorage.setItem('learnMenu', 'learned');
-    checkMenuPulseState();
-    /* LOCAL STORAGE END */
-
-    $(".menu-overlay").toggleClass("menu-open");
-    $(".menu-toggle").toggleClass("menu-open");
-  });
-});
-
-//
