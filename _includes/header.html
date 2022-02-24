@@ -1,5 +1,7 @@
-<header role="site-header" id="header">
-  <canvas id="canvas" data-scroll data-scroll-speed="4"></canvas>
+<header role="site-header" class="{% if page.title == "About" %} header-about {% elsif page.title == "Work" %} header-work {% endif %}">
+
+    <canvas id="canvas" data-scroll data-scroll-speed="4"></canvas>
+
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
@@ -11,8 +13,11 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav header-menu" data-scroll data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="1.5">
-              <a class="nav-link" aria-current="page" href="#">About</a>
-              <a class="nav-link" href="#">Work</a>
+              {% for link in site.data.secondary-menu %}
+                <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
+                  {{ link.title }}
+                </a>
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -21,6 +26,7 @@
 
     {% include menu.html %}
 
+    {% if page.title == "Home" %}
     <div class="container header-slide">
       <div class="row justify-content-center">
         <div class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -31,5 +37,23 @@
         </div>
       </div>
     </div>
+    {% elsif page.title == "About" %}
+    <div class="container header-slide">
+      <div class="row justify-content-center">
+        <div class="col-11 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+          <h1 class="medium normal" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">We work with ambitious businesses to improve their digital products.</h1>
+        </div>
+      </div>
+    </div>
+    {% elsif page.title == "Work" %}
+    <div class="container header-slide">
+      <div class="row justify-content-center">
+        <div class="col-11 col-sm-12 col-md-10 col-lg-9 col-xl-9 col-xxl-9">
+          <!-- <h1 class="small">WE ARE A</h1> -->
+          <h1 class="medium normal" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">We work with ambitious businesses to improve their digital products.</h1>
+        </div>
+      </div>
+    </div>
+    {% endif %}
 
 </header>
