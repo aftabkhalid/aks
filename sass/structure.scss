@@ -491,6 +491,79 @@ footer #inner_footer a.main_link.mobile {
   }
 }
 
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba($black, 0.15);
+  align-items: flex-start;
+  padding: 3rem 0;
+
+  &:nth-of-type(1) {
+    border-top: 1px solid rgba($black, 0.15);
+  }
+
+  .faq-question,
+  .faq-answer {
+    width: 50%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .faq-question {
+    padding-right: 4rem;
+  }
+}
+
+.faq-anim {
+  align-items: center;
+  display: block;
+  &:after {
+    content: "😀";
+    font-size: $h1-font-size * fontSize(90);
+    position: absolute;
+    top: 10px;
+    padding-left: 10px;
+    animation-name: faqAnim;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+  &:hover:after {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes faqAnim {
+  12% {
+    content: "😀";
+  }
+  24% {
+    content: "🐱";
+  }
+  36% {
+    content: "🥳";
+  }
+  48% {
+    content: "🐶";
+  }
+  60% {
+    content: "😉";
+  }
+  72% {
+    content: "🐋";
+  }
+  84% {
+    content: "👍";
+  }
+  100% {
+    content: "😎";
+  }
+}
+
 //
 //// Responsive layout
 
