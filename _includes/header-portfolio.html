@@ -1,6 +1,23 @@
 <header class="header-portfolio">
 
     <div class="container">
+
+      <div class="menu-toggle">
+        <a href="#" class="menu-link">
+
+          <span class="menu-icon">
+            <span class="menu-line menu-line-1"></span>
+            <span class="menu-line menu-line-2"></span>
+          </span>
+
+          <span class="menu-circle">
+            <span class="menu-pulse first-pulse"></span>
+            <span class="menu-pulse second-pulse"></span>
+          </span>
+
+        </a>
+      </div>
+
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="-1.5">
@@ -22,5 +39,54 @@
         </div>
       </nav>
     </div>
-    {% include menu.html %}
+
+    <div class="menu-overlay">
+      <div class="overlay-content d-flex align-items-center">
+
+        <div class="container">
+          <div class="row justify-content-center align-items-stretch">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3 order-3 order-lg-1 mt-5 mt-lg-0">
+              <div class="menu-contact d-flex align-items-center">
+                <div class="small">
+          				<div>
+          					<h6>Address</h6>
+          					<p>Office No. 432, 4th Floor, Sadique Trade Center, Lahore, Pakistan.<br><br></p>
+          				</div>
+
+                  <nav class="nav small">
+                    {% for link in site.data.social %}
+                      <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
+                        {{ link.platform }}
+                      </a>
+                    {% endfor %}
+                  </nav>
+
+                  <span class="small">© 2022 <a href="https://www.aftabkhalid.com" title="AK Studio">AK Studio.</a></span>
+
+        	    	</div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 offset-lg-2 separater order-2 order-lg-2">
+
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 order-1 order-lg-3">
+              <h6 class="mb-4">Explore</h6>
+              <nav class="nav flex-column main-menu">
+                {% for link in site.data.main-menu %}
+                  <a class="nav-link" data-text='{{ link.title }}' title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
+                    {{ link.title }}
+                  </a>
+                {% endfor %}
+              </nav>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
 </header>
