@@ -24,7 +24,7 @@ header[role="site-header"] {
 
 .header-portfolio {
   background-color: black;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .header-about {
@@ -573,7 +573,10 @@ footer #inner_footer a.main_link.mobile {
 // Project page
 
 .portfolio-pg {
-  padding: 10rem 0;
+  padding: 7rem 0;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 16%);
+  background-color: $white;
+  border-radius: 14px;
   img {
     width: 100%;
   }
