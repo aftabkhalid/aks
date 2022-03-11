@@ -52,7 +52,7 @@ document.body.onload = function() {
     if( !preloader.classList.contains('done') ) {
       preloader.classList.add('done');
     }
-  },2000);
+  },1000);
 
   $(preloader).on('scroll touchmove mousewheel keydown keypress keyup',function(e){
     e.preventDefault();
