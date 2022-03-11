@@ -34,18 +34,22 @@
 {% include scripts.html %}
 
 <script type='text/javascript'>
-$(document).ready(function(){
-  document.body.innerText = 'checking';
-  if (localStorage.getItem('isLoaded') !== 'yes') {
-    localStorage.setItem('isLoaded', 'yes');
-    alert('reloading now');
-        document.body.innerText += ' - loaded once';
-    location.reload();
-  } else {
-    alert('not reloading');
-        document.body.innerText += ' - loaded twice';
-  }
-});
+
+function reloadPage() {
+// The last "domLoading" Time //
+var currentDocumentTimestamp =
+new Date(performance.timing.domLoading).getTime();
+// Current Time //
+var now = Date.now();
+// Ten Seconds //
+var tenSec = 10 * 1000;
+// Plus Ten Seconds //
+var plusTenSec = currentDocumentTimestamp + tenSec;
+if (now > plusTenSec) {
+location.reload();
+} else {}
+}
+reloadPage();
 
 </script>
 
