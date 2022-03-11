@@ -102,6 +102,37 @@ $(function() {
 });
 
 //
+// Preload images
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+MM_preloadImages(
+  '{{ site.baseurl }}/images/web-design/auclaw/home.png',
+  '{{ site.baseurl }}/images/projects/taxslips/1.png',
+  '{{ site.baseurl }}/images/projects/taxslips/2.png',
+  '{{ site.baseurl }}/images/projects/taxslips/3.png',
+  '{{ site.baseurl }}/images/projects/taxslips/4.png',
+  '{{ site.baseurl }}/images/projects/taxslips/5.png',
+  '{{ site.baseurl }}/images/projects/taxslips/6.png',
+  '{{ site.baseurl }}/images/projects/taxslips/7.png',
+  '{{ site.baseurl }}/images/projects/taxslips/8.png',
+  '{{ site.baseurl }}/images/projects/taxslips/9.png',
+  '{{ site.baseurl }}/images/projects/taxslips/10.png',
+  '{{ site.baseurl }}/images/projects/taxslips/11.png',
+  '{{ site.baseurl }}/images/projects/taxslips/12.png',
+  '{{ site.baseurl }}/images/projects/taxslips/13.png',
+  '{{ site.baseurl }}/images/projects/taxslips/14.png',
+  '{{ site.baseurl }}/images/projects/taxslips/15.png',
+  '{{ site.baseurl }}/images/projects/taxslips/16.png',
+  '{{ site.baseurl }}/images/projects/taxslips/17.png',
+  '{{ site.baseurl }}/images/projects/taxslips/18.png',
+); //add more if required
+
+//
 // Particals for canvas
 
 let c = init("canvas"),
