@@ -12,10 +12,10 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
       <div class="col-8">
 
         <h1>Design Audit</h1>
-        <p>Fill the form below to send us your website, we will send you design audit report. <strong>It's Free </strong></p>
+        <p>Fill the form below to send us your website, we will send you design audit report. <strong>It's Free! </strong></p>
 
-
-        <form class="row g-3" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfHJSmpDYC754xF4KP690iuR2cHNXiUWzufW0BGgmsuVscY2w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        <form class="row g-3" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfHJSmpDYC754xF4KP690iuR2cHNXiUWzufW0BGgmsuVscY2w/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
           <div class="col-12">
             <label for="email" class="form-label" placeholder="Enter your email">Email</label>
@@ -58,9 +58,6 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
             <input class="btn btn-primary" type="submit" value="Submit">
           </div>
         </form>
-
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
 
       </div>
 		</div>
