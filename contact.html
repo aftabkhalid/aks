@@ -9,54 +9,58 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 <div class="section">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-8">
+      <div class="col-6">
 
         <h1>Design Audit</h1>
         <p>Fill the form below to send us your website, we will send you design audit report. <strong>it's Free!</strong></p>
 
+        <div class="form-elements">
+          <form class="row g-3 gform" novalidate method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbznLlAlA9bmVUKd0JxT3YIGybezaa6OfZrXbQw7W3barWG-JVy4eaNJ_Q0VSzUZtZoL/exec" method="POST">
 
-        <form class="gform row g-3" method="POST" data-email="example@email.net"
-        action="https://script.google.com/macros/s/AKfycbznLlAlA9bmVUKd0JxT3YIGybezaa6OfZrXbQw7W3barWG-JVy4eaNJ_Q0VSzUZtZoL/exec">
-          <!-- change the form action to your script url -->
+              <div class="col-12">
+                <label for="name" class="form-label" placeholder="Enter your name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your full name</div>
+              </div>
 
-          <div class="form-elements">
-            <div class="col-12">
-              <label class="form-label" for="name">Name: </label>
-              <input class="form-control" id="name" name="name" placeholder="What your Mom calls you" />
-            </div>
+              <div class="col-12">
+                <label for="email" class="form-label" placeholder="Enter your name">Name</label>
+                <input type="text" class="form-control" name="email" id="email" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your valid email</div>
+              </div>
 
-            <div class="col-12">
-              <label class="form-label" for="message">Message: </label>
-              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Tell us what's on your mind..."></textarea>
-            </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+              </div>
 
-            <div class="col-12">
-              <label class="form-label" for="email"><em>Your</em> Email Address:</label>
-              <input class="form-control" id="email" name="email" type="email" value="" required placeholder="your.name@email.com"/>
-            </div>
+              <div class="col-12 honeypot-field">
+                <label class="form-label" for="honeypot"></label>
+                <input class="form-control" id="honeypot" type="text" name="honeypot" value="" />
+              </div>
 
-            <div class="col-12">
-              <label class="form-label" for="color">Favourite Color: </label>
-              <input class="form-control" id="color" name="color" placeholder="green" />
-            </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
 
-            <div class="col-12">
-              <label class="form-label" for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-              <input class="form-control" id="honeypot" type="text" name="honeypot" value="" />
-            </div>
+          </form>
+        </div>
 
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </div>
-
-          <!-- Customise the Thankyou Message People See when they submit the form: -->
-          <div class="thankyou_message" style="display:none;">
-            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
-          </div>
-
-        </form>
-
+        <div class="thankyou_message" style="display:none;">
+          <h4>Great! Form Submitted</h4>
+          <p class="lead">We'll get back to you as soon as possible.</p>
+          <p>Follow us on our social channels</p>
+          <nav class="nav small">
+            {% for link in site.data.social %}
+              <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
+                {{ link.platform }}
+              </a>
+            {% endfor %}
+          </nav>
+        </div>
 
       </div>
 		</div>
