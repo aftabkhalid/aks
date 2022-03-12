@@ -4,11 +4,8 @@
 - url: /about
   title: About
 
-- url: /services
-  title: Services
+# - url: /services
+#   title: Services
 
 - url: /work
   title: Work
-
-- url: /contact
-  title: Contact
