@@ -160,7 +160,7 @@ MM_preloadImages(
         form.classList.add('was-validated')
       }, false)
     })
-})();
+})()
 
 //
 // Particals for canvas
