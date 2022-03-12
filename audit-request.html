@@ -15,31 +15,41 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
         <p>Fill the form below to send us your website, we will send you design audit report. <strong>it's Free!</strong></p>
 
         <div class="form-elements">
-          <form class="row g-3 gform" method="POST" data-email="example@email.net"
+          <form class="row g-3 gform needs-validation" novalidate method="POST" data-email="example@email.net"
           action="https://script.google.com/macros/s/AKfycbxHVf9dOzXOgIlH6DBfzRQzmB5o8VXJrX_XXA9pLMgg9F3Hz0k45lCOlkTMPN4OGhTl/exec" method="POST">
 
               <div class="col-12">
                 <label for="name" class="form-label" placeholder="Enter your name">Name</label>
                 <input type="text" class="form-control" name="name" id="name" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your full name</div>
               </div>
 
               <div class="col-12">
                 <label for="email" class="form-label" placeholder="Enter your email">Email</label>
                 <input type="email" class="form-control" name="email" id="email" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter valid email</div>
               </div>
 
               <div class="col-12">
                 <label for="phone" class="form-label">Contact number</label>
                 <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter phone number" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your phone number</div>
               </div>
               <div class="col-12">
                 <label for="storelink" class="form-label">Store URL</label>
                 <input type="text" class="form-control" name="storelink" id="storelink" placeholder="www.mystore.com" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your website link</div>
               </div>
 
               <div class="col-md-4">
                 <label for="city" class="form-label">City</label>
                 <input type="text" class="form-control" name="city" id="city" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your city</div>
               </div>
               <div class="col-md-4">
                 <label for="state" class="form-label">State</label>
@@ -293,6 +303,8 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
                   <option value="Zambia">Zambia</option>
                   <option value="Zimbabwe">Zimbabwe</option>
                 </select>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please select your country</div>
               </div>
 
               <div class="col-12">
