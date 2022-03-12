@@ -593,6 +593,16 @@ footer #inner_footer a.main_link.mobile {
   display: none;
 }
 
+.thankyou_message {
+  height: 80vh;
+  .nav-link {
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
 //
 //// Responsive layout
 
