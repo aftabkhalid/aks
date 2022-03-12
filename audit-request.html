@@ -14,10 +14,11 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
         <h1>Design Audit</h1>
         <p>Fill the form below to send us your website, we will send you design audit report. <strong>it's Free!</strong></p>
 
-        <div class="form-elements">
+
           <form class="row g-3 gform needs-validation" novalidate method="POST" data-email="example@email.net"
           action="https://script.google.com/macros/s/AKfycbxHVf9dOzXOgIlH6DBfzRQzmB5o8VXJrX_XXA9pLMgg9F3Hz0k45lCOlkTMPN4OGhTl/exec" method="POST">
 
+            <div class="form-elements">
               <div class="col-12">
                 <label for="name" class="form-label" placeholder="Enter your name">Name</label>
                 <input type="text" class="form-control" name="name" id="name" required>
@@ -321,22 +322,22 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
 
+            </div>
+
+            <div class="thankyou_message" style="display:none;">
+              <h4>We Received Your Request</h4>
+              <p class="lead">We'll get back to you as soon as we complete design audit.</p>
+              <p>Follow us on our social channels</p>
+              <nav class="nav small">
+                {% for link in site.data.social %}
+                  <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
+                    {{ link.platform }}
+                  </a>
+                {% endfor %}
+              </nav>
+            </div>
+
           </form>
-        </div>
-
-        <div class="thankyou_message" style="display:none;">
-          <h4>We Received Your Request</h4>
-          <p class="lead">We'll get back to you as soon as we complete design audit.</p>
-          <p>Follow us on our social channels</p>
-          <nav class="nav small">
-            {% for link in site.data.social %}
-              <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
-                {{ link.platform }}
-              </a>
-            {% endfor %}
-          </nav>
-        </div>
-
 
       </div>
 		</div>

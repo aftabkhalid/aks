@@ -17,10 +17,10 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 
       <div class="col-6">
         <h3 class="faq-anim">Hello</h3>
-        <div class="form-elements">
+
           <form class="row g-3 gform" novalidate method="POST" data-email="example@email.net"
           action="https://script.google.com/macros/s/AKfycbznLlAlA9bmVUKd0JxT3YIGybezaa6OfZrXbQw7W3barWG-JVy4eaNJ_Q0VSzUZtZoL/exec" method="POST">
-
+            <div class="form-elements">
               <div class="col-12">
                 <label for="name" class="form-label" placeholder="Enter your name">Name</label>
                 <input type="text" class="form-control" name="name" id="name" required>
@@ -48,24 +48,23 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
+            </div>
+
+            <div class="thankyou_message" style="display:none;">
+              <h4>Great! Form Submitted</h4>
+              <p class="lead">We'll get back to you as soon as possible.</p>
+              <p>Follow us on our social channels</p>
+              <nav class="nav small">
+                {% for link in site.data.social %}
+                  <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
+                    {{ link.platform }}
+                  </a>
+                {% endfor %}
+              </nav>
+            </div>
 
           </form>
         </div>
-
-        <div class="thankyou_message" style="display:none;">
-          <h4>Great! Form Submitted</h4>
-          <p class="lead">We'll get back to you as soon as possible.</p>
-          <p>Follow us on our social channels</p>
-          <nav class="nav small">
-            {% for link in site.data.social %}
-              <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
-                {{ link.platform }}
-              </a>
-            {% endfor %}
-          </nav>
-        </div>
-
-      </div>
 
 		</div>
   </div>
