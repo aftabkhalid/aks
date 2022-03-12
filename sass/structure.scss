@@ -587,6 +587,13 @@ footer #inner_footer a.main_link.mobile {
 }
 
 //
+// Forms
+
+.honeypot-field {
+  display: none;
+}
+
+//
 //// Responsive layout
 
 @include media-breakpoint-down(sm) {
