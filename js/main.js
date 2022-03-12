@@ -137,10 +137,10 @@ MM_preloadImages(
 
 var submitted=false;
 
-// $('#gform').on('submit', function(e) {
-//   $('#gform *').fadeOut(2000);
-//   $('#gform').prepend('thank-you.html');
-// });
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+});
 
 //
 // Particals for canvas
