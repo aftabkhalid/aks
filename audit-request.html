@@ -14,11 +14,11 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
         <h1>Design Audit</h1>
         <p>Fill the form below to send us your website, we will send you design audit report. <strong>it's Free!</strong></p>
 
+        <div class="hide-form">
+          <form class="row g-3 gform" method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbxHVf9dOzXOgIlH6DBfzRQzmB5o8VXJrX_XXA9pLMgg9F3Hz0k45lCOlkTMPN4OGhTl/exec" method="POST">
 
-        <form class="row g-3 gform" method="POST" data-email="example@email.net"
-        action="https://script.google.com/macros/s/AKfycbxHVf9dOzXOgIlH6DBfzRQzmB5o8VXJrX_XXA9pLMgg9F3Hz0k45lCOlkTMPN4OGhTl/exec" method="POST">
 
-          <div class="form-elements">
             <div class="col-12">
               <label for="name" class="form-label" placeholder="Enter your name">Name</label>
               <input type="text" class="form-control" name="name" id="name">
@@ -310,21 +310,21 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
             <div class="col-12">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-          </div>
+          </form>
+        </div>
 
-          <div class="thankyou_message" style="display:none;">
-            <h2>Thanks for contacting us! We will get back to you soon!</h2>
-            <strong>Follow us on our social channels</strong>
-            <nav class="nav small">
-              {% for link in site.data.social %}
-                <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
-                  {{ link.platform }}
-                </a>
-              {% endfor %}
-            </nav>
-          </div>
+        <div class="thankyou_message" style="display:none;">
+          <h2>Thanks for contacting us! We will get back to you soon!</h2>
+          <strong>Follow us on our social channels</strong>
+          <nav class="nav small">
+            {% for link in site.data.social %}
+              <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
+                {{ link.platform }}
+              </a>
+            {% endfor %}
+          </nav>
+        </div>
 
-        </form>
 
 
       </div>

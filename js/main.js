@@ -135,12 +135,12 @@ MM_preloadImages(
 //
 // Audit form
 
-var submitted=false;
-
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-});
+// var submitted=false;
+//
+// $('#gform').on('submit', function(e) {
+//   $('#gform *').fadeOut(2000);
+//   $('#gform').prepend('Your submission has been processed...');
+// });
 
 //
 // Particals for canvas
