@@ -18,7 +18,7 @@
   title: OGC
   description: The ultimate mobile Karaoke experience
 
-- path: !#
+- path: /
   thumb: /images/cover-orient.jpg
   title: Orient
   description: The ultimate mobile Karaoke experience
