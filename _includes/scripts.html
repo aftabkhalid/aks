@@ -15,14 +15,15 @@
     setTimeout(function(){window.location.href = loc + hash;}, 12000);
 	}
 
-	window.addEventListener('scroll',function() {
-    //When scroll change, you save it on localStorage.
-    localStorage.setItem('scrollPosition',window.scrollY);
-	},false);
+	window.onunload = function() {
+    localStorage.setItem("scrollY", window.scrollY);
+	}
 
-	window.addEventListener('load',function() {
-    if(localStorage.getItem('scrollPosition') !== null)
-       window.scrollTo(0, localStorage.getItem('scrollPosition'));
-	},false);
+	window.onload = function() {
+    var scrollY = parseInt(localStorage.getItem("scrollY"));
+    if (!isNaN(scroll)) {
+      window.scroll(0, scrollY);
+    }
+	}
 
 </script>
