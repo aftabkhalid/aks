@@ -1,28 +1,34 @@
+up:
 - path: /projects/taxslips
   thumb: /images/cover-taxslip.jpg
   title: Taxslip
   description: The ultimate mobile Karaoke experience
 
+down:
 - path: /projects/mevris
   thumb: /images/cover-mevris.jpg
   title: Mevris
   description: The ultimate mobile Karaoke experience
 
+up:
 - path: /projects/dukaan
   thumb: /images/cover-dukaan.jpg
   title: Dukaan
   description: The ultimate mobile Karaoke experience
 
+down:
 - path: /projects/ogc
   thumb: /images/cover-ogc.jpg
   title: OGC
   description: The ultimate mobile Karaoke experience
 
+up:
 - path: /
   thumb: /images/cover-orient.jpg
   title: Orient
   description: The ultimate mobile Karaoke experience
 
+down:
 - path: /web-design/infotech
   thumb: /images/cover-infotech.jpg
   title: Infotech

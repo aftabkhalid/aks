@@ -16,14 +16,25 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 			<div class="col-12">
         <div class="row justify-content-between">
 
-          {% for portfolio in site.data.portfolio-grid %}
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.75" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
-              <a href="{{site.baseurl}}{{ portfolio.path }}" class="portfolio">
-                <img src="{{site.baseurl}}{{ portfolio.thumb }}" alt="">
-                <h4>{{ portfolio.title }}</h4>
-                <p>{{ portfolio.description }}</p>
-              </a>
-            </div>
+          {% for grid in site.data.portfolio-grid %}
+            {% for portfolio in site.data.portfolio-grid.up %}
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.75" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
+                <a href="{{site.baseurl}}{{ portfolio.path }}" class="portfolio">
+                  <img src="{{site.baseurl}}{{ portfolio.thumb }}" alt="">
+                  <h4>{{ portfolio.title }}</h4>
+                  <p>{{ portfolio.description }}</p>
+                </a>
+              </div>
+            {% endfor %}
+            {% for portfolio in site.data.portfolio-grid.down %}
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.5" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
+                <a href="{{site.baseurl}}{{ portfolio.path }}" class="portfolio">
+                  <img src="{{site.baseurl}}{{ portfolio.thumb }}" alt="">
+                  <h4>{{ portfolio.title }}</h4>
+                  <p>{{ portfolio.description }}</p>
+                </a>
+              </div>
+            {% endfor %}
           {% endfor %}
 
         </div>
