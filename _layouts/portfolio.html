@@ -18,6 +18,7 @@
 
 			{{ content }}
 
+			{% include footer-contact.html %}
 			{% include footer.html %}
 
 		</div>
@@ -32,16 +33,5 @@
 </body>
 
 {% include scripts.html %}
-
-<script type='text/javascript'>
-
-	if(location.search.indexOf('r') < 0){
-    var hash = window.location.hash;
-    var loc = window.location.href.replace(hash, '');
-    loc += (loc.indexOf('?') < 0? '?' : '&') + 'r';
-    setTimeout(function(){window.location.href = loc + hash;}, 12000);
-	}
-
-</script>
 
 </html>

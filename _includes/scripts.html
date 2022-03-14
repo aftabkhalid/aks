@@ -5,3 +5,14 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/index.js"></script>
 <script src="{{ site.baseurl }}/js/main.js"></script>
+
+<script type='text/javascript'>
+
+	if(location.search.indexOf('r') < 0){
+    var hash = window.location.hash;
+    var loc = window.location.href.replace(hash, '');
+    loc += (loc.indexOf('?') < 0? '?' : '&') + 'r';
+    setTimeout(function(){window.location.href = loc + hash;}, 12000);
+	}
+
+</script>
