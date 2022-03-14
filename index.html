@@ -305,30 +305,52 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 			<div class="col-12">
         <div class="row justify-content-between">
 
-          {% for grid in site.data.portfolio-grid %}
-            {% for portfolio in site.data.portfolio-grid.up %}
-              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.75" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
-                <a href="{{site.baseurl}}{{ portfolio.path }}" class="portfolio">
-                  <img src="{{site.baseurl}}{{ portfolio.thumb }}" alt="">
-                  <h4>{{ portfolio.title }}</h4>
-                  <p>{{ portfolio.description }}</p>
-                </a>
-              </div>
-            {% endfor %}
-            {% for portfolio in site.data.portfolio-grid.down %}
-              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.5" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
-                <a href="{{site.baseurl}}{{ portfolio.path }}" class="portfolio">
-                  <img src="{{site.baseurl}}{{ portfolio.thumb }}" alt="">
-                  <h4>{{ portfolio.title }}</h4>
-                  <p>{{ portfolio.description }}</p>
-                </a>
-              </div>
-            {% endfor %}
-          {% endfor %}
-          
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.75" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
+    				<a href="{{site.baseurl}}/projects/taxslips" class="portfolio">
+    					<img src="images/cover-taxslip.jpg" alt="">
+    					<h4>Taxslip</h4>
+    					<p>The ultimate mobile Karaoke experience</p>
+    				</a>
+    			</div>
+
+    			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.5" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
+    				<a href="{{site.baseurl}}/projects/mevris" class="portfolio">
+    					<img src="images/cover-mevris.jpg" alt="">
+    					<h4>Mevris</h4>
+    					<p>The ultimate mobile Karaoke experience</p>
+    				</a>
+    			</div>
+    			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.75" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
+    				<a href="{{site.baseurl}}/projects/dukaan-dashboard" class="portfolio">
+    					<img src="images/cover-dukaan.jpg" alt="">
+    					<h4>Dukaan</h4>
+    					<p>The ultimate mobile Karaoke experience</p>
+    				</a>
+    			</div>
+    			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.5" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
+    				<a href="{{site.baseurl}}/web-design/ogc" class="portfolio">
+    					<img src="images/cover-ogc.jpg" alt="">
+    					<h4>OGC</h4>
+    					<p>The ultimate mobile Karaoke experience</p>
+    				</a>
+    			</div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.75" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
+    				<a href="#" class="portfolio">
+    					<img src="images/cover-orient.jpg" alt="">
+    					<h4>Orient</h4>
+    					<p>The ultimate mobile Karaoke experience</p>
+    				</a>
+    			</div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" data-scroll data-scroll-speed="0.5" data-scroll-position="top" data-scroll-delay="0.05" data-scroll-repeat="true">
+    				<a href="{{site.baseurl}}/web-design/infotech" class="portfolio">
+    					<img src="images/cover-infotech.jpg" alt="">
+    					<h4>Infotech</h4>
+    					<p>The ultimate mobile Karaoke experience</p>
+    				</a>
+    			</div>
+
         </div>
       </div>
-
 		</div>
   </div>
 </div>
