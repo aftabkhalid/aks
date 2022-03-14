@@ -1,3 +1,6 @@
+{% if page.title == "Contact" %}
+
+{% else %}
 <div class="{% if page.title == "Home" %} section text-center {% else %} section text-center pt-0  {% endif %}">
   <div class="container">
     <div class="row">
@@ -9,3 +12,4 @@
     </div>
   </div>
 </div>
+{% endif %}
