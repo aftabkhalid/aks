@@ -1,33 +1,29 @@
-quote1:
-- heading: RANDOM PROJECTS
-  subheading: I do everything with my core values of honesty, hard work, and trust.
+- path: /projects/taxslips
+  thumb: /images/cover-taxslip.jpg
+  title: Taxslip
+  description: The ultimate mobile Karaoke experience
 
-quote2:
-- heading: What <br> They<br> Say
-  description: Mr. Aftab is very creative person and i found his service high standards and recommend people to consult for their project. Good Luck!
-  footer: Asim Khan - Project Manager
+- path: /projects/mevris
+  thumb: /images/cover-mevris.jpg
+  title: Mevris
+  description: The ultimate mobile Karaoke experience
 
-portfolioThumb1:
-- thumb:
-  imagePath: images/6.png
-  url: /projects/dukaan-client
-- thumb:
-  imagePath: images/7.png
-  url: /projects/blueeast
-- thumb:
-  imagePath: images/1.png
-  url: /projects/dukaan-enterprise
-- thumb:
-  imagePath: images/5.png
-  url: /projects/orient-rozgaar
+- path: /projects/dukaan
+  thumb: /images/cover-dukaan.jpg
+  title: Dukaan
+  description: The ultimate mobile Karaoke experience
 
-portfolioThumb2:
-- thumb:
-  imagePath: images/2.png
-  url: /projects/OGC
-- thumb:
-  imagePath: images/3.png
-  url: /projects/mevris
-- thumb:
-  imagePath: images/4.png
-  url: /projects/mevris-website
+- path: /projects/ogc
+  thumb: /images/cover-ogc.jpg
+  title: OGC
+  description: The ultimate mobile Karaoke experience
+
+- path: !#
+  thumb: /images/cover-orient.jpg
+  title: Orient
+  description: The ultimate mobile Karaoke experience
+
+- path: /web-design/infotech
+  thumb: /images/cover-infotech.jpg
+  title: Infotech
+  description: The ultimate mobile Karaoke experience
