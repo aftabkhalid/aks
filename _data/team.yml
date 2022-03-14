@@ -1,11 +1,11 @@
-- media: <img src="{{ site.baseurl }}/images/team-member-1.jpg" alt="">
+- media: images/team-member-1.jpg"
   name: Aftab Khalid
   position: Founder, UX Strategist
 
-- media: <img src="{{ site.baseurl }}/images/team-member-2.jpg" alt="">
+- media: images/team-member-2.jpg"
   name: Abdullah Asif
   position: Interaction Designer
 
-- media: <img src="{{ site.baseurl }}/images/team-member-3.jpg" alt="">
+- media: images/team-member-3.jpg"
   name: Muhammad Ahmad
   position: Senior Shopify Developer
