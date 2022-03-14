@@ -15,15 +15,4 @@
     setTimeout(function(){window.location.href = loc + hash;}, 12000);
 	}
 
-	window.onunload = function() {
-    localStorage.setItem("scrollY", window.scrollY);
-	}
-
-	window.onload = function() {
-    var scrollY = parseInt(localStorage.getItem("scrollY"));
-    if (!isNaN(scroll)) {
-      window.scroll(0, scrollY);
-    }
-	}
-
 </script>
