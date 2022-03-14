@@ -72,51 +72,27 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
       <div class="col-10">
         <h1 class="small normal mb-5" data-scroll data-scroll-speed="1" data-scroll-delay="0.05">Meet Our Team</h1>
         <div class="row" data-scroll data-scroll-speed="1" data-scroll-delay="0.05">
-          <div class="col-4">
-            <div class="team">
-              <div class="team-media">
-                <img src="{{ site.baseurl }}/images/team-member-1.jpg" alt="">
-              </div>
-              <div class="team-detail">
-                <h2 class="mt-3 hairline ">
-                  <span>Aftab Khalid</span>
-                </h2>
-                <span>
-                  <span>UX Strategist & Founder</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="team">
-              <div class="team-media">
-                <img src="{{ site.baseurl }}/images/team-member-2.jpg" alt="">
-              </div>
-              <div class="team-detail">
-                <h2 class="mt-3 hairline ">
-                  <span>Aftab Khalid</span>
-                </h2>
-                <span>
-                  <span>UX Strategist & Founder</span>
-                </span>
+
+          {% for member in site.data.team %}
+
+            <div class="col-4">
+              <div class="team">
+                <div class="team-media">
+                  {{ member.media }}
+                </div>
+                <div class="team-detail">
+                  <h2 class="mt-3 hairline ">
+                    <span>{{ member.name }}</span>
+                  </h2>
+                  <span>
+                    <span>{{ member.position }}</span>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="team">
-              <div class="team-media">
-                <img src="{{ site.baseurl }}/images/team-member-1.jpg" alt="">
-              </div>
-              <div class="team-detail">
-                <h2 class="mt-3 hairline ">
-                  <span>Aftab Khalid</span>
-                </h2>
-                <span>
-                  <span>UX Strategist & Founder</span>
-                </span>
-              </div>
-            </div>
-          </div>
+
+          {% endfor %}
+
         </div>
       </div>
     </div>
