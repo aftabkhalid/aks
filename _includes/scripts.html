@@ -15,16 +15,16 @@
     setTimeout(function(){window.location.href = loc + hash;}, 12000);
 	}
 
-	document.addEventListener("DOMContentLoaded", function (event) {
-    var scrollpos = sessionStorage.getItem('scrollpos');
-    if (scrollpos) {
-      window.scrollTo(0, scrollpos);
-      sessionStorage.removeItem('scrollpos');
-    }
-	});
+	//code to handle setting page offset on load
+	$(function() {
+    if ( window.location.href.indexOf( 'loc' ) != -1 ) {
+      //gets the number from end of url
+      var match = window.location.href.split('?')[1].match( /\d+$/ );
+      var loc = match[0];
 
-	window.addEventListener("beforeunload", function (e) {
-    sessionStorage.setItem('scrollpos', window.scrollY);
+      //sets the page offset
+      $( 'html, body' ).scrollTop( loc );
+    }
 	});
 
 </script>
