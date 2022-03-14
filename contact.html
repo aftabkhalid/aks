@@ -12,6 +12,27 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 
       <div class="col-4">
         <h1>Get In Touch</h1>
+
+        <div class="contact-form">
+          <div class="small">
+            <div>
+              <h6>Address</h6>
+              <p>Office No. 432, 4th Floor, Sadique Trade Center, Lahore, Pakistan.<br><br></p>
+            </div>
+
+            <nav class="nav small">
+              {% for link in site.data.social %}
+                <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
+                  {{ link.platform }}
+                </a>
+              {% endfor %}
+            </nav>
+
+            <span class="small">© 2022 <a href="https://www.aftabkhalid.com" title="AK Studio">AK Studio.</a></span>
+
+          </div>
+        </div>
+
       </div>
 
       <div class="col-6">

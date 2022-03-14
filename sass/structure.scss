@@ -603,6 +603,15 @@ footer #inner_footer a.main_link.mobile {
   }
 }
 
+.contact-form {
+  .nav-link {
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
 //
 //// Responsive layout
 
