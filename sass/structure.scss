@@ -9,6 +9,10 @@ header[role="site-header"] {
   z-index: 1;
 
   .header-menu {
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    z-index: 5;
     .nav-link {
       color: #fff;
       text-transform: uppercase;
@@ -36,19 +40,6 @@ header[role="site-header"] {
 
 .header-work {
   background-image: url('../images/work.jpg')!important;
-}
-
-.menu-ak {
-  position: absolute;
-  width: 100%;
-  top: 4rem;
-  z-index: 5;
-  .nav-link {
-    color: $white;
-    &:hover {
-      color: rbga($white, 0.6);
-    }
-  }
 }
 
 canvas{
