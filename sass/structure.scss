@@ -20,6 +20,10 @@ header[role="site-header"] {
       padding-right: 1.5rem;
     }
   }
+
+  .container, .row {
+    height: 100%;
+  }
 }
 
 .header-portfolio {
@@ -34,6 +38,12 @@ header[role="site-header"] {
   background-image: url('../images/work.jpg')!important;
 }
 
+.menu-main {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+}
+
 canvas{
   filter: blur(1px);
   position: absolute;
@@ -41,7 +51,7 @@ canvas{
 }
 
 .header-slide {
-  padding-top: 12rem;
+  //padding-top: 12rem;
   position: relative;
   p {
     padding-right: 12rem;
