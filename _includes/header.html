@@ -2,33 +2,35 @@
 
     <canvas id="canvas" data-scroll data-scroll-speed="4"></canvas>
 
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="-1.5">
-            <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav header-menu" data-scroll data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="1.5">
-              {% for link in site.data.secondary-menu %}
-                <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
-                  {{ link.title }}
-                </a>
-              {% endfor %}
+    <div class="menu-main">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="-1.5">
+              <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav header-menu" data-scroll data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="1.5">
+                {% for link in site.data.secondary-menu %}
+                  <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
+                    {{ link.title }}
+                  </a>
+                {% endfor %}
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
 
     {% include menu.html %}
 
     {% if page.title == "Home" %}
     <div class="container header-slide">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center align-items-stretch">
         <div class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
           <!-- <h1 class="small">WE ARE A</h1> -->
           <h1 class="huge" data-scroll data-scroll-speed="5" data-scroll-delay="0.15">Creative Studio</h1>
