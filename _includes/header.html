@@ -30,7 +30,7 @@
             <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
           </div>
 
-          <nav class="nav" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
+          <nav class="nav align-item-center" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
             {% for link in site.data.secondary-menu %}
               <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
                 {{ link.title }}
