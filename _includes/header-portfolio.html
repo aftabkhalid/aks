@@ -1,44 +1,40 @@
 <header class="header-portfolio">
 
-    <div class="container">
+    <div class="menu-ak header-menu">
+      <div class="container">
 
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
+        <div class="menu-toggle">
+          <a href="#" class="menu-link">
 
-          <div class="menu-toggle">
-            <a href="#" class="menu-link">
+            <span class="menu-icon">
+              <span class="menu-line menu-line-1"></span>
+              <span class="menu-line menu-line-2"></span>
+            </span>
 
-              <span class="menu-icon">
-                <span class="menu-line menu-line-1"></span>
-                <span class="menu-line menu-line-2"></span>
-              </span>
+            <span class="menu-circle">
+              <span class="menu-pulse first-pulse"></span>
+              <span class="menu-pulse second-pulse"></span>
+            </span>
 
-              <span class="menu-circle">
-                <span class="menu-pulse first-pulse"></span>
-                <span class="menu-pulse second-pulse"></span>
-              </span>
+          </a>
+        </div>
 
-            </a>
-          </div>
-          
-          <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="-1.5">
+        <div class="d-flex justify-content-between">
+          <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1.5">
             <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav header-menu" data-scroll data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="1.5">
-              {% for link in site.data.secondary-menu %}
-                <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
-                  {{ link.title }}
-                </a>
-              {% endfor %}
 
-            </div>
-          </div>
+          <nav class="nav align-items-center" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
+            {% for link in site.data.secondary-menu %}
+              <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
+                {{ link.title }}
+              </a>
+            {% endfor %}
+            <a href="#" class="btn btn-theme btn-theme-sm btn-outline-light" >Free Design Audit</a>
+          </nav>
         </div>
-      </nav>
+
+      </div>
     </div>
 
     <div class="menu-overlay">
