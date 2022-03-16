@@ -24,6 +24,13 @@ header[role="site-header"] {
   .container, .row {
     height: 100%;
   }
+
+  .menu-ak {
+    color: $white;
+    &:hover {
+      color: rbga($white, 0.6);
+    }
+  }
 }
 
 .header-portfolio {
