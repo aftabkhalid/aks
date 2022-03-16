@@ -25,17 +25,19 @@
           </div>
         </nav> -->
 
-        <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1.5">
-          <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
-        </div>
+        <div class="d-flex justify-content-between">
+          <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1.5">
+            <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
+          </div>
 
-        <nav class="nav" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
-          {% for link in site.data.secondary-menu %}
-            <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
-              {{ link.title }}
-            </a>
-          {% endfor %}
-        </nav>
+          <nav class="nav" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
+            {% for link in site.data.secondary-menu %}
+              <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
+                {{ link.title }}
+              </a>
+            {% endfor %}
+          </nav>
+        </div>
 
       </div>
     </div>
