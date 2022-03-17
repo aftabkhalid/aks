@@ -12,6 +12,10 @@ header[role="site-header"] {
   }
 }
 
+.header-menu {
+  display: none;
+}
+
 .header-portfolio {
   background-color: black;
   height: 82px;
@@ -731,6 +735,7 @@ footer #inner_footer a.main_link.mobile {
     top: 4rem;
     z-index: 5;
     width: 100%;
+    display: block;
     .nav-link {
       color: #fff;
       text-transform: uppercase;
@@ -773,6 +778,7 @@ footer #inner_footer a.main_link.mobile {
     top: 4rem;
     z-index: 5;
     width: 100%;
+    display: block;
     .nav-link {
       color: #fff;
       text-transform: uppercase;
@@ -805,6 +811,7 @@ footer #inner_footer a.main_link.mobile {
     top: 4rem;
     z-index: 5;
     width: 100%;
+    display: block;
     .nav-link {
       color: #fff;
       text-transform: uppercase;
