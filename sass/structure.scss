@@ -644,6 +644,20 @@ footer #inner_footer a.main_link.mobile {
     }
   }
 
+  .header-menu {
+    display: none;
+
+    .menu-toggle {
+      position: absolute;
+      width: 72px;
+      height: 72px;
+      top: -1px;
+      right: -70px;
+      margin-left: inherit;
+      z-index: 2;
+    }
+  }
+
   h1.huge,
   .h1.huge {
     font-size: $h1-font-size * fontSize(125);
@@ -683,6 +697,20 @@ footer #inner_footer a.main_link.mobile {
     h1.huge {
       font-size: $h1-font-size * fontSize(250);
       line-height: 100px;
+    }
+  }
+
+  .header-menu {
+    display: none;
+
+    .menu-toggle {
+      position: absolute;
+      width: 72px;
+      height: 72px;
+      top: -1px;
+      right: -70px;
+      margin-left: inherit;
+      z-index: 2;
     }
   }
 
