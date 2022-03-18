@@ -10,5 +10,8 @@
 - url: /work
   title: Work
 
+- url: /audit-request
+  title: Audit Request
+
 - url: /contact
   title: Contact

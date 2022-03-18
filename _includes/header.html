@@ -2,11 +2,28 @@
 
     <canvas id="canvas" data-scroll data-scroll-speed="4"></canvas>
 
-    <div class="mobile-logo d-block d-sm-none">
+    <div class="mobile-header d-block d-sm-none">
       <div class="container">
         <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1.5">
           <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
         </div>
+
+        <div class="menu-toggle">
+          <a href="#" class="menu-link">
+
+            <span class="menu-icon">
+              <span class="menu-line menu-line-1"></span>
+              <span class="menu-line menu-line-2"></span>
+            </span>
+
+            <span class="menu-circle">
+              <span class="menu-pulse first-pulse"></span>
+              <span class="menu-pulse second-pulse"></span>
+            </span>
+
+          </a>
+        </div>
+
       </div>
     </div>
 
