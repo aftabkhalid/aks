@@ -13,7 +13,21 @@ header[role="site-header"] {
 }
 
 .header-menu {
-  display: none;
+  position: absolute;
+  top: 4rem;
+  z-index: 5;
+  width: 100%;
+  display: block;
+  .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $theme-font-family-heading-medium;
+    font-size: $font-size-base * fontSize(75);
+    //font-weight: 500;
+    letter-spacing: 3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .header-portfolio {
@@ -68,8 +82,6 @@ canvas{
   }
   100% {background-position: 100%}
 }
-
-
 
 .section {
   padding: 10rem 0 10rem 0;
@@ -630,20 +642,6 @@ footer #inner_footer a.main_link.mobile {
     }
   }
 
-  .header-menu {
-    display: none;
-
-    .menu-toggle {
-      position: absolute;
-      width: 72px;
-      height: 72px;
-      top: -1px;
-      right: -70px;
-      margin-left: inherit;
-      z-index: 2;
-    }
-  }
-
   h1.huge,
   .h1.huge {
     font-size: $h1-font-size * fontSize(125);
@@ -686,20 +684,6 @@ footer #inner_footer a.main_link.mobile {
     }
   }
 
-  .header-menu {
-    display: none;
-
-    .menu-toggle {
-      position: absolute;
-      width: 72px;
-      height: 72px;
-      top: -1px;
-      right: -70px;
-      margin-left: inherit;
-      z-index: 2;
-    }
-  }
-
   .menu__item {
     justify-content: flex-start;
   }
@@ -730,24 +714,6 @@ footer #inner_footer a.main_link.mobile {
     }
   }
 
-  .header-menu {
-    position: absolute;
-    top: 4rem;
-    z-index: 5;
-    width: 100%;
-    display: block;
-    .nav-link {
-      color: #fff;
-      text-transform: uppercase;
-      font-family: $theme-font-family-heading-medium;
-      font-size: $font-size-base * fontSize(75);
-      //font-weight: 500;
-      letter-spacing: 3px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
   .project {
     margin-top: 12rem;
   }
@@ -772,25 +738,6 @@ footer #inner_footer a.main_link.mobile {
     width: 100%;
     margin-top: 0rem;
   }
-
-  .header-menu {
-    position: absolute;
-    top: 4rem;
-    z-index: 5;
-    width: 100%;
-    display: block;
-    .nav-link {
-      color: #fff;
-      text-transform: uppercase;
-      font-family: $theme-font-family-heading-medium;
-      font-size: $font-size-base * fontSize(75);
-      //font-weight: 500;
-      letter-spacing: 3px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
 }
 @include media-breakpoint-up(xxl) {
   footer #inner_footer {
@@ -804,23 +751,5 @@ footer #inner_footer a.main_link.mobile {
   .project {
     width: 100%;
     margin-top: 0rem;
-  }
-
-  .header-menu {
-    position: absolute;
-    top: 4rem;
-    z-index: 5;
-    width: 100%;
-    display: block;
-    .nav-link {
-      color: #fff;
-      text-transform: uppercase;
-      font-family: $theme-font-family-heading-medium;
-      font-size: $font-size-base * fontSize(75);
-      //font-weight: 500;
-      letter-spacing: 3px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
   }
 }
