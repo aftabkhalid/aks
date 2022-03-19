@@ -17,13 +17,13 @@
   <div class="ak-manu-container">
     <div class="container">
 
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
         <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1.5">
           <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
         </div>
 
         <div class="d-none d-sm-block">
-          <nav class="nav ak-menu-top align-items-center" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
+          <nav class="nav ak-menu-top" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
             {% for link in site.data.secondary-menu %}
               <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
                 {{ link.title }}
