@@ -1,99 +1,35 @@
-<header role="site-header" class="{% if page.title == "About" %} header-about {% elsif page.title == "Work" %} header-work {% endif %}">
+<header class="ak-header">
+  <canvas id="canvas" data-scroll data-scroll-speed="4"></canvas>
 
-    <canvas id="canvas" data-scroll data-scroll-speed="4"></canvas>
+  <div class="ak-manu-top">
+    <div class="container">
 
-    <div class="mobile-header d-block d-sm-none">
-      <div class="container">
+      <div class="d-flex justify-content-between">
         <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1.5">
           <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
         </div>
 
-        <div class="menu-toggle">
-          <a href="#" class="menu-link">
+        <nav class="nav align-items-center" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
+          {% for link in site.data.secondary-menu %}
+            <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
+              {{ link.title }}
+            </a>
+          {% endfor %}
+          <a href="#" class="btn btn-theme btn-theme-sm btn-outline-light" >Free UX Audit</a>
+        </nav>
+      </div>
 
-            <span class="menu-icon">
-              <span class="menu-line menu-line-1"></span>
-              <span class="menu-line menu-line-2"></span>
-            </span>
+      {% include menu.html %}
 
-            <span class="menu-circle">
-              <span class="menu-pulse first-pulse"></span>
-              <span class="menu-pulse second-pulse"></span>
-            </span>
+    </div>
+  </div>
 
-          </a>
-        </div>
-
+  <div class="container ak-header-text">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-11 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+        <h1 class="medium normal" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">We work with ambitious businesses to improve their digital products.</h1>
       </div>
     </div>
-
-    <div class="menu-ak header-menu d-none d-md-block">
-      <div class="container">
-
-        <div class="d-flex justify-content-between">
-          <div class="ak-logo navbar-brand" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1.5">
-            <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
-          </div>
-
-          <nav class="nav align-items-center" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
-            {% for link in site.data.secondary-menu %}
-              <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
-                {{ link.title }}
-              </a>
-            {% endfor %}
-            <a href="#" class="btn btn-theme btn-theme-sm btn-outline-light" >Free UX Audit</a>
-          </nav>
-        </div>
-
-      </div>
-    </div>
-
-    {% include menu.html %}
-
-    {% if page.title == "Home" %}
-    <div class="container header-slide">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-          <!-- <h1 class="small">WE ARE A</h1> -->
-          <h1 class="huge" data-scroll data-scroll-speed="3" data-scroll-delay="0.15">Creative Studio</h1>
-          <p data-scroll data-scroll-speed="3" data-scroll-delay="0.15">We transform ideas into digital outcomes to elevate the connection between our clients and their customers.</p>
-          <a class="btn btn-theme btn-theme-sm btn-outline-light btn-resume" href="{{site.baseurl}}/about"data-scroll data-scroll-speed="2">More About us</a>
-        </div>
-      </div>
-    </div>
-    {% elsif page.title == "About" %}
-    <div class="container header-slide">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-11 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-          <h1 class="medium normal" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">We work with ambitious businesses to improve their digital products.</h1>
-        </div>
-      </div>
-    </div>
-    {% elsif page.title == "Work" %}
-    <div class="container header-slide">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-11 col-sm-12 col-md-10 col-lg-9 col-xl-9 col-xxl-9">
-          <!-- <h1 class="small">WE ARE A</h1> -->
-          <h1 class="medium normal" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">We work with ambitious businesses to improve their digital products.</h1>
-        </div>
-      </div>
-    </div>
-    {% elsif page.title == "Audit Request" %}
-    <div class="container header-slide">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-          <h1 class="medium normal" data-scroll data-scroll-speed="5" data-scroll-delay="0.15">Get free design audit report and fix your website according to expert openion.</h1>
-        </div>
-      </div>
-    </div>
-    {% elsif page.title == "Contact" %}
-    <div class="container header-slide">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-          <h1 class="medium normal" data-scroll data-scroll-speed="5" data-scroll-delay="0.15">Contact us.</h1>
-        </div>
-      </div>
-    </div>
-    {% endif %}
+  </div>
 
 </header>
