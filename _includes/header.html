@@ -22,13 +22,16 @@
           <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/ak-logo.svg" alt="AK Studio"></a>
         </div>
 
-        <nav class="nav ak-menu-top align-items-center d-none d-sm-block" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
-          {% for link in site.data.secondary-menu %}
-            <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
-              {{ link.title }}
-            </a>
-          {% endfor %}
-        </nav>
+        <div class="d-none d-sm-block">
+          <nav class="nav ak-menu-top align-items-center" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1.5">
+            {% for link in site.data.secondary-menu %}
+              <a class="nav-link" title="{{ link.title }}" href="{{ link.url | prepend: site.baseurl }}">
+                {{ link.title }}
+              </a>
+            {% endfor %}
+          </nav>
+        </div>
+
       </div>
 
       {% include menu.html %}
