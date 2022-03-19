@@ -5,8 +5,7 @@
   width: 72px;
   height: 72px;
   top: -12px;
-  right: 16px;
-  margin-left: -36px;
+  right: 0;
 }
 
 .menu-link {
@@ -293,17 +292,4 @@
 
 .menu-contact {
   height: 100%;
-}
-
-
-header[role=default-site-header] {
-  .menu-toggle {
-    top: calc(60% - 72px);
-  }
-}
-
-.header-about {
-  .menu-toggle {
-    top: calc(50% - 72px)!important;
-  }
 }

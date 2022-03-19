@@ -1,4 +1,4 @@
-<header class="ak-header">
+<header class="ak-header {% if page.title == "About" %} header-about {% elsif page.title == "Work" %} header-work {% elsif page.title == "Home" %} header-home {% else %} header-about {% endif %}">
   <!-- <canvas id="canvas" data-scroll data-scroll-speed="4"></canvas> -->
 
   <div class="ak-manu-container">
@@ -23,12 +23,50 @@
     </div>
   </div>
 
-  <div class="container ak-header-text">
+  {% if page.title == "Home" %}
+  <div class="container header-slide">
     <div class="row justify-content-center align-items-center">
-      <div class="col-11 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+      <div class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <!-- <h1 class="small">WE ARE A</h1> -->
+        <h1 class="huge" data-scroll data-scroll-speed="3" data-scroll-delay="0.15">Creative Studio</h1>
+        <p data-scroll data-scroll-speed="3" data-scroll-delay="0.15">We transform ideas into digital outcomes to elevate the connection between our clients and their customers.</p>
+        <a class="btn btn-theme btn-theme-sm btn-outline-light btn-resume" href="{{site.baseurl}}/about"data-scroll data-scroll-speed="2">More About us</a>
+      </div>
+    </div>
+  </div>
+  {% elsif page.title == "About" %}
+  <div class="container header-slide">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-11 col-sm-12 col-md-10 col-lg-9 col-xl-9 col-xxl-9">
         <h1 class="medium normal" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">We work with ambitious businesses to improve their digital products.</h1>
       </div>
     </div>
   </div>
+  {% elsif page.title == "Work" %}
+  <div class="container header-slide">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-11 col-sm-12 col-md-10 col-lg-9 col-xl-9 col-xxl-9">
+        <!-- <h1 class="small">WE ARE A</h1> -->
+        <h1 class="medium normal" data-scroll data-scroll-speed="1" data-scroll-delay="0.15">We work with ambitious businesses to improve their digital products.</h1>
+      </div>
+    </div>
+  </div>
+  {% elsif page.title == "Audit Request" %}
+  <div class="container header-slide">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-11 col-sm-12 col-md-10 col-lg-9 col-xl-8 col-xxl-8">
+        <h1 class="medium normal" data-scroll data-scroll-speed="5" data-scroll-delay="0.15">Get free design audit report and fix your website according to expert openion.</h1>
+      </div>
+    </div>
+  </div>
+  {% elsif page.title == "Contact" %}
+  <div class="container header-slide">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-11 col-sm-12 col-md-10 col-lg-9 col-xl-9 col-xxl-9">
+        <h1 class="medium normal" data-scroll data-scroll-speed="5" data-scroll-delay="0.15">Contact us.</h1>
+      </div>
+    </div>
+  </div>
+  {% endif %}
 
 </header>

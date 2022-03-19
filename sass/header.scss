@@ -2,7 +2,6 @@
   width: 100%;
   height: 100vh;
   color: #fff;
-  background-image: url('../images/about.jpg');
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -34,4 +33,16 @@
       padding-right: 1.5rem;
     }
   }
+}
+
+.header-home {
+  background-image: url('../images/header-bg-1.jpg');
+}
+
+.header-about {
+  background-image: url('../images/about.jpg');
+}
+
+.header-work {
+  background-image: url('../images/work.jpg');
 }
