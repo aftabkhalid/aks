@@ -12,12 +12,15 @@
   }
 }
 
-.ak-manu-top {
+.ak-manu-container {
   position: absolute;
   top: 4rem;
   z-index: 5;
   width: 100%;
   display: block;
+}
+
+.ak-manu-top {
   .nav-link {
     color: #fff;
     text-transform: uppercase;
