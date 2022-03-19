@@ -9,6 +9,7 @@
 
   .container, .row {
     height: 100%;
+    position: relative;
   }
 }
 
@@ -21,7 +22,7 @@
 }
 
 .ak-menu-top {
-  .nav {
+  &.nav {
     .nav-link {
       color: #fff;
       text-transform: uppercase;
