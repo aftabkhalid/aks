@@ -2,20 +2,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/2d65b3e3b8.js" crossorigin="anonymous"></script>
 
-<script type="text/javascript">
-	function isMobile() {
-		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-	}
-
-	if (!isMobile()) {
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script type="text/javascript" src="{{ site.baseurl }}/js/index.js"></script>
-	}
-</script>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="{{ site.baseurl }}/js/main.js"></script>
-
-
 
 <script type='text/javascript'>
 
@@ -24,6 +12,14 @@
     var loc = window.location.href.replace(hash, '');
     loc += (loc.indexOf('?') < 0? '?' : '&') + 'r';
     setTimeout(function(){window.location.href = loc + hash;}, 12000);
+	}
+
+	function isMobile() {
+		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	}
+
+	if (!isMobile()) {
+		<script type="text/javascript" src="{{ site.baseurl }}/js/index.js"></script>
 	}
 
 </script>
