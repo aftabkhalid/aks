@@ -14,7 +14,7 @@ preloader('.menu__item').then(() => {
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
       mobile: {
-       smooth: true
+       smooth: false
       },
     });
 
