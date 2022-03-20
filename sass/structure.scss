@@ -25,7 +25,7 @@ canvas{
     animation-direction: alternate;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-    font-size: $h1-font-size * fontSize(300); // Defined in Sass function
+    font-size: $h1-font-size * fontSize(200); // Defined in Sass function
     line-height: 120px;
   }
 }
@@ -590,16 +590,11 @@ footer #inner_footer a.main_link.mobile {
       padding-right: 0;
     }
     h1.huge {
-      font-size: $h1-font-size * fontSize(225);
+      font-size: $h1-font-size * fontSize(200);
       line-height: 90px;
     }
   }
-
-  h1.huge,
-  .h1.huge {
-    font-size: $h1-font-size * fontSize(125);
-  }
-
+  
   .menu__item {
     justify-content: flex-start;
   }
@@ -632,7 +627,7 @@ footer #inner_footer a.main_link.mobile {
       padding-right: 6rem;
     }
     h1.huge {
-      font-size: $h1-font-size * fontSize(250);
+      font-size: $h1-font-size * fontSize(225);
       line-height: 100px;
     }
   }

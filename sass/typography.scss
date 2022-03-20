@@ -38,22 +38,22 @@ h1,
 
 h1.huge,
 .h1.huge {
-  font-size: $h1-font-size * fontSize(200); // Defined in Sass function
+  font-size: $h1-font-size * fontSize(130); // 200
 }
 
 h1.large,
 .h1.large {
-  font-size: $h1-font-size * fontSize(175);
+  font-size: $h1-font-size * fontSize(120); // 175
 }
 
 h1.medium,
 .h1.medium {
-  font-size: $h1-font-size * fontSize(150);
+  font-size: $h1-font-size * fontSize(110); //150
 }
 
 h1.small,
 .h1.small {
-  font-size: $h1-font-size * fontSize(125);
+  font-size: $h1-font-size * fontSize(100); //125
 }
 
 h1 {
@@ -114,4 +114,70 @@ h6, .h6 {
 p {
   line-height: 34px;
   margin-top: 15px;
+}
+
+@include media-breakpoint-up(sm) {
+  h1.huge,
+  .h1.huge {
+    font-size: $h1-font-size * fontSize(135);
+  }
+
+  h1.large,
+  .h1.large {
+    font-size: $h1-font-size * fontSize(125);
+  }
+
+  h1.medium,
+  .h1.medium {
+    font-size: $h1-font-size * fontSize(112.5);
+  }
+
+  h1.small,
+  .h1.small {
+    font-size: $h1-font-size * fontSize(100);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1.huge,
+  .h1.huge {
+    font-size: $h1-font-size * fontSize(155);
+  }
+
+  h1.large,
+  .h1.large {
+    font-size: $h1-font-size * fontSize(135);
+  }
+
+  h1.medium,
+  .h1.medium {
+    font-size: $h1-font-size * fontSize(125);
+  }
+
+  h1.small,
+  .h1.small {
+    font-size: $h1-font-size * fontSize(100);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1.huge,
+  .h1.huge {
+    font-size: $h1-font-size * fontSize(200);
+  }
+
+  h1.large,
+  .h1.large {
+    font-size: $h1-font-size * fontSize(175);
+  }
+
+  h1.medium,
+  .h1.medium {
+    font-size: $h1-font-size * fontSize(150);
+  }
+
+  h1.small,
+  .h1.small {
+    font-size: $h1-font-size * fontSize(125);
+  }
 }

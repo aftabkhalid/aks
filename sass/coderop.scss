@@ -265,3 +265,9 @@ html.has-scroll-dragging {
 	cursor: -webkit-grabbing;
 	cursor: grabbing;
 }
+
+@include media-breakpoint-down(sm) {
+	.cursor {
+		display: none;
+	}
+}
