@@ -4,7 +4,6 @@
   color: #fff;
   background-size: cover;
   position: relative;
-  z-index: 1;
 
   .container, .row {
     height: 100%;
@@ -15,10 +14,25 @@
 .ak-manu-container {
   position: absolute;
   top: 4rem;
-  z-index: 5;
+  z-index: 999;
   width: 100%;
-  display: block;
 }
+
+.header-portfolio {
+  background-color: black;
+  height: 82px;
+  position: relative;
+  z-index: 998;
+
+  .ak-manu-container {
+    top: 12px;
+  }
+  &.expanded {
+    height: 100vh;
+  }
+}
+
+
 
 .ak-menu-top {
   &.nav {
@@ -45,15 +59,6 @@
 
 .header-work {
   background-image: url('../images/work.jpg');
-}
-
-.header-portfolio {
-  background-color: black;
-  height: 82px;
-
-  .ak-manu-container {
-    top: 12px;
-  }
 }
 
 @include media-breakpoint-down(sm) {

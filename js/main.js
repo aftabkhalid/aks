@@ -81,7 +81,6 @@ $(function() {
   checkMenuPulseState();
   /* LOCAL STORAGE END */
 
-
   $(".menu-link").click(function(e) {
     e.preventDefault();
 
@@ -91,12 +90,14 @@ $(function() {
     /* LOCAL STORAGE END */
     $(".menu-overlay").toggleClass("menu-open");
     $(".menu-toggle").toggleClass("menu-open");
+    $(".header-portfolio").toggleClass("expanded");
 
     $(".menu-open").on('scroll touchmove mousewheel keydown keypress keyup',function(e){
       e.preventDefault();
       e.stopPropagation();
       return false;
     });
+
 
   });
 });
