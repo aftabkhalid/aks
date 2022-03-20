@@ -278,3 +278,12 @@
 .menu-contact {
   height: 100%;
 }
+
+@include media-breakpoint-down(sm) {
+  .main-menu {
+    .nav-link {
+      font-size: 2rem;
+      margin: 0.35rem 0;
+    }
+  }
+}
