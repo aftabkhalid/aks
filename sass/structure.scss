@@ -11,7 +11,6 @@ canvas{
     padding-right: 12rem;
     padding-left: .75rem;
     line-height: 28px;
-    margin-top: -2.5rem;
     font-size: $font-size-base * fontSize(125);
   }
 
@@ -590,11 +589,11 @@ footer #inner_footer a.main_link.mobile {
       padding-right: 0;
     }
     h1.huge {
-      font-size: $h1-font-size * fontSize(200);
+      font-size: $h1-font-size * fontSize(175);
       line-height: 90px;
     }
   }
-  
+
   .menu__item {
     justify-content: flex-start;
   }
@@ -655,6 +654,7 @@ footer #inner_footer a.main_link.mobile {
   .header-slide {
     p {
       padding-right: 12rem;
+      margin-top: -2.5rem
     }
     h1.huge {
       font-size: $h1-font-size * fontSize(300);
