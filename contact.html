@@ -6,85 +6,21 @@ author: Aftab Khalid
 description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Entrepreneur and occasional Front-end Developer including ReactJS, Bootstrap and Html/Scss.
 ---
 
-<div class="section">
-  <div class="container">
-    <div class="row justify-content-between">
+<div data-scroll-section>
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-between">
 
-      <div class="col-4">
-        <h1>Get In Touch</h1>
+        <div class="col-4">
+          <h1>Get In Touch</h1>
 
-        <div class="contact-form">
-          <div class="small">
-            <div>
-              <h6>Address</h6>
-              <p>Office No. 432, 4th Floor, Sadique Trade Center, Lahore, Pakistan.<br><br></p>
-            </div>
-
-            <nav class="nav small">
-              {% for link in site.data.social %}
-                <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
-                  {{ link.platform }}
-                </a>
-              {% endfor %}
-            </nav>
-
-            <span class="small">© 2022 <a href="https://www.aftabkhalid.com" title="AK Studio">AK Studio.</a></span>
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-6">
-
-          <form class="row g-3 gform" method="POST"
-          action="https://script.google.com/macros/s/AKfycbyTEqRBlz2MX3aCmvj-sBR9Nuy6x69iON7jO6VwalzG2qkrAi2i9ZxsVk-RMuIxYsVU/exec">
-
-            <div class="form-elements">
-
-              <h3>Hello</h3>
-              <p>We are happy to talk with you! Feel free to contact us.</p>
-
-              <div class="col-12">
-                <label for="name" class="form-label" placeholder="Enter your name">Name</label>
-                <input type="text" class="form-control" name="name" id="name" required>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter your full name</div>
+          <div class="contact-form">
+            <div class="small">
+              <div>
+                <h6>Address</h6>
+                <p>Office No. 432, 4th Floor, Sadique Trade Center, Lahore, Pakistan.<br><br></p>
               </div>
 
-              <div class="col-12 mt-3">
-                <label for="email" class="form-label" placeholder="Enter your name">Email</label>
-                <input type="email" class="form-control" name="email" id="email" required>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter your valid email</div>
-              </div>
-
-              <div class="col-12 mt-3">
-                <label for="phone" class="form-label" placeholder="Enter your name">Phone</label>
-                <input type="tel" class="form-control" name="phone" id="phone">
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter your phone</div>
-              </div>
-
-              <div class="col-12 mt-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="5"></textarea>
-              </div>
-
-              <div class="col-12 honeypot-field">
-                <label class="form-label" for="honeypot"></label>
-                <input class="form-control" id="honeypot" type="text" name="honeypot" value="" />
-              </div>
-
-              <div class="col-12 mt-3">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </div>
-
-            <div class="thankyou_message" style="display:none;">
-              <h1>Great! Form Submitted</h1>
-              <p class="lead">We'll get back to you as soon as possible.</p>
-              <p>Follow us on our social channels</p>
               <nav class="nav small">
                 {% for link in site.data.social %}
                   <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
@@ -92,11 +28,77 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
                   </a>
                 {% endfor %}
               </nav>
-            </div>
 
-          </form>
+              <span class="small">© 2022 <a href="https://www.aftabkhalid.com" title="AK Studio">AK Studio.</a></span>
+
+            </div>
+          </div>
+
         </div>
 
-		</div>
+        <div class="col-6">
+
+            <form class="row g-3 gform" method="POST"
+            action="https://script.google.com/macros/s/AKfycbyTEqRBlz2MX3aCmvj-sBR9Nuy6x69iON7jO6VwalzG2qkrAi2i9ZxsVk-RMuIxYsVU/exec">
+
+              <div class="form-elements">
+
+                <h3>Hello</h3>
+                <p>We are happy to talk with you! Feel free to contact us.</p>
+
+                <div class="col-12">
+                  <label for="name" class="form-label" placeholder="Enter your name">Name</label>
+                  <input type="text" class="form-control" name="name" id="name" required>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter your full name</div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label for="email" class="form-label" placeholder="Enter your name">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter your valid email</div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label for="phone" class="form-label" placeholder="Enter your name">Phone</label>
+                  <input type="tel" class="form-control" name="phone" id="phone">
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter your phone</div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+                </div>
+
+                <div class="col-12 honeypot-field">
+                  <label class="form-label" for="honeypot"></label>
+                  <input class="form-control" id="honeypot" type="text" name="honeypot" value="" />
+                </div>
+
+                <div class="col-12 mt-3">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+
+              <div class="thankyou_message" style="display:none;">
+                <h1>Great! Form Submitted</h1>
+                <p class="lead">We'll get back to you as soon as possible.</p>
+                <p>Follow us on our social channels</p>
+                <nav class="nav small">
+                  {% for link in site.data.social %}
+                    <a class="nav-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.title }}">
+                      {{ link.platform }}
+                    </a>
+                  {% endfor %}
+                </nav>
+              </div>
+
+            </form>
+          </div>
+
+  		</div>
+    </div>
   </div>
 </div>

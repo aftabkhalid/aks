@@ -9995,7 +9995,9 @@ var menuEl = document.querySelector('.menu'); // preload the images set as data 
   // initialize the smooth scroll
   var scroll = new _locomotiveScroll.default((_LocomotiveScroll = {
     el: menuEl
-  }, _defineProperty(_LocomotiveScroll, "el", document.querySelector('[data-scroll-container]')), _defineProperty(_LocomotiveScroll, "smooth", true), _LocomotiveScroll)); // initialize custom cursor
+  }, _defineProperty(_LocomotiveScroll, "el", document.querySelector('[data-scroll-container]')), _defineProperty(_LocomotiveScroll, "smooth", true), _defineProperty(_LocomotiveScroll, "mobile", {
+    smooth: false
+  }), _LocomotiveScroll)); // initialize custom cursor
 
   var cursor = new _cursor.default(document.querySelector('.cursor')); // initialize menu
 
