@@ -13,8 +13,16 @@ preloader('.menu__item').then(() => {
       el: menuEl,
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
+      getDirection: true,
       mobile: {
-       smooth: false
+        breakpoint: 0,
+        smooth: false,
+        getDirection: true,
+      },
+      tablet: {
+        breakpoint: 0,
+        smooth: false,
+        getDirection: true,
       },
     });
 
