@@ -458,7 +458,6 @@ footer #inner_footer a.main_link.mobile {
 }
 
 .faq {
-  display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid rgba($black, 0.15);
   align-items: flex-start;
@@ -617,8 +616,20 @@ footer #inner_footer a.main_link.mobile {
 
   .footer-area {
     padding-top: 10rem;
-}
+  }
 
+  .faq {
+    display: block;
+
+    .faq-question,
+    .faq-answer {
+      width: 100%;
+    }
+
+    .faq-question {
+      padding-right: 0;
+    }
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -650,6 +661,19 @@ footer #inner_footer a.main_link.mobile {
     transform: translateY(-100%);
   }
 
+  .faq {
+    display: block;
+
+    .faq-question,
+    .faq-answer {
+      width: 100%;
+    }
+
+    .faq-question {
+      padding-right: 0;
+    }
+  }
+
 }
 
 @include media-breakpoint-up(lg) {
@@ -673,6 +697,19 @@ footer #inner_footer a.main_link.mobile {
     transform: translateY(-50%);
   }
 
+  .faq {
+    display: flex;
+
+    .faq-question,
+    .faq-answer {
+      width: 50%;
+    }
+
+    .faq-question {
+      padding-right: 4rem;
+    }
+  }
+
 }
 
 @include media-breakpoint-up(xl) {
@@ -689,6 +726,7 @@ footer #inner_footer a.main_link.mobile {
     margin-top: 0rem;
   }
 }
+
 @include media-breakpoint-up(xxl) {
   footer #inner_footer {
     margin-left: 17%;
