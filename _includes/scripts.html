@@ -15,12 +15,9 @@
     setTimeout(function(){window.location.href = loc + hash;}, 12000);
 	}
 
-	function isMobile() {
-		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-	}
-
-	if (!isMobile()) {
-		<script type="text/javascript" src="{{ site.baseurl }}/js/index.js"></script>
-	}
-
+	(function() {
+		if( window.innerWidth > 600 ) {
+	    document.write('<scr'+'ipt type="text/javascript" src="{{ site.baseurl }}/js/index.js" ></scr'+'ipt>');
+		}
+	})();
 </script>
