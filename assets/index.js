@@ -12,10 +12,7 @@ preloader('.menu__item').then(() => {
     const scroll = new LocomotiveScroll({
       el: menuEl,
       el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-      mobile: {
-       smooth: false
-      },
+      smooth: true
     });
 
     // initialize custom cursor
