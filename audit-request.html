@@ -22,14 +22,14 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 
                 <div class="col-12">
                   <label for="name" class="form-label" placeholder="Enter your name">Name</label>
-                  <input type="text" class="form-control" name="name" id="name" required>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please enter your full name</div>
                 </div>
 
                 <div class="col-12 mt-3">
                   <label for="email" class="form-label" placeholder="Enter your email">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please enter valid email</div>
                 </div>
@@ -42,7 +42,7 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
                 </div>
                 <div class="col-12 mt-3">
                   <label for="siteurl" class="form-label">Store URL</label>
-                  <input type="text" class="form-control" name="siteurl" id="siteurl" placeholder="www.mystore.com" required>
+                  <input type="text" class="form-control" name="siteurl" id="siteurl" placeholder="www.mysite.com" required>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please enter your website link</div>
                 </div>
@@ -50,13 +50,13 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
                 <div class="row">
                   <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-3">
                     <label for="city" class="form-label">City</label>
-                    <input type="text" class="form-control" name="city" id="city" required>
+                    <input type="text" class="form-control" name="city" id="city" placeholder="New York" required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Please enter your city</div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-3">
                     <label for="state" class="form-label">State</label>
-                    <input type="text" class="form-control" name="state" id="state">
+                    <input type="text" class="form-control" name="state" id="state" placeholder="NY">
                   </div>
                   <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mt-3">
                     <label for="country" class="form-label">Country</label>
@@ -319,6 +319,7 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
                 <div class="col-12 honeypot-field">
                   <label class="form-label" for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
                   <input class="form-control" id="honeypot" type="text" name="honeypot" value="" />
+                  <input type="hidden" class="form-control" name="status" id="status" value="Pending">
                 </div>
 
                 <div class="col-12 mt-3">
