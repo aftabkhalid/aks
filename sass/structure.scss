@@ -484,14 +484,12 @@ footer #inner_footer a.main_link.mobile {
 .faq-anim {
   align-items: center;
   display: block;
+  position: relative;
   &:after {
     content: "😀";
-    font-size: $h1-font-size * fontSize(90);
-    position: absolute;
-    top: 10px;
     padding-left: 10px;
     animation-name: faqAnim;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -503,29 +501,65 @@ footer #inner_footer a.main_link.mobile {
 }
 
 @keyframes faqAnim {
-  12% {
+  5% {
     content: "😀";
   }
-  24% {
-    content: "🐱";
-  }
-  36% {
-    content: "🥳";
-  }
-  48% {
+  10% {
     content: "🐶";
   }
-  60% {
-    content: "😉";
+  15% {
+    content: "💂‍♀️";
   }
-  72% {
+  20% {
+    content: "🐹";
+  }
+  25% {
+    content: "👹";
+  }
+  30% {
     content: "🐋";
   }
-  84% {
+  35% {
     content: "👍";
   }
-  100% {
+  40% {
+    content: "🦊";
+  }
+  45% {
+    content: "🐳";
+  }
+  50% {
+    content: "🍔";
+  }
+  55% {
+    content: "🏉";
+  }
+  60% {
+    content: "🦁";
+  }
+  65% {
+    content: "🏡";
+  }
+  70% {
+    content: "📺";
+  }
+  75% {
+    content: "🐲";
+  }
+  80% {
     content: "😎";
+  }
+  85% {
+    content: "🐢";
+  }
+  90% {
+    content: "🎅";
+  }
+  95% {
+    content: "🧠";
+  }
+  100% {
+    content: "🐡";
   }
 }
 
@@ -555,7 +589,7 @@ footer #inner_footer a.main_link.mobile {
 }
 
 .thankyou_message {
-  height: 80vh;
+  height: 40vh;
   .nav-link {
     color: $black;
     &:hover {
