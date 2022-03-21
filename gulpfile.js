@@ -53,9 +53,11 @@ const arr = [
   //{to: 'css', from: ['node_modules/locomotive-scroll/dist/locomotive-scroll.css']},
   {to: 'sass/material-icons', from: ['node_modules/@mdi/font/scss/*.scss']},
   {to: 'fonts', from: ['node_modules/@mdi/font/fonts/**']},
-  //{to: 'js', from: ['node_modules/locomotive-scroll/dist/locomotive-scroll.js']}
+  {to: 'js', from: ['node_modules/bootstrap/dist/js/bootstrap.bundle.min.js']},
   {to: 'js', from: ['dist/index.js']},
-  {to: 'images', from: ['dist/*.jpg']}
+  {to: 'js', from: ['node_modules/swiper/swiper-bundle.min.js']},
+  {to: 'images', from: ['dist/*.jpg']},
+  {to: 'css', from: ['node_modules/swiper/swiper-bundle.min.css']}
 ];
 
 function copyFiles(arr) {
