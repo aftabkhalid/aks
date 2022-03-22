@@ -684,6 +684,10 @@ footer #inner_footer a.main_link.mobile {
     }
   }
 
+  .section {
+    padding: 5rem 0 5rem 0;
+  }
+
 }
 
 @include media-breakpoint-up(md) {
