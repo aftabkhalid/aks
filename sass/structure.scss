@@ -611,11 +611,6 @@ footer #inner_footer a.main_link.mobile {
 //// Responsive layout
 
 @include media-breakpoint-down(sm) {
-
-  .ak-header {
-    height: 80vh;
-  }
-
   .header-slide {
     //padding-top: 10rem;
     p {
@@ -664,6 +659,31 @@ footer #inner_footer a.main_link.mobile {
       padding-right: 0;
     }
   }
+
+  .team {
+    .team-detail {
+
+      h2 {
+        span {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      span {
+        span {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .image-block {
+    img {
+      opacity: 1;
+    }
+  }
+
 }
 
 @include media-breakpoint-up(md) {

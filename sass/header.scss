@@ -61,6 +61,7 @@
 
 @include media-breakpoint-down(sm) {
   .ak-manu-container {
+    top: 2rem;
     .menu-toggle {
       right: 30px;
     }

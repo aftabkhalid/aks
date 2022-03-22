@@ -57,8 +57,12 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
             <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
               <p class="lead mb-4" data-scroll data-scroll-speed="1" data-scroll-delay="0.08">We help our clients with solutions in design, creative, emerging technology, and stunning communications.</p>
               <p data-scroll data-scroll-speed="1" data-scroll-delay="0.08"><strong>Explore our latest work</strong></p>
-              <a href="{{site.baseurl}}/work" class="btn btn-theme btn-theme-sm btn-theme-purple" data-scroll data-scroll-speed="1" data-scroll-delay="0.05">Our Work</a>
-              <a href="https://www.upwork.com/freelancers/~011fc7bee8f6513b5e" target="_blank" class="btn btn-theme btn-theme-sm btn-outline-dark ms-2" data-scroll data-scroll-speed="1" data-scroll-delay="0.05">Upwork Profile</a>
+
+              <div class="d-grid gap-4 d-md-block mb-3 mb-md-0">
+                <a href="{{site.baseurl}}/work" class="btn btn-theme btn-theme-sm btn-theme-purple" data-scroll data-scroll-speed="1" data-scroll-delay="0.05">Our Work</a>
+                <a href="https://www.upwork.com/freelancers/~011fc7bee8f6513b5e" target="_blank" class="btn btn-theme btn-theme-sm btn-outline-dark ms-2" data-scroll data-scroll-speed="1" data-scroll-delay="0.05">Upwork Profile</a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -81,7 +85,7 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 
             {% for member in site.data.team %}
 
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-5 mb-md-0">
                 <div class="team">
                   <div class="team-media">
                     <img src="{{ site.baseurl }}/{{ member.media }}" alt="">
