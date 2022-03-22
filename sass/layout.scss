@@ -34,6 +34,9 @@ body {
         content: "_";
       }
     }
+    &:hover {
+      color: $white;
+    }
   }
   .logo-fill {
     fill: $white;
