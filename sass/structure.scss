@@ -490,7 +490,7 @@ footer #inner_footer a.main_link.mobile {
     padding-left: 10px;
     animation-name: faqAnim;
     animation-duration: 10s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
