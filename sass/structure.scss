@@ -494,6 +494,7 @@ footer #inner_footer a.main_link.mobile {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
+    animation-direction: alternate;
   }
   &:hover:after {
     animation-play-state: paused;
@@ -501,7 +502,7 @@ footer #inner_footer a.main_link.mobile {
 }
 
 @keyframes faqAnim {
-  5% {
+  0% {
     content: "😀";
   }
   10% {
@@ -560,6 +561,54 @@ footer #inner_footer a.main_link.mobile {
   }
   100% {
     content: "🐡";
+  }
+}
+
+.contact-anim {
+  align-items: center;
+  display: block;
+  position: relative;
+  &:after {
+    transform: rotate(180deg);
+    content: "✋";
+    padding-left: 10px;
+    animation-name: contactAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+  }
+  &:hover:after {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes contactAnim {
+  12% {
+    content: "☝️";
+  }
+  24% {
+    content: "✌️";
+  }
+  36% {
+    content: "🤞";
+  }
+  48% {
+    content: "🤘";
+  }
+  60% {
+    content: "🤟";
+  }
+  72% {
+    content: "🖖";
+  }
+  84% {
+    content: "🖐";
+  }
+  100% {
+    content: "✋";
   }
 }
 
