@@ -13,5 +13,8 @@
 - url: /audit-request
   title: Audit Request
 
+- url: /blog
+  title: Blog
+
 - url: /contact
   title: Contact
