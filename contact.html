@@ -47,29 +47,37 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
                 <p>We are happy to talk with you! Feel free to contact us.</p>
 
                 <div class="col-12">
-                  <label for="name" class="form-label" placeholder="Enter your name">Name</label>
-                  <input type="text" class="form-control" name="name" id="name" required>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please enter your full name</div>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                    <label for="name" class="form-label">Name</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your full name</div>
+                  </div>
                 </div>
 
                 <div class="col-12 mt-3">
-                  <label for="email" class="form-label" placeholder="Enter your name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please enter your valid email</div>
+                  <div class="form-floating">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                    <label for="email" class="form-label">Email</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your valid email</div>
+                  </div>
                 </div>
 
                 <div class="col-12 mt-3">
-                  <label for="phone" class="form-label" placeholder="Enter your name">Phone</label>
-                  <input type="tel" class="form-control" name="phone" id="phone">
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please enter your phone</div>
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter your name" required>
+                    <label for="phone" class="form-label">Phone</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your phone</div>
+                  </div>
                 </div>
 
                 <div class="col-12 mt-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+                  <div class="form-floating">
+                    <textarea class="form-control" name="message" id="message" rows="10" placeholder="Write message" style="height: 200px;"></textarea>
+                    <label for="message" class="form-label">Message</label>
+                  </div>
                 </div>
 
                 <div class="col-12 honeypot-field">
