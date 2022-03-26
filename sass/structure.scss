@@ -46,7 +46,6 @@ canvas{
       color: #fff;
     }
   }
-
   &.bright {
     background-color: $mk-section-bg-beige;
   }
@@ -55,10 +54,10 @@ canvas{
     padding: 8rem 0;
   }
   &.pt {
-    padding-top: 7rem;
+    padding-top: 8rem;
   }
-  &.pn {
-    padding-bottom: 7rem;
+  &.pb {
+    padding-bottom: 8rem;
   }
 }
 
