@@ -1,7 +1,7 @@
 // portfolio
 
 .portfolio {
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: block;
   h4 {
     margin-top: 1rem;
@@ -13,5 +13,11 @@
   img {
     border-radius: 12px;
     width: 100%;
+  }
+}
+
+.case-study {
+  img {
+    border-radius: 12px;
   }
 }
