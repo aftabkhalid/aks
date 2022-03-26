@@ -36,10 +36,10 @@ canvas{
   100% {background-position: 100%}
 }
 
-.section {
-  padding: 10rem 0 10rem 0;
+//
+// Section
+.section-ak {
   position: relative;
-
   &.dark {
     background-color: $mk-section-bg;
     h4, p, h6, h1 {
@@ -51,10 +51,18 @@ canvas{
     background-color: $mk-section-bg-beige;
   }
 
-  &.small {
-    padding: 7rem 0 0 0;
+  &.pv {
+    padding: 7rem 0;
+  }
+  &.pt {
+    padding-top: 7rem;
+  }
+  &.pn {
+    padding-bottom: 7rem;
   }
 }
+
+//
 
 .section-vh {
   height: 100vh;
