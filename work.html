@@ -6,6 +6,36 @@ author: Aftab Khalid
 description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Entrepreneur and occasional Front-end Developer including ReactJS, Bootstrap and Html/Scss.
 ---
 
+<!-- <div class="section-ak pt" data-scroll-section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pb-5">
+        <h6 data-scroll data-scroll-speed=".75" data-scroll-delay="0.05">Portfolio</h6>
+        <h1 class="medium" data-scroll data-scroll-speed=".75" data-scroll-delay="0.05">Case Studies</h1>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- {% for portfolio in site.data.portfolio.casestudies %}
+  <div class="section-ak pt case-study" data-scroll-section>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+          <img class="w-100" src="{{ site.url }}/{{ portfolio.thumb }}" alt="" data-scroll data-scroll-speed="0.1" data-scroll-delay="0.085">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 mt-3 mt-lg-0" data-scroll data-scroll-speed="0.55" data-scroll-delay="0.05">
+          <h2>{{ portfolio.title }}</h2>
+          <p>{{ portfolio.description }}</p>
+          <a href="{{ portfolio.link }}" class="btnbtn btn-theme btn-theme-sm btn-theme-purple">View Project</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{% endfor %} -->
+
 <div class="section-ak pt case-study" data-scroll-section>
   <div class="container">
     <div class="row">
@@ -93,10 +123,10 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 			<div class="col-12">
         <div class="row justify-content-center">
 
-          {% for portfolio in site.data.portfolio %}
+          {% for portfolio in site.data.portfolio.work %}
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4" >
               <a href="{{ portfolio.link }}" class="portfolio" data-scroll data-scroll-speed="{{ portfolio.speed }}" data-scroll-delay="0.05">
-                <img src="{{ site.url }}/{{ portfolio.thumb }}" alt="">
+                <img src="{{ site.url }}/{{ portfolio.thumb }}" alt="{{ portfolio.title }}" title="{{ portfolio.title }}">
                 <h4>{{ portfolio.title }}</h4>
                 <p>{{ portfolio.description }}</p>
               </a>
