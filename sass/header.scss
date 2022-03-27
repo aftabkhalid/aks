@@ -52,11 +52,11 @@
 }
 
 .header-about {
-  background-image: url('../images/about.jpg');
+  background-image: url('../images/header-bg-2.pg');
 }
 
 .header-work {
-  background-image: url('../images/work.jpg');
+  background-image: url('../images/header-bg-3.jpg');
 }
 
 @include media-breakpoint-down(sm) {
