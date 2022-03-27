@@ -1,5 +1,10 @@
 <div data-scroll-section>
-  <header class="ak-header" id="header">
+  <header
+    {% if page.type == "headless" %}
+      class="header-portfolio"
+    {% else %}
+      class="ak-header" id="header"
+    {% endif %}>
     <!-- <canvas id="canvas" data-scroll data-scroll-speed="4"></canvas> -->
 
     <div class="ak-manu-container">

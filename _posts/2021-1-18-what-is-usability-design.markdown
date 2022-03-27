@@ -6,6 +6,7 @@ categories: ux design
 author: Aftab Khalid
 permalink: /blog/:title/
 tag: ux-design
+type: headless
 ---
 What is Usability Design? Good usability is the hallmark of any successful product. In the new digital world it is more important than ever to keep up with the rapidly changing user experience design field. A good user experience design is essential to the survival of any website or product. Below are some of the most important characteristics of a good user experience design.
 

@@ -6,6 +6,7 @@ categories: ux design
 author: Aftab Khalid
 permalink: /blog/:title/
 tag: ux-design
+type: headless
 ---
 
 The digital world is becoming increasingly more complicated, and more confusing. Here are seven terms you are likely to come across and what they mean.
