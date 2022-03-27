@@ -8,7 +8,7 @@
   thumb: /images/cover-auclaw.jpg
   title: Auc Law
   description: Website design for a law firm.
-  speed: 0.5
+  speed: 0.6
 
 - link: /web-design/ogc
   thumb: /images/cover-ogc.jpg
@@ -26,7 +26,7 @@
   thumb: /images/cover-infotech.jpg
   title: Infotech
   description: Website design for a technology company.
-  speed: 0.6
+  speed: 0.5
 
 - link: /web-design/mevris
   thumb: /images/cover-mevris-website.jpg
