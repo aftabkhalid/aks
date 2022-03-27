@@ -36,3 +36,9 @@
 .portfolio-mt {
   margin-top: 4rem;
 }
+
+@include media-breakpoint-down(sm) {
+  .portfolio-pg {
+    margin: 4rem 0 0;
+  }
+}
