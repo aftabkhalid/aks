@@ -1,0 +1,41 @@
+- link: /web-design/elysium
+  thumb: /images/cover-elysium.jpg
+  title: Elysium Blockchain
+  description: Website design for a technology company.
+  speed: 0.6
+
+- link: /web-design/auclaw
+  thumb: /images/cover-auclaw.jpg
+  title: Auc Law
+  description: Website design for a law firm.
+  speed: 0.5
+
+- link: /web-design/ogc
+  thumb: /images/cover-ogc.jpg
+  title: OGC
+  description: Re-Branding for group of companies in Pakistan.
+  speed: 0.6
+
+- link: /web-design/sabo-skirt
+  thumb: /images/cover-sabo-skirt.jpg
+  title: Sabo Skirt
+  description: Shop design for apparel brand.
+  speed: 0.5
+
+- link: /web-design/infotech
+  thumb: /images/cover-infotech.jpg
+  title: Infotech
+  description: Website design for a technology company.
+  speed: 0.6
+
+- link: /web-design/mevris
+  thumb: /images/cover-mevris-website.jpg
+  title: Mevris
+  description: Website design for Mevris
+  speed: 0.5
+
+# - link: /web-design/orient-rozgaar
+#   thumb: /images/cover-orient-rozgaar.jpg
+#   title: Orient Rozgaar
+#   description: Website design for Orient Rozgaar
+#   speed: 0.6
