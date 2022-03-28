@@ -4,55 +4,87 @@ work:
   title: Elysium Blockchain
   description: Website design for a technology company.
   speed: 0.6
+
 - link: /web-design/auclaw
   thumb: /images/cover-auclaw.jpg
   title: Auc Law
   description: Website design for a law firm.
   speed: 0.6
+
 # - link: /web-design/vulcan
 #   thumb: /images/cover-vulcan.jpg
 #   title: VulcanForged
 #   description: NfT and blockchain company.
 #   speed: 0.6
+
 - link: /web-design/ogc
   thumb: /images/cover-ogc.jpg
   title: OGC
   description: Re-Branding for group of companies in Pakistan.
   speed: 0.6
+
 - link: /web-design/sabo-skirt
   thumb: /images/cover-sabo-skirt.jpg
   title: Sabo Skirt
   description: Shop design for apparel brand.
   speed: 0.5
+
 - link: /web-design/infotech
   thumb: /images/cover-infotech.jpg
   title: Infotech
   description: Website design for a technology company.
   speed: 0.5
+
 - link: /web-design/mevris
   thumb: /images/cover-mevris-website.jpg
   title: Mevris
   description: Website design for Mevris
   speed: 0.5
+
 # - link: /web-design/orient-rozgaar
 #   thumb: /images/cover-orient-rozgaar.jpg
 #   title: Orient Rozgaar
 #   description: Website design for Orient Rozgaar
 #   speed: 0.6
 
+##
+
 casestudies:
-  - link: /projects/taxslips
+  - project:
+    link: /projects/taxslips
     thumb: /images/cover-taxslip.jpg
     title: Taxslip
     description: Tax filing solution for the Canadian market.
-    speed: 0.6
-  - link: /projects/mevris
+    image-speed: 0.1
+    image-delay: 0.085
+    text-speed: 0.55
+    text-delay: 0.05
+    type: left
+    text-order: order-2 order-lg-2
+    image-order: order-1 order-lg-1
+
+  - project:
+    link: /projects/mevris
     thumb: /images/cover-mevris.jpg
     title: Mevris
     description: IoT platform to control digital products remotely.
-    speed: 0.6
-  - link: /projects/dukaan-dashboard
+    image-speed: 0.1
+    image-delay: 0.085
+    text-speed: 0.55
+    text-delay: 0.05
+    type: right
+    text-order: order-1 order-lg-1
+    image-order: order-2 order-lg-2
+
+  - project:
+    link: /projects/dukaan-dashboard
     thumb: /images/cover-dukaan.jpg
     title: Dukaan
     description: A marketplace to sell products online.
-    speed: 0.6
+    image-speed: 0.1
+    image-delay: 0.085
+    text-speed: 0.55
+    text-delay: 0.05
+    type: left
+    text-order: order-2 order-lg-2
+    image-order: order-1 order-lg-1

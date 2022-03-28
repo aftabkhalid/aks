@@ -6,7 +6,7 @@ author: Aftab Khalid
 description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Entrepreneur and occasional Front-end Developer including ReactJS, Bootstrap and Html/Scss.
 ---
 
-<!-- <div class="section-ak pt" data-scroll-section>
+<div class="section-ak pt" data-scroll-section>
   <div class="container">
     <div class="row">
       <div class="col-12 pb-5">
@@ -15,17 +15,23 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
-<!-- {% for portfolio in site.data.portfolio.casestudies %}
-  <div class="section-ak pt case-study" data-scroll-section>
+{% for portfolio in site.data.portfolio.casestudies %}
+  <div class="section-ak pb case-study" data-scroll-section>
     <div class="container">
       <div class="row justify-content-between align-items-center">
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-          <img class="w-100" src="{{ site.url }}/{{ portfolio.thumb }}" alt="" data-scroll data-scroll-speed="0.1" data-scroll-delay="0.085">
+        {% if portfolio.type == "right" %}
+        <div class="col-1 d-none d-sm-none d-lg-block order-3 order-lg-1">
+
         </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 mt-3 mt-lg-0" data-scroll data-scroll-speed="0.55" data-scroll-delay="0.05">
+        {% endif %}
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 {% if portfolio.type == "right" %} {{portfolio.image-order}} {% endif %}">
+          <img class="w-100" src="{{ site.url }}/{{ portfolio.thumb }}" alt="" data-scroll data-scroll-speed="{{ portfolio.image-speed }}" data-scroll-delay="{{ portfolio.image-delay }}">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 mt-3 mt-lg-0 {% if portfolio.type =="right" %} {{portfolio.text-order}} {% endif %}" data-scroll data-scroll-speed="{{ portfolio.text-speed }}" data-scroll-delay="{{ portfolio.text-delay }}">
           <h2>{{ portfolio.title }}</h2>
           <p>{{ portfolio.description }}</p>
           <a href="{{ portfolio.link }}" class="btnbtn btn-theme btn-theme-sm btn-theme-purple">View Project</a>
@@ -34,86 +40,9 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
       </div>
     </div>
   </div>
-{% endfor %} -->
+{% endfor %}
 
-<div class="section-ak pt case-study" data-scroll-section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 pb-5">
-        <h6 data-scroll data-scroll-speed=".75" data-scroll-delay="0.05">Portfolio</h6>
-        <h1 class="medium" data-scroll data-scroll-speed=".75" data-scroll-delay="0.05">Case Studies</h1>
-      </div>
-      <div class="col-12">
-        <div class="row justify-content-between align-items-center">
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-            <img class="w-100" src="{{ site.baseurl }}/images/cover-taxslip.jpg" alt="" data-scroll data-scroll-speed="0.1" data-scroll-delay="0.085">
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 mt-3 mt-lg-0" data-scroll data-scroll-speed="0.55" data-scroll-delay="0.05">
-            <h2>Taxslip</h2>
-            <p>Tax filing solution for the Canadian market.</p>
-            <a href="{{ site.url }}/projects/taxslips" class="btnbtn btn-theme btn-theme-sm btn-theme-purple">View Project</a>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="section-ak pt case-study" data-scroll-section>
-  <div class="container">
-    <div class="row">
-
-      <div class="col-12">
-        <div class="row justify-content-between align-items-center">
-
-          <div class="col-1 d-none d-sm-none d-lg-block order-3 order-lg-1">
-
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 order-2 order-lg-2 mt-3 mt-lg-0" data-scroll data-scroll-speed="0.55" data-scroll-delay="0.05">
-            <h2>Mevris</h2>
-            <p>IoT platform to control digital products remotely.</p>
-            <a href="{{ site.url }}/projects/mevris" class="btnbtn btn-theme btn-theme-sm btn-theme-purple">View Project</a>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 order-1 order-lg-3">
-            <img class="w-100" src="{{ site.baseurl }}/images/cover-mevris.jpg" alt="" data-scroll data-scroll-speed="0.1" data-scroll-delay="0.085">
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="section-ak pt case-study" data-scroll-section>
-  <div class="container">
-    <div class="row">
-
-      <div class="col-12">
-        <div class="row justify-content-between align-items-center">
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-            <img class="w-100" src="{{ site.baseurl }}/images/cover-dukaan.jpg" alt="" data-scroll data-scroll-speed="0.1" data-scroll-delay="0.085">
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 mt-3 mt-lg-0" data-scroll data-scroll-speed="0.55" data-scroll-delay="0.05">
-            <h2>Dukaan</h2>
-            <p>A marketplace to sell products online.</p>
-            <a href="{{ site.url }}/projects/dukaan-dashboard" class="btnbtn btn-theme btn-theme-sm btn-theme-purple">View Project</a>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="section-ak pt" data-scroll-section>
+<div class="section-ak pb" data-scroll-section>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -132,70 +61,6 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
               </a>
             </div>
           {% endfor %}
-
-          <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4" >
-    				<a href="{{site.baseurl}}/web-design/elysium" class="portfolio" data-scroll data-scroll-speed="0.6" data-scroll-delay="0.05">
-    					<img src="{{ site.baseurl }}/images/cover-elysium.jpg" alt="">
-    					<h4>Elysium Blockchain</h4>
-    					<p>Website design for a technology company.</p>
-    				</a>
-    			</div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-    				<a href="{{site.baseurl}}/web-design/auclaw" class="portfolio" data-scroll data-scroll-speed="0.6" data-scroll-delay="0.05">
-    					<img src="{{ site.baseurl }}/images/cover-auclaw.jpg" alt="">
-    					<h4>Auc Law</h4>
-    					<p>Website design for a law firm.</p>
-    				</a>
-    			</div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-    				<a href="{{site.baseurl}}/web-design/vulcan" class="portfolio" data-scroll data-scroll-speed="0.6" data-scroll-delay="0.05">
-    					<img src="{{ site.baseurl }}/images/cover-vulcan.jpg" alt="">
-    					<h4>VulcanForged</h4>
-    					<p>NfT and blockchain company.</p>
-    				</a>
-    			</div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-    				<a href="{{site.baseurl}}/web-design/ogc" class="portfolio" data-scroll data-scroll-speed="0.6" data-scroll-delay="0.05">
-    					<img src="{{ site.baseurl }}/images/cover-ogc.jpg" alt="">
-    					<h4>OGC</h4>
-    					<p>Re-Branding for group of companies in Pakistan.</p>
-    				</a>
-    			</div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-    				<a href="{{site.baseurl}}/web-design/sabo-skirt" class="portfolio" data-scroll data-scroll-speed="0.6" data-scroll-delay="0.05">
-    					<img src="{{ site.baseurl }}/images/cover-sabo-skirt.jpg" alt="">
-    					<h4>Sabo Skirt</h4>
-    					<p>Shop design for apparel brand.</p>
-    				</a>
-    			</div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-    				<a href="{{site.baseurl}}/web-design/infotech" class="portfolio" data-scroll data-scroll-speed="0.6" data-scroll-delay="0.05">
-    					<img src="{{ site.baseurl }}/images/cover-infotech.jpg" alt="">
-    					<h4>Infotech</h4>
-    					<p>Website design for a technology company.</p>
-    				</a>
-    			</div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-    				<a href="{{site.baseurl}}/web-design/mevris" class="portfolio" data-scroll data-scroll-speed="0.6" data-scroll-delay="0.05">
-    					<img src="{{ site.baseurl }}/images/cover-mevris-website.jpg" alt="">
-    					<h4>Mevris</h4>
-    					<p>Website design for Mevris</p>
-    				</a>
-    			</div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-    				<a href="{{site.baseurl}}/web-design/orient-rozgaar" class="portfolio" data-scroll data-scroll-speed="0.6" data-scroll-delay="0.05">
-    					<img src="{{ site.baseurl }}/images/cover-orient-rozgaar.jpg" alt="">
-    					<h4>Orient Rozgaar</h4>
-    					<p>Website design for Orient Rozgaar</p>
-    				</a>
-    			</div> -->
 
         </div>
       </div>
