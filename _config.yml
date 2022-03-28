@@ -8,8 +8,8 @@ kramdown:
 permalink:        pretty
 
 # Core
-title:            Aftab Khalid
-description:      Personal static website.
+title:            AK Studio
+description:      A full stack design agency
 email:            xeeafui@gmail.com
 
 destination:      _ak_pages
