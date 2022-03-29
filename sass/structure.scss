@@ -654,6 +654,13 @@ footer #inner_footer a.main_link.mobile {
 }
 
 //
+// 404 error page
+
+.not-found {
+  margin-top: 10rem;
+}
+
+//
 //// Responsive layout
 
 @include media-breakpoint-down(sm) {
