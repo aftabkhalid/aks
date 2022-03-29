@@ -90,7 +90,7 @@ canvas{
 
 footer {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   max-height: 900px;
   overflow: hidden;
   position: relative;
@@ -133,43 +133,13 @@ footer .overlay2 {
   z-index: 2;
 }
 
-footer #inner_footer {
-  display: block;
-  width: 62%;
-  margin-left: 17%;
-  position: absolute;
-  top: 30%;
-  z-index: 2;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-footer .address {
-  width: 100%;
-  position: relative;
-  padding-top: 55vh;
-  padding-left: 15%;
-}
-
-footer #inner_footer a.main_link {
-  font: 100 normal 65px/65px $theme-font-family-base;
-  padding: 40px 0 10px;
-  color: #fff;
-  display: inline-block;
-  position: relative;
-}
-
-footer #inner_footer a.main_link.mobile {
-  display: none;
-}
-
 .ak-logo-footer {
   width: 60px;
   opacity: .5;
 }
 
 .footer-area {
-  padding-top: 20rem;
+  padding-top: 10rem;
   color: #fff;
 
   a {
