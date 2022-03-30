@@ -69,10 +69,7 @@ document.body.onload = function() {
     '../images/header-bg-1.jpg',
     '../images/header-bg-2.jpg',
     '../images/header-bg-3.jpg',
-    '../images/header-bg-4.jpg',
-    '../images/header-bg-5.jpg',
     '../images/header-bg-6.jpg',
-    '../images/header-bg-7.jpg',
     '../images/header-bg-8.jpg'
   );
   var numBg = backgrounds.length;
