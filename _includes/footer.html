@@ -3,10 +3,18 @@
 
     <div class="footer__background background-image" data-scroll data-scroll-speed="-6"  data-scroll-delay="0.1" data-scroll-repeat="true" data-bg="url('images/footer-bg.jpg')" style="background-image: url('{{ site.baseurl }}/images/footer-bg.jpg');"></div>
 
-    <div class="overlay2"></div>
+    <div class="overlay2 d-none d-lg-block"></div>
 
 
     <div class="is-inview" data-scroll="" data-scroll-speed="-4">
+      <div id="inner_footer">
+        <a href="mailto:{{ site.email| encode_email }}" title="Contact me" class="main_link menu_fade">
+          {{ site.email }}
+        </a>
+        <a href="{{ 'hello@aftabkhalid.com' | encode_email }}" class="main_link menu_fade mobile">
+          Get in touch
+        </a>
+      </div>
 
   		<div class="container footer-area">
   			<div class="row">
