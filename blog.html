@@ -18,8 +18,7 @@ type: headless
                 <figure class="author-avatar">
                   <img src="https://1.gravatar.com/userimage/11227337/85544ef2447ae14b349dd6a0343097fd?s=100&r=pg&d=mp" alt="Aftab Khalid" class="avatar">
                 </figure>
-                <time datetime="{{ post.date | date: "%b %-d, %Y" }}"></time>
-                <p>by {% if post.author %}{{ post.author }}{% endif %} • {{ post.date | date: "%b %-d, %Y" }}</p>
+                <p>by {{ post.author }} • {{ post.date | date: "%b %-d, %Y" }}</p>
               </div>
 
               <p>{{ post.excerpt }}</p>
