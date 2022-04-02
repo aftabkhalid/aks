@@ -30,6 +30,14 @@
   &.expanded {
     height: 100vh;
   }
+
+  .ak-logo {
+    a {
+      span {
+        display: none;
+      }
+    }
+  }
 }
 
 .ak-menu-top {
