@@ -26,17 +26,17 @@
 
   .ak-manu-container {
     top: -4px;
+
+    .ak-logo {
+      a {
+        span {
+          display: none
+        }
+      }
+    }
   }
   &.expanded {
     height: 100vh;
-  }
-
-  .ak-logo {
-    a {
-      span {
-        display: none;
-      }
-    }
   }
 }
 
