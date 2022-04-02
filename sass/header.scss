@@ -25,10 +25,13 @@
   z-index: 998;
 
   .ak-manu-container {
-    top: -4px;
+    top: 12px;
 
     .ak-logo {
       a {
+        img {
+          width: 40px;
+        }
         span {
           display: none
         }
@@ -37,6 +40,13 @@
   }
   &.expanded {
     height: 100vh;
+  }
+
+  .menu-toggle {
+    top: -18px;
+  }
+  .ak-menu-top {
+    margin-top: 5px;
   }
 }
 
