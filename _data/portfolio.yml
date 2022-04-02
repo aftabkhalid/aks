@@ -73,8 +73,8 @@ casestudies:
     text-speed: 0.55
     text-delay: 0.05
     type: right
-    text-order: order-1 order-lg-1
-    image-order: order-2 order-lg-2
+    text-order: order-2 order-lg-1
+    image-order: order-1 order-lg-2
 
   - project:
     link: /projects/dukaan-dashboard
