@@ -20,12 +20,12 @@
 
 .header-portfolio {
   background-color: $black;
-  height: 100px;
+  height: 66px;
   position: relative;
   z-index: 998;
 
   .ak-manu-container {
-    top: 12px;
+    top: -4px;
   }
   &.expanded {
     height: 100vh;
