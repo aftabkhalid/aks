@@ -139,7 +139,7 @@ footer .overlay2 {
 }
 
 .footer-area {
-  padding-top: 10rem;
+  padding-top: 15rem;
   padding-bottom: 8rem;
   color: #fff;
 
@@ -668,7 +668,8 @@ footer .overlay2 {
   }
 
   .footer-area {
-    padding-top: 10rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .faq {
@@ -743,12 +744,9 @@ footer .overlay2 {
     margin-top: 7rem;
   }
 
-  footer #inner_footer a.main_link {
-    font: 100 normal 48px/48px $theme-font-family-base;
-  }
-
-  footer #inner_footer {
-    transform: translateY(-100%);
+  .footer-area {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .faq {
@@ -794,11 +792,6 @@ footer .overlay2 {
     margin-top: 12rem;
   }
 
-  footer #inner_footer {
-    margin-left: 11%;
-    transform: translateY(-50%);
-  }
-
   .faq {
     display: flex;
 
@@ -815,28 +808,15 @@ footer .overlay2 {
 }
 
 @include media-breakpoint-up(xl) {
-  footer #inner_footer {
-    margin-left: 17%;
-    transform: translateY(-50%);
-  }
-  footer #inner_footer a.main_link {
-    font: 100 normal 65px/65px $theme-font-family-base;
-  }
 
   .project {
     width: 100%;
     margin-top: 0rem;
   }
+
 }
 
 @include media-breakpoint-up(xxl) {
-  footer #inner_footer {
-    margin-left: 17%;
-    transform: translateY(-50%);
-  }
-  footer #inner_footer a.main_link {
-    font: 100 normal 65px/65px $theme-font-family-base;
-  }
 
   .project {
     width: 100%;
