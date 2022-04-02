@@ -13,14 +13,11 @@ body {
 
 // Logo
 .ak-logo {
-  fill: $white;
   a {
     font-size: 18px;
     font-weight: 700;
-
-    text-decoration: none;
     color: $white;
-    width: 110px;
+    text-decoration: none;
     img {
       width: 50px;
     }
@@ -37,9 +34,6 @@ body {
     &:hover {
       color: $white;
     }
-  }
-  .logo-fill {
-    fill: $white;
   }
 }
 
