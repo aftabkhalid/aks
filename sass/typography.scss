@@ -1,6 +1,5 @@
 // Import font from google
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
 @font-face {
 font-family: 'GorditaRegular';
@@ -112,7 +111,7 @@ h6, .h6 {
 
 p {
   line-height: 34px;
-  margin-top: 15px;
+  margin: 2rem 0;
 }
 
 @include media-breakpoint-up(sm) {
