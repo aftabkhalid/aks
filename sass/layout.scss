@@ -141,11 +141,28 @@ body {
   padding: 60px 0;
   //font-family: 'Nanum Myeongjo', serif;
 
+  a {
+    font-weight: 500;
+    position: relative;
+    &:hover {
+      content: "";
+      &:before {
+        content: "/";
+        position: absolute;
+        left: -1rem;
+      }
+    }
+  }
+
   h1 {
     a {
       color: #000;
-      :hover {
-        text-decoration: none
+      &:hover {
+        text-decoration: none;
+        content: "";
+        &:before {
+          content: "";
+        }
       }
     }
   }
