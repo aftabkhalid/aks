@@ -1,9 +1,9 @@
 work:
-- link: /web-design/elysium
-  thumb: /images/cover-elysium.jpg
-  title: Elysium Blockchain
-  description: Website design for a technology company.
-  speed: 0.6
+# - link: /web-design/elysium
+#   thumb: /images/cover-elysium.jpg
+#   title: Elysium Blockchain
+#   description: Website design for a technology company.
+#   speed: 0.6
 
 - link: /web-design/auclaw
   thumb: /images/cover-auclaw.jpg
