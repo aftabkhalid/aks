@@ -4,22 +4,10 @@
 <script src="{{ site.baseurl }}/js/swiper-bundle.min.js"></script>
 <script src="{{ site.baseurl }}/js/main.js"></script>
 
-<!-- {% if page.title == "UX Audit Request" %}
+{% if page.title == "UX Audit Request" %}
 {% elsif page.title == "Contact" %}
 
-{% else %}
-<script type='text/javascript'>
-	if(location.search.indexOf('r') < 0){
-    var hash = window.location.hash;
-    var loc = window.location.href.replace(hash, '');
-    loc += (loc.indexOf('?') < 0? '?' : '&') + 'r';
-    setTimeout(function(){window.location.href = loc + hash;}, 12000);
-	}
-</script>
-{% endif %} -->
-
-<script type='text/javascript'>
-
+<script type="text/javascript">
 	(() => {
 	  'use strict'
 
@@ -36,6 +24,20 @@
 	    }, false)
 	  })
 	})()
+</script>
+
+{% else %}
+<!-- <script type='text/javascript'>
+	if(location.search.indexOf('r') < 0){
+    var hash = window.location.hash;
+    var loc = window.location.href.replace(hash, '');
+    loc += (loc.indexOf('?') < 0? '?' : '&') + 'r';
+    setTimeout(function(){window.location.href = loc + hash;}, 12000);
+	}
+</script> -->
+{% endif %}
+
+<script type='text/javascript'>
 
 	(function() {
 		if( window.innerWidth > 600 ) {
