@@ -8,22 +8,60 @@
 {% elsif page.title == "Contact" %}
 
 <script type="text/javascript">
-	(() => {
-	  'use strict'
+	// (() => {
+	//   'use strict'
+	//
+	//   const forms = document.querySelectorAll('.needs-validation')
+	//
+	//   Array.from(forms).forEach(form => {
+	//     form.addEventListener('submit', event => {
+	//       if (!form.checkValidity()) {
+	//         event.preventDefault()
+	//         event.stopPropagation()
+	//       }
+	//
+	//       form.classList.add('was-validated')
+	//     }, false)
+	//   })
+	// })();
 
-	  const forms = document.querySelectorAll('.needs-validation')
+// validation
+	$(function () {
 
-	  Array.from(forms).forEach(form => {
-	    form.addEventListener('submit', event => {
-	      if (!form.checkValidity()) {
-	        event.preventDefault()
-	        event.stopPropagation()
-	      }
+	    window.verifyRecaptchaCallback = function (response) {
+	        $('input[data-recaptcha]').val(response).trigger('change');
+	    }
 
-	      form.classList.add('was-validated')
-	    }, false)
-	  })
-	})()
+	    window.expiredRecaptchaCallback = function () {
+	        $('input[data-recaptcha]').val("").trigger('change');
+	    }
+
+	    $('#contactForm').validator();
+
+	    $('#contactForm').on('submit', function (e) {
+	        if (!e.isDefaultPrevented()) {
+	            var url = "https://script.google.com/macros/s/AKfycbyTEqRBlz2MX3aCmvj-sBR9Nuy6x69iON7jO6VwalzG2qkrAi2i9ZxsVk-RMuIxYsVU/exec";
+
+	            $.ajax({
+	                type: "POST",
+	                url: url,
+	                data: $(this).serialize(),
+	                success: function (data) {
+	                    var messageAlert = 'alert-' + data.type;
+	                    var messageText = data.message;
+
+	                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+	                    if (messageAlert && messageText) {
+	                        $('#contactForm').find('.messages').html(alertBox);
+	                        $('#contactForm')[0].reset();
+	                        grecaptcha.reset();
+	                    }
+	                }
+	            });
+	            return false;
+	        }
+	    })
+	});
 </script>
 
 {% else %}

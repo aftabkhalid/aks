@@ -47,7 +47,7 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 
               <div class="col-12">
                 <div class="form-floating">
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required data-error="Firstname is required.">
                   <label for="name" class="form-label">Name</label>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please enter your full name</div>
@@ -56,7 +56,7 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 
               <div class="col-12 mt-3">
                 <div class="form-floating">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required data-error="Firstname is required.">
                   <label for="email" class="form-label">Email</label>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please enter your valid email</div>
@@ -65,7 +65,7 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 
               <div class="col-12 mt-3">
                 <div class="form-floating">
-                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter your name" required>
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter your name" required data-error="Firstname is required.">
                   <label for="phone" class="form-label">Phone</label>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please enter your phone</div>
@@ -74,7 +74,7 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
 
               <div class="col-12 mt-3">
                 <div class="form-floating">
-                  <textarea class="form-control" name="message" id="message" rows="10" placeholder="Write message" style="height: 200px;" required></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="10" placeholder="Write message" style="height: 200px;" required data-error="Firstname is required."></textarea>
                   <label for="message" class="form-label">Message</label>
                 </div>
               </div>
@@ -84,8 +84,17 @@ description: I’m Aftab Khalid, a Lahore based UI/UX Designer, Illustrator, Ent
                 <input class="form-control" id="honeypot" type="text" name="honeypot" value="" />
               </div>
 
-              <div class="col-12 mt-3">
+              <!-- Old reCaptch -->
+              <!-- <div class="col-12 mt-3">
                 <div class="g-recaptcha" data-sitekey="6LeA2JQjAAAAACuHuNFwprBKOngF7DU3GY6T68w5"></div>
+              </div> -->
+
+              <!-- New reCaptcha -->
+
+              <div class="form-group">
+                  <div class="g-recaptcha" data-sitekey="6LeA2JQjAAAAACuHuNFwprBKOngF7DU3GY6T68w5" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                  <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                  <div class="help-block with-errors"></div>
               </div>
 
               <div class="col-12 mt-3">
