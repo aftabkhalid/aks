@@ -1,0 +1,129 @@
+"use client";
+
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+import GradualBlur from "./GradualBlur";
+
+import "./CaseStudies.css";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const caseStudies = [
+  {
+    title: "Tictify",
+    category: "Mobile App Design",
+    year: "2024",
+    image: "/project-1.jpg",
+  },
+  {
+    title: "Project Two",
+    category: "Product Design",
+    year: "2024",
+    image: "/project-1.jpg",
+  },
+  {
+    title: "Project Three",
+    category: "SaaS Product",
+    year: "2024",
+    image: "/project-1.jpg",
+  },
+  {
+    title: "Project Four",
+    category: "UX / UI Design",
+    year: "2023",
+    image: "/project-1.jpg",
+  },
+  {
+    title: "Project Five",
+    category: "Digital Experience",
+    year: "2023",
+    image: "/project-1.jpg",
+  },
+];
+
+const CaseStudies = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useGSAP(
+    () => {
+      const cards = gsap.utils.toArray<HTMLElement>(".case-study-card");
+
+      cards.forEach((card, index) => {
+        // Skip animating the last card (it stays on top without shrinking)
+        if (index === cards.length - 1) return;
+
+        const nextCard = cards[index + 1];
+
+        gsap.to(card, {
+          scale: 0.8,
+          opacity: 1,
+          transformOrigin: "top center",
+          ease: "none",
+          scrollTrigger: {
+            trigger: nextCard,
+            start: "top bottom-=10%", // Starts scaling as the next card approaches
+            end: "top top+=400px",    // Completes scale when next card pins
+            scrub: true,
+            invalidateOnRefresh: true,
+          },
+        });
+      });
+    },
+    {
+      scope: sectionRef,
+    }
+  );
+
+  return (
+    <section ref={sectionRef} className="case-studies-section pt-120" id="case-studies">
+      <div className="container">
+        <div className="row mb-5">
+          <div className="col-12 col-lg-5">
+            <span className="ak-badge">Case Studies</span>
+            <h2>
+              A selection of products, <span className="font-rubik">experiences,</span> and <span className="font-rubik">systems</span> I've helped bring to life.
+            </h2>
+          </div>
+        </div>
+
+        <div className="row case-studies-stack">
+          {caseStudies.map((project, index) => (
+            <div
+              className="col-12 case-study-wrapper"
+              key={project.title}
+              style={{ top: `calc(100px + ${index * 0}px)` }} // Staggered sticky top offsets
+            >
+              <article className="case-study-card">
+                <a href="#" className="case-study-link">
+                  <div className="case-study-image">
+                    <img src={project.image} alt={project.title} />
+                  </div>
+
+                  <div className="case-study-info">
+                    <h3>
+                      {project.title}
+                      <span>↗</span>
+                    </h3>
+
+                    <div className="case-study-meta">
+                      {project.category} — {project.year}
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="w-100 py-100"></div>
+      <div className="section-blur-overlay">
+        <GradualBlur position="bottom" strength={1.5} height="120px" />
+      </div>
+    </section>
+  );
+};
+
+export default CaseStudies;

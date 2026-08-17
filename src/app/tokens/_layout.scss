@@ -1,0 +1,12 @@
+:root {
+  --container-max-width: 1800px;
+  --container-padding: 24px;
+  --section-padding: 120px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}

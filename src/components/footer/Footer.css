@@ -1,0 +1,49 @@
+/* Container holding both components */
+.footer-reveal-wrapper {
+  position: relative;
+  background-color: #121212; /* Matches PreFooter background */
+}
+
+/* PreFooter sits on top */
+.pre-footer-layer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer sits underneath and sticks to the bottom */
+.footer-sticky-layer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Footer base styles */
+.footer {
+  width: 100%;
+  padding: 120px 0 80px;
+}
+
+.social-icons {
+  text-align: right;
+}
+
+.social-icons a {
+  padding: 0 0 0 16px;
+  font-size: 16px;
+}
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #555;
+}

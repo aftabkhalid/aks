@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #FFF;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 80%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.hero-side-copy {
+  font-size: 32px;
+}

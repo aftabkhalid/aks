@@ -1,0 +1,18 @@
+.pre-footer {
+  background-color: #18181B; /* Dark base so GLSL terrain lines POP */
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.pre-footer .btn-theme {
+  background-color: #d5ff37;
+  color: #121212;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pre-footer .btn-theme:hover {
+  background-color: #c4f028;
+  transform: translateY(-2px);
+}

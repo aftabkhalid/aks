@@ -1,0 +1,73 @@
+<footer className="footer" id="contact">
+      <div className="footer__panel">
+        {/* Contact */}
+        <div className="footer__contact">
+          <h2 className="footer__headline">
+            What happens next usually
+            <br />
+            starts with a conversation.
+          </h2>
+
+          <div className="footer__contact-row">
+            <a
+              href="mailto:hello@aftabkhalid.com"
+              className="footer__email"
+            >
+              hello@aftabkhalid.com
+            </a>
+
+            <a href="mailto:hello@aftabkhalid.com" className="footer__button">
+              <span>Contact me</span>
+              <span className="footer__arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="footer__divider" />
+
+        {/* Footer navigation */}
+        <div className="footer__bottom">
+          <div className="footer__identity">
+            <a href="/" className="footer__logo">
+              <span className="footer__logo-mark">A</span>
+
+              <span className="footer__logo-name">
+                Aftab
+                <br />
+                Khalid
+              </span>
+            </a>
+
+            <span className="footer__copyright">
+                © {new Date().getFullYear()}
+            </span>
+          </div>
+
+          <nav className="footer__links" aria-label="Footer navigation">
+            {footerLinks.map((link) => (
+              <a key={link.label} href={link.href}>
+                {link.label}
+              </a>
+            ))}
+          </nav>
+
+          <div className="footer__socials">
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                aria-label={social.label}
+                title={social.label}
+              >
+                {social.shortLabel}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Closing statement */}
+      <div className="footer__statement" aria-hidden="true">
+        Let’s work together.
+      </div>
+    </footer>

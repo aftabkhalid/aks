@@ -1,0 +1,27 @@
+<div className="services__header">
+        <h2 className="services__headline">I design products that make complex things feel simple.</h2>
+
+        <p className="services__intro">
+          From defining the right problem to shaping the experience and bringing it to life, I work across strategy, UX, UI, and emerging AI experiences to create products people understand, use, and trust.
+        </p>
+      </div>
+
+      <div className="services__track">
+        {services.map((service) => (
+          <article className="service-card" key={service.number}>
+            <ServiceIcon type={service.icon} />
+
+            <div className="service-card__number">
+              {service.number}
+            </div>
+
+            <h3 className="service-card__title">
+              {service.title}
+            </h3>
+
+            <p className="service-card__description">
+              {service.description}
+            </p>
+          </article>
+        ))}
+      </div>

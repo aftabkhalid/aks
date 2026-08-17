@@ -1,0 +1,15 @@
+
+.ak-card {
+  padding: 40px;
+  border: 1.375px solid #cdcfd7;
+  margin-left: -1px;
+  position: relative;
+}
+
+.connector-top {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+}
+
+

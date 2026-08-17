@@ -1,0 +1,48 @@
+
+
+<section className="case-studies" id="case-studies">
+      <div className="case-studies__container">
+
+        <div className="case-studies__intro">
+          <div className="section-label">
+            <span className="section-label__dot" />
+            Case Studies
+          </div>
+
+          <h2>A selection of products, experiences, and systems I've helped bring to life.</h2>
+        </div>
+
+        <div className="case-studies__list">
+          {caseStudies.map((project, index) => (
+            <article
+              className="case-study"
+              key={project.title}
+            >
+              <a href="#" className="case-study__link">
+
+                <div className="case-study__image-wrapper">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="case-study__image"
+                  />
+                </div>
+
+                <div className="case-study__meta">
+                  <h3>
+                    {project.title}
+                    <span className="case-study__arrow">↗</span>
+                  </h3>
+
+                  <div className="case-study__category">
+                    {project.category} — {project.year}
+                  </div>
+                </div>
+
+              </a>
+            </article>
+          ))}
+        </div>
+
+      </div>
+    </section>

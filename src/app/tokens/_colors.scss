@@ -1,0 +1,16 @@
+$colors: (
+  "background": #1c1d24,
+  "surface": #282930,
+  "surface-light": #c7c7c7,
+  "text": #f4f4f4,
+  "text-muted": #a8a8ad,
+  "accent": #ff8050,
+  "black": #171820,
+  "white": #ffffff
+);
+
+:root {
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
+}

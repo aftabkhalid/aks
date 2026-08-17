@@ -1,0 +1,70 @@
+<div className="design-principles__container">
+
+  <div className="design-principles__intro">
+    <span className="design-principles__eyebrow">
+      DESIGN PRINCIPLES
+    </span>
+
+    <h2>
+      I don't design screens. I design
+      <br />
+      how products make sense.
+    </h2>
+
+    <p>
+      Great products sit at the intersection of business goals, human
+      needs, and thoughtful technology. My role is to connect those
+      pieces and turn complexity into clarity.
+    </p>
+  </div>
+
+  <div className="design-principles__grid">
+    {principles.map((principle, index) => (
+      <article
+        className="design-principles__card"
+        key={principle.title}
+      >
+        <div className="design-principles__graphic">
+          <span />
+          <span />
+          <span />
+        </div>
+
+        <div className="design-principles__card-content">
+          <h3>{principle.title}</h3>
+
+          <p>{principle.description}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+
+</div>
+
+
+    <section className="section">
+      <div className="container">
+        
+        <div className="row justify-content-center text-center">
+          <div className="col-6">
+            <h2>I don't design screens. I design how products make sense.</h2>
+            <p>Great products sit at the intersection of business goals, human needs, and thoughtful technology. My role is to connect those pieces and turn complexity into clarity.</p>
+          </div>
+        </div>
+
+        <div className="row pt-5 gx-3">
+          {principles.map((principle, index) => (
+            <div className="col" key={principle.title}>
+              <div className="ak-card">
+                <div className="mb-10">
+                  <Image src={principle.image} alt="" width={110} height={110}/>
+                </div>
+                <h3>{principle.title}</h3>
+                <p>{principle.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>

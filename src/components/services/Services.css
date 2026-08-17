@@ -1,0 +1,15 @@
+.section-services {
+  background-color: #E4E4E7;
+}
+
+.service-img-card img {
+  will-change: clip-path, object-position;
+}
+
+@media (max-width: 991px) {
+  .service-img-card {
+    position: relative !important;
+    height: 620px !important;
+    margin-bottom: 2rem;
+  }
+}
