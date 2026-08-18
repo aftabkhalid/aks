@@ -29,10 +29,10 @@ export default function WritingListingPage() {
         {/* Header Section */}
         <section className="row justify-content-center mb-5 pt-4">
           <div className="col-8">
-            <span className="ak-badge mb-3">
+            <span className="ak-badge">
               Writing / {count}
             </span>
-            <h1 className="display-3 fw-normal mb-0">
+            <h1 className="fs-64 fw-normal mb-0">
               / Blog
             </h1>
           </div>
@@ -48,13 +48,13 @@ export default function WritingListingPage() {
                 className="row py-4 border-bottom text-decoration-none align-items-center hover-row px-20"
                 style={{ transition: "background-color 0.15s ease" }}
               >
-                <div className="col-12 col-md-7 mb-2 mb-md-0">
+                <div className="col-12 col-md-7 mb-2 mb-md-0 fs-16">
                   <span className="">{post.title}</span>
                 </div>
-                <div className="col-6 col-md-3 small">
+                <div className="col-6 col-md-3 fs-12">
                   {post.category}
                 </div>
-                <div className="col-6 col-md-2 text-end small">
+                <div className="col-6 col-md-2 text-end fs-12">
                   {post.date}
                 </div>
               </Link>

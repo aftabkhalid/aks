@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,16 +14,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const caseStudies = [
   {
-    title: "Tictify",
-    category: "Mobile App Design",
-    year: "2024",
-    image: "/project-1.jpg",
+    title: "Epic Group",
+    category: "Web Design",
+    year: "2025",
+    image: "/portfolio/epic-group-cs.jpg",
+    link: "https://www.figma.com/proto/Fi8UQWNfDtKUQZLeHmxJYD/EPIC-Group-LLC--PP-?node-id=8622-3528&t=xsEdMGVEtIPGlol8-8&scaling=scale-down-width&content-scaling=fixed&page-id=8622%3A3527&starting-point-node-id=8622%3A3528&hide-ui=1"
   },
   {
-    title: "Project Two",
-    category: "Product Design",
-    year: "2024",
-    image: "/project-1.jpg",
+    title: "Eficiente",
+    category: "Brand Identity",
+    year: "2026",
+    image: "/portfolio/eficiente-cs.jpg",
   },
   {
     title: "Project Three",
@@ -33,12 +35,6 @@ const caseStudies = [
   {
     title: "Project Four",
     category: "UX / UI Design",
-    year: "2023",
-    image: "/project-1.jpg",
-  },
-  {
-    title: "Project Five",
-    category: "Digital Experience",
     year: "2023",
     image: "/project-1.jpg",
   },
@@ -97,7 +93,7 @@ const CaseStudies = () => {
               style={{ top: `calc(100px + ${index * 0}px)` }} // Staggered sticky top offsets
             >
               <article className="case-study-card">
-                <a href="#" className="case-study-link">
+                <a href={project.link} target="_blank" className="case-study-link">
                   <div className="case-study-image">
                     <img src={project.image} alt={project.title} />
                   </div>

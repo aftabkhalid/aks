@@ -53,7 +53,7 @@ export default async function PostDetailPage({
 
         {/* Body Content */}
         <div
-          className="article-body fs-5 text-secondary"
+          className="article-body fs-18 fw-lighter text-secondary"
           style={{ lineHeight: "1.8" }}
           dangerouslySetInnerHTML={{ __html: post.contentHtml || "" }}
         />

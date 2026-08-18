@@ -1,7 +1,7 @@
 ---
 title:  "If UX Is Not UI Then What Is IxD? Confusing Digital Design Terms Defined"
 date:   Jan 17, 2021
-category: ux design
+category: UX Design
 author: Aftab Khalid
 ---
 

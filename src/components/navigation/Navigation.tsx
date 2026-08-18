@@ -49,7 +49,7 @@ export default function Navigation() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto fs-14">
               <li className="nav-item">
-                <a className="nav-link active" href="/about">
+                <a className="nav-link" href="/about">
                   About
                 </a>
               </li>
