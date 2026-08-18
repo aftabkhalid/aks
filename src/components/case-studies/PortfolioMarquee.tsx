@@ -167,7 +167,7 @@ export default function PortfolioMarquee() {
       <div className="container py-4">
         <div className="row mb-5">
           <div className="col-5">
-            <span className="ak-badge">Recent Projects</span>
+            <span className="ak-badge">/ Recent Projects</span>
             <h2>
               I turn <span className="font-rubik">complex problem</span> into clear, purposeful digital products
             </h2>

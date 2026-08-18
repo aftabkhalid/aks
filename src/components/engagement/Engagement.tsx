@@ -63,8 +63,8 @@ export default function Engagement() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-5">
-            <span className="ak-badge">About me</span>
-            <h2 className="fs-48">Aftab Khalid is an Lahore-based design engineer working across branidng, interaction design, and AI workflows.</h2>
+            <span className="ak-badge">/ About me</span>
+            <h2 className="fs-48">Aftab Khalid is a Lahore-based design engineer working across branidng, interaction design, and AI workflows.</h2>
             <p>I design and build fully custom web experiences end to end. Recent client involvements include NeutoAI, TomeAI, FinMin and OceanMoney.</p>
             <button type="button" className="btn btn-dark mt-40">Book a Call</button>
           </div>

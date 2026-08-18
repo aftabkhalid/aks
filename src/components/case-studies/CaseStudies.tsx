@@ -78,7 +78,7 @@ const CaseStudies = () => {
       <div className="container">
         <div className="row mb-5">
           <div className="col-12 col-lg-5">
-            <span className="ak-badge">Case Studies</span>
+            <span className="ak-badge">/ Case Studies</span>
             <h2>
               A selection of products, <span className="font-rubik">experiences,</span> and <span className="font-rubik">systems</span> I've helped bring to life.
             </h2>
