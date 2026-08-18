@@ -138,9 +138,9 @@ export default function Services() {
       <div className="container">
         {/* Header Row */}
         <div className="row pb-5 align-items-end">
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-5">
             <h2>
-              I design products that make complex things feel simple.
+              I design products that make <span className="font-rubik">complex things</span> feel simple.
             </h2>
           </div>
           <div className="col-12 col-lg-4 ms-auto mt-3 mt-lg-0">

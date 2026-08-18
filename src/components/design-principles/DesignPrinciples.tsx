@@ -33,7 +33,7 @@ export default function DesignPrinciples() {
         
         <div className="row justify-content-center text-center">
           <div className="col-5">
-            <h2>I don't design screens. I design how products make sense.</h2>
+            <h2>I don't <span className="font-rubik">design screens.</span> I design how products <span className="font-rubik">make sense.</span></h2>
           </div>
           <div className="w-100"></div>
           <div className="col-4">
