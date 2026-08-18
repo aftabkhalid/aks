@@ -3,7 +3,7 @@ import Navigation from "@/components/navigation/Navigation";
 
 export default function ResumePage() {
   return (
-    <main className=" ">
+    <main className="">
 
       <div className="container-fluid">
         <div className="row">
@@ -13,24 +13,24 @@ export default function ResumePage() {
         </div>
       </div>
 
-      <div className="container-fluid text-dark">
+      <div className="container-fluid text-dark pb-120">
 
-        <section className="row mb-5 pt-4">
+        <section className="row mb-5 py-80">
           <div className="col-12 col-md-9 ms-auto">
-            <span className="badge bg-light text-secondary border rounded-pill px-3 py-2 mb-3">
+            <span className="ak-badge">
               / Resume
             </span>
             <h1 className="display-4 fw-normal mb-4">
-              Experience, education, and the <em>details.</em>
+              Resume, <span className="font-rubik">Experience,</span> and the details.
             </h1>
             <div className="d-flex gap-2 flex-wrap">
-              <a href="/resume.pdf" download className="btn btn-dark rounded-pill px-4 py-2 btn-sm">
-                Download PDF
+              <a href="/resume.pdf" download className="btn btn-dark rounded-pill px-4 py-2">
+                Download Resume
               </a>
-              <a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-outline-secondary rounded-pill px-4 py-2 btn-sm">
-                View PDF ↗
+              <a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-outline-dark rounded-pill px-4 py-2">
+                View Portfolio
               </a>
-              <button type="button" className="btn btn-light border rounded-pill px-4 py-2 btn-sm">
+              <button type="button" className="btn btn-light border rounded-pill px-4 py-2">
                 Share
               </button>
             </div>
@@ -40,12 +40,12 @@ export default function ResumePage() {
         {/* Experience Section */}
         <section className="row border-top py-4 align-items-start px-30 fs-16">
           <div className="col-12 col-md-3 mb-3 mb-md-0">
-            <h2 className="fs-6 text-uppercase tracking-wider text-muted fw-semibold">Experience</h2>
+            <h2 className="fs-12 text-uppercase">Experience</h2>
           </div>
           <div className="col-12 col-md-9">
             {/* Item 1 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">Vaival Technologies</div>
+              <div className="col-12 col-md-4">Vaival Technologies</div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Manager Design Services</span>
@@ -61,7 +61,7 @@ export default function ResumePage() {
 
             {/* Item 2 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">BlueEast</div>
+              <div className="col-12 col-md-4">BlueEast</div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Lead UX Designer</span>
@@ -77,7 +77,7 @@ export default function ResumePage() {
 
             {/* Item 3 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">KuroBase Inc.</div>
+              <div className="col-12 col-md-4">KuroBase Inc.</div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Principle UI/UX Designer</span>
@@ -93,7 +93,7 @@ export default function ResumePage() {
 
             {/* Item 4 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">7Vals</div>
+              <div className="col-12 col-md-4">7Vals</div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Front-end UI/UX Designer</span>
@@ -109,7 +109,7 @@ export default function ResumePage() {
 
             {/* Item 5 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">Hashe Computer Solutions</div>
+              <div className="col-12 col-md-4">Hashe Computer Solutions</div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Senior Web UI/UX Designer</span>
@@ -125,7 +125,7 @@ export default function ResumePage() {
 
             {/* Item 6 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">Crystal IT Expert </div>
+              <div className="col-12 col-md-4">Crystal IT Expert </div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Senior Web Designer & Team Lead</span>
@@ -141,7 +141,7 @@ export default function ResumePage() {
 
             {/* Item 7 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">Hashe Computer Solutions</div>
+              <div className="col-12 col-md-4">Hashe Computer Solutions</div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Web Graphic Designer</span>
@@ -157,7 +157,7 @@ export default function ResumePage() {
 
             {/* Item 8 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">Ravont Inc</div>
+              <div className="col-12 col-md-4">Ravont Inc</div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Web Graphic Designer</span>
@@ -173,7 +173,7 @@ export default function ResumePage() {
 
             {/* Item 9 */}
             <div className="row mb-4">
-              <div className="col-12 col-md-4 fw-bold">Image Zone</div>
+              <div className="col-12 col-md-4">Image Zone</div>
               <div className="col-12 col-md-8">
                 <div className="mb-2">
                   <span className="fw-semibold">Graphic Designer</span>
@@ -193,25 +193,31 @@ export default function ResumePage() {
         {/* Skills Section */}
         <section className="row border-top py-4 align-items-start px-30 fs-16">
           <div className="col-12 col-md-3 mb-3 mb-md-0">
-            <h2 className="fs-6 text-uppercase tracking-wider text-muted fw-semibold">Skills</h2>
+            <h2 className="fs-12 text-uppercase">Skills</h2>
           </div>
           <div className="col-12 col-md-9">
             <div className="row mb-3">
-              <div className="col-12 col-md-4 fw-bold">Development</div>
+              <div className="col-12 col-md-4">UX Research & Strategy</div>
               <div className="col-12 col-md-8 text-secondary">
-                TypeScript, JavaScript, React, Next.js, React Native, Swift, Electron.js, HTML/CSS, Liquid (Shopify)
+                User-Centered design, User persona, User journey, Accessibility design, Usability design, Information architecture, A/B testing, Competitive analysis, Quantitative & aualitative research.
               </div>
             </div>
             <div className="row mb-3">
-              <div className="col-12 col-md-4 fw-bold">Design</div>
+              <div className="col-12 col-md-4">Visual & UI Design</div>
               <div className="col-12 col-md-8 text-secondary">
-                Figma, Webflow, Blender, After Effects, Adobe CC
+                Design System, UI Pattern, Responsive Design, Visual Hierarchy, Branding, Design Tokens.
+              </div>
+            </div>
+            <div className="row mb-3">
+              <div className="col-12 col-md-4">Tools</div>
+              <div className="col-12 col-md-8 text-secondary">
+                Figma, FigJam, Affinity Design, Adobe Illustrator, Adobe Photoshop, Webflow
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-md-4 fw-bold">AI & Workflows</div>
+              <div className="col-12 col-md-4">AI-Driven Design</div>
               <div className="col-12 col-md-8 text-secondary">
-                LangChain, Claude Code, Cursor, MCP, n8n, Make
+                Claude Code, Lovable, V0, Figma Make, Google Stitch, MCP
               </div>
             </div>
           </div>
@@ -220,29 +226,29 @@ export default function ResumePage() {
         {/* Details Section */}
         <section className="row border-top py-4 align-items-start px-30 fs-16">
           <div className="col-12 col-md-3 mb-3 mb-md-0">
-            <h2 className="fs-6 text-uppercase tracking-wider text-muted fw-semibold">Details</h2>
+            <h2 className="fs-12 text-uppercase">Details</h2>
           </div>
           <div className="col-12 col-md-9">
             <div className="row mb-2">
-              <div className="col-12 col-md-4 fw-bold">Location</div>
-              <div className="col-12 col-md-8 text-secondary">Antwerp, Belgium</div>
+              <div className="col-12 col-md-4">Location</div>
+              <div className="col-12 col-md-8 text-secondary">Lahore, Pakistan</div>
             </div>
             <div className="row mb-2">
-              <div className="col-12 col-md-4 fw-bold">Languages</div>
-              <div className="col-12 col-md-8 text-secondary">English, Dutch, Russian</div>
+              <div className="col-12 col-md-4">Languages</div>
+              <div className="col-12 col-md-8 text-secondary">English, Urdu, Panjabi</div>
             </div>
             <div className="row mb-2">
-              <div className="col-12 col-md-4 fw-bold">Email</div>
+              <div className="col-12 col-md-4">Email</div>
               <div className="col-12 col-md-8">
-                <a href="mailto:khasiyev.vishan@gmail.com" className="text-decoration-none text-dark border-bottom">
-                  khasiyev.vishan@gmail.com
+                <a href="mailto:hello@aftabkhalid.com" className="text-decoration-none text-dark border-bottom">
+                  hello@aftabkhalid.com
                 </a>
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-md-4 fw-bold">LinkedIn</div>
+              <div className="col-12 col-md-4">LinkedIn</div>
               <div className="col-12 col-md-8">
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-decoration-none text-dark border-bottom">
+                <a href="https://linkedin.com/in/aftabkhalid" target="_blank" rel="noreferrer" className="text-decoration-none text-dark border-bottom">
                   linkedin.com ↗
                 </a>
               </div>

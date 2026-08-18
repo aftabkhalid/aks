@@ -1,15 +1,15 @@
 "use client";
 
-import { GLSLHills } from "./GLSLHills";
+// import { GLSLHills } from "./GLSLHills";
 import "./PreFooter.css";
 
 export default function Footer() {
   return (
     <section className="section pre-footer text-white position-relative overflow-hidden">
       {/* Background Animation Canvas */}
-      <div className="position-absolute top-0 start-0 w-100 h-100 z-0">
+      {/* <div className="position-absolute top-0 start-0 w-100 h-100 z-0">
         <GLSLHills speed={0.4} cameraZ={130} />
-      </div>
+      </div> */}
 
       {/* Foreground Content */}
       <div className="container position-relative z-1 py-5">

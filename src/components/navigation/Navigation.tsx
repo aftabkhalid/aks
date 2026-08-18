@@ -29,7 +29,7 @@ export default function Navigation() {
 
         {/* Bootstrap navbar content */}
         <div className="navbar-content container-fluid">
-          <a className="fs-16 align-items-center gap-2 d-flex" href="#">
+          <a className="fs-16 align-items-center gap-2 d-flex" href="/">
             <Image src="/ak-logo-dark.svg" alt="" width={28} height={28}/>
             <span className="mt-1">Aftab Khalid</span>
           </a>
@@ -49,14 +49,14 @@ export default function Navigation() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto fs-14">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/about">
                   About
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Work
+                <a className="nav-link" href="/writing">
+                  Writing
                 </a>
               </li>
 
@@ -67,7 +67,7 @@ export default function Navigation() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="mailto:hello@aftabkhalid.com">
                   Contact
                 </a>
               </li>

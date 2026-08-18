@@ -1,6 +1,5 @@
 .pre-footer {
   background-color: #18181B; /* Dark base so GLSL terrain lines POP */
-  min-height: 80vh;
   display: flex;
   align-items: center;
 }

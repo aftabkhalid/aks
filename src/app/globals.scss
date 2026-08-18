@@ -73,3 +73,61 @@ h2 {
     flex-shrink: 0;
   }
 }
+
+.extra-small {
+  font-size: 0.75rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tracking-wide {
+  letter-spacing: 0.05em;
+}
+
+.ak-ratio {
+  height: 650px;
+}
+
+// Blog page
+/* List Hover State */
+.hover-row:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+}
+
+/* Article Styling */
+.article-body {
+  p {
+    margin-bottom: 1.75rem;
+    color: #333333;
+  }
+  h2, h3 {
+    color: #111111;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.875em;
+  }
+  pre {
+    background-color: #121212;
+    color: #f8f9fa;
+    padding: 1.25rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 2rem 0;
+  }
+  blockquote {
+    border-left: 2px solid #111111;
+    padding-left: 1.25rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #555555;
+  }
+}
