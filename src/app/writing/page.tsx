@@ -32,8 +32,8 @@ export default function WritingListingPage() {
             <span className="ak-badge">
               Writing / {count}
             </span>
-            <h1 className="fs-64 fw-normal mb-0">
-              / Blog
+            <h1 className="fs-40 fw-normal mb-0">
+              Writing on design, <span className="font-rubik">experiments,</span> and <span className="font-rubik">AI workflows</span>
             </h1>
           </div>
         </section>

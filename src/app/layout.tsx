@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.scss";
 
 import SmoothScroll from "@/components/smooth-scroll/SmoothScroll";
+import TextRevealProvider from "@/components/text-reveal/TextRevealProvider";
 
 const googleSans = Google_Sans({
   variable: "--font-google-sans",
@@ -16,7 +17,7 @@ const googleSans = Google_Sans({
 const rubik = localFont({
   src: [
     {
-      path: "./fonts/rubik.woff2", // Update file extension to match yours (.ttf/.otf)
+      path: "./fonts/rubik.woff2",
       weight: "400",
       style: "normal",
     },
@@ -47,7 +48,9 @@ export default function RootLayout({
     >
       <body>
         <SmoothScroll />
-        {children}
+        <TextRevealProvider>
+          {children}
+        </TextRevealProvider>
       </body>
     </html>
   );

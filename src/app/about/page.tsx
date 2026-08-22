@@ -18,13 +18,13 @@ export default function AboutPage() {
       <div className="container-fluid px-30 text-dark pb-120">
       
         {/* Top Hero / Intro Section */}
-        <section className="row gy-4 mb-5 pt-4 align-items-end">
+        <section className="row gy-4 mb-5 pt-4 align-items-end" data-reveal="group">
           {/* Left Column: Big Headline */}
           <div className="col-12 col-lg-5 pe-lg-5">
             <h1 className="display-2 fw-semibold lh-1 mb-3">
-              Aftab<br />Khalid
+              <span data-reveal="item">Aftab</span><br /><span data-reveal="item">Khalid</span>
             </h1>
-            <p className="text-secondary small">UX Designer • Lahore</p>
+            <p className="text-secondary small" data-reveal="item">UX Designer • Lahore</p>
           </div>
 
           {/* Right Column: Photo + Narrative Bio */}
@@ -56,7 +56,7 @@ export default function AboutPage() {
                   <a href="mailto:hello@aftabkhalid.com" className="text-dark text-decoration-none">
                     Email
                   </a>
-                  <a href="#book" className="text-dark text-decoration-none">
+                  <a href="mailto:hello@aftabkhalid.com" className="text-dark text-decoration-none">
                     Book a call
                   </a>
                   <a href="https://linkedin.com/in/aftabkhalid" target="_blank" rel="noreferrer" className="text-dark text-decoration-none">
@@ -95,7 +95,7 @@ export default function AboutPage() {
                   <li>/ Epic Group</li>
                   <li>/ OceanMoney</li>
                   <li>/ Taskpay</li>
-                  <li><a className="" href="/work">See work</a></li>
+                  <li><a className="" href="/">See work</a></li>
                 </ul>
               </div>
               <div className="col-6 col-md-3">

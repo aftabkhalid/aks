@@ -15,42 +15,42 @@ const services = [
     title: "Product Strategy",
     description:
       "I help teams turn unclear ideas into focused product direction, aligning user needs, business goals, and priorities before execution begins.",
-    image: "https://ik.imagekit.io/kg2nszxjp/GSAP%20pinned%20image%20mask%20reveal%20on%20scroll/cu8978xjlsjjpjk52ta0.webp",
+    image: "/service-1.jpg",
   },
   {
     number: "02",
     title: "UX / UI Design",
     description:
       "I design digital experiences that are clear, intuitive, and purposeful, balancing user needs with business outcomes.",
-    image: "/image-1.webp",
+    image: "/service-2.jpg",
   },
   {
     number: "03",
     title: "AI Product Design",
     description:
       "I turn powerful AI capabilities into understandable, useful experiences that give people clarity, control, and confidence.",
-    image: "https://ik.imagekit.io/kg2nszxjp/GSAP%20pinned%20image%20mask%20reveal%20on%20scroll/cu8978xjlsjjpjk52ta0.webp",
+    image: "/service-3.jpg",
   },
   {
     number: "04",
     title: "Design Systems",
     description:
       "I build scalable design systems that connect product strategy, interaction patterns, visual language, and reusable components.",
-    image: "/image-1.webp",
+    image: "/service-4.jpg",
   },
   {
     number: "05",
     title: "Prototyping",
     description:
       "I turn ideas into tangible prototypes that help teams explore possibilities, test assumptions, and make better decisions faster.",
-    image: "https://ik.imagekit.io/kg2nszxjp/GSAP%20pinned%20image%20mask%20reveal%20on%20scroll/cu8978xjlsjjpjk52ta0.webp",
+    image: "/service-5.jpg",
   },
   {
     number: "06",
     title: "Product Experience",
     description:
       "I shape the experience across the product, connecting strategy, UX, interface, and systems into something people can understand and trust.",
-    image: "/image-1.webp",
+    image: "/service-6.jpg",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Services() {
 
         gsap.set(imgs, {
           clipPath: "inset(0% 0% 0% 0%)",
-          objectPosition: "0px 0%",
+          objectPosition: "50% 50%",
         });
 
         const mainTimeline = gsap.timeline({
@@ -91,7 +91,7 @@ export default function Services() {
               currentImage,
               {
                 clipPath: "inset(0% 0% 100% 0%)",
-                objectPosition: "0px 60%",
+                objectPosition: "50% 60%",
                 duration: 1.5,
                 ease: "none",
               },
@@ -100,7 +100,7 @@ export default function Services() {
             .to(
               nextImage,
               {
-                objectPosition: "0px 40%",
+                objectPosition: "50% 50%",
                 duration: 1.5,
                 ease: "none",
               },
@@ -114,11 +114,11 @@ export default function Services() {
       // Mobile Fallback (<992px)
       mm.add("(max-width: 991px)", () => {
         const imgs = gsap.utils.toArray<HTMLElement>(".service-img-card img");
-        gsap.set(imgs, { objectPosition: "0px 60%" });
+        gsap.set(imgs, { objectPosition: "50% 50%" });
 
         imgs.forEach((image) => {
           gsap.to(image, {
-            objectPosition: "0px 30%",
+            objectPosition: "50% 50%",
             scrollTrigger: {
               trigger: image,
               start: "top 80%",
@@ -137,14 +137,14 @@ export default function Services() {
     <section ref={containerRef} className="section section-services position-relative" id="services">
       <div className="container">
         {/* Header Row */}
-        <div className="row pb-5 align-items-end">
+        <div className="row pb-5 align-items-end" data-reveal="group">
           <div className="col-12 col-lg-5">
-            <h2>
+            <h2 data-reveal="item">
               I design products that make <span className="font-rubik">complex things</span> feel simple.
             </h2>
           </div>
           <div className="col-12 col-lg-4 ms-auto mt-3 mt-lg-0">
-            <p className="text-dark opacity-75 fs-5 mb-0">
+            <p data-reveal="item" className="text-dark opacity-75 fs-5 mb-0">
               From defining the right problem to shaping the experience and bringing it to life, I work across strategy, UX, UI, and emerging AI experiences to create products people understand, use, and trust.
             </p>
           </div>

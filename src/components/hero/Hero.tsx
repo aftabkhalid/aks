@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import MagneticButton from "@/components/magnetic-button/MagneticButton";
 
 import Navigation from "../navigation/Navigation";
 
@@ -65,14 +66,16 @@ export default function Hero() {
               <div className="col-12 col-lg-3 ms-auto">
                 <div className="hero-side">
                   <div className="hero-side-copy">
-                    Leave the rest to me
+                    Leave the <span className="font-rubik">rest to me</span>
                   </div>
                   <p>
                     Independent Product
                     <br />
                     Designer
                   </p>
-                  <span className="hero-arrow" aria-hidden="true">↗</span>
+                  <MagneticButton className="btn btn-lg btn-dark rounded-pill" href="mailto:hello@aftabkhalid.com" target="_blank" data-reveal="item">
+                    Book a Call
+                  </MagneticButton>
                 </div>
               </div>
             </div>

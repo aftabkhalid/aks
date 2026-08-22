@@ -1,4 +1,5 @@
 "use client";
+import MagneticButton from "@/components/magnetic-button/MagneticButton";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -61,20 +62,22 @@ export default function Engagement() {
 
     <section className="section br-top">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-center" data-reveal="group">
           <div className="col-5">
-            <span className="ak-badge">/ About me</span>
-            <h2 className="fs-48">Aftab Khalid is a Lahore-based <span className="font-rubik">UX designer</span> working across branidng, <span className="font-rubik">interaction design,</span> and AI workflows.</h2>
-            <p>I design and build fully custom web experiences end to end. Recent client involvements include NeutoAI, TomeAI, FinMin and OceanMoney.</p>
-            <button type="button" className="btn btn-dark mt-40">Book a Call</button>
+            <span className="ak-badge" data-reveal="item">/ About me</span>
+            <h2 className="fs-48" data-reveal="item">Aftab Khalid is a Lahore-based <span className="font-rubik">UX designer</span> working across branidng, <span className="font-rubik">interaction design,</span> and AI workflows.</h2>
+            <p data-reveal="item">I design and build fully custom web experiences end to end. Recent client involvements include NeutoAI, TomeAI, FinMin and OceanMoney.</p>
+            <MagneticButton className="btn btn-lg btn-dark rounded-pill" href="https://linkedin.com/in/aftabkhalid" target="_blank" data-reveal="item">
+              View Linkedin
+            </MagneticButton>
           </div>
           <div className="col-6 ms-auto">
-            <div className="row gx-2">
+            <div className="row gx-2 align-items-end">
               <div className="col-6">
-                <Image className="w-100" src="/flux.avif" alt="" width={498} height={650}/>
+                <Image className="w-100" src="/ak-profile.png" alt="" width={600} height={410} data-reveal="item"/>
               </div>
               <div className="col-6">
-                <Image className="w-100" src="/flux.avif" alt="" width={498} height={650}/>
+                <Image className="w-100" src="/flux.avif" alt="" width={498} height={650} data-reveal="item"/>
               </div>
             </div>
           </div>

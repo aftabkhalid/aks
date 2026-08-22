@@ -22,13 +22,13 @@ export default function Navigation() {
     };
   }, []);
   return (
-    <header className="site-nav">
+    <header className="site-nav" data-reveal="group">
       <nav className={`navbar navbar-expand-lg ${
           scrolled ? "is-scrolled" : ""
         }`}>
 
         {/* Bootstrap navbar content */}
-        <div className="navbar-content container-fluid">
+        <div className="navbar-content container-fluid" data-reveal="item">
           <a className="fs-16 align-items-center gap-2 d-flex" href="/">
             <Image src="/ak-logo-dark.svg" alt="" width={28} height={28}/>
             <span className="mt-1">Aftab Khalid</span>
@@ -49,25 +49,25 @@ export default function Navigation() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto fs-14">
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <a className="nav-link" href="/about" data-reveal="item">
                   About
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/writing">
+                <a className="nav-link" href="/writing" data-reveal="item">
                   Writing
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/resume">
+                <a className="nav-link" href="/resume" data-reveal="item">
                   Resume
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="mailto:hello@aftabkhalid.com">
+                <a className="nav-link" href="mailto:hello@aftabkhalid.com" data-reveal="item">
                   Contact
                 </a>
               </li>

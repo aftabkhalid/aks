@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Navigation from "@/components/navigation/Navigation";
+import MagneticButton from "@/components/magnetic-button/MagneticButton";
 
 export default function ResumePage() {
   return (
-    <main className="">
+    <main>
 
       <div className="container-fluid">
         <div className="row">
@@ -15,24 +16,21 @@ export default function ResumePage() {
 
       <div className="container-fluid text-dark pb-120">
 
-        <section className="row mb-5 py-80">
+        <section className="row mb-5 py-80" data-reveal="group">
           <div className="col-12 col-md-9 ms-auto">
-            <span className="ak-badge">
+            <span className="ak-badge" data-reveal="item">
               / Resume
             </span>
-            <h1 className="display-4 fw-normal mb-4">
+            <h1 className="display-4 fw-normal mb-4" data-reveal="item">
               Resume, <span className="font-rubik">Experience,</span> and the details.
             </h1>
-            <div className="d-flex gap-2 flex-wrap">
-              <a href="/resume.pdf" download className="btn btn-dark rounded-pill px-4 py-2">
+            <div className="d-flex gap-3" >
+              <MagneticButton className="btn btn-lg btn-bg-secondary rounded-pill" href="/aftab-resume.pdf" target="_blank" data-reveal="item">
                 Download Resume
-              </a>
-              <a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-outline-dark rounded-pill px-4 py-2">
-                View Portfolio
-              </a>
-              <button type="button" className="btn btn-light border rounded-pill px-4 py-2">
-                Share
-              </button>
+              </MagneticButton>
+              <MagneticButton className="btn btn-lg btn-outline-dark rounded-pill" href="https://linkedin.com/in/aftabkhalid" target="_blank" data-reveal="item">
+                View Linkedin
+              </MagneticButton>
             </div>
           </div>
         </section>

@@ -18,12 +18,12 @@ export default function Footer() {
    <footer className="footer">
       <div className="container">
         <div className="row align-items-stretch">
-          <div className="col-2">
+          <div className="col-2" data-reveal="group">
             
-            <h4 className="mb-40">Menu</h4>
+            <h4 className="mb-40" data-reveal="item">Menu</h4>
             <nav className="nav flex-column">
               {footerLinks.map((link) => (
-                <a className="nav-link p-0 fs-24 active" aria-current="page" key={link.label} href={link.href}>{link.label}</a>
+                <a className="nav-link p-0 fs-24 active" data-reveal="item" aria-current="page" key={link.label} href={link.href}>{link.label}</a>
                ))}
             </nav>
 
@@ -31,17 +31,17 @@ export default function Footer() {
 
           <div className="col-2">
             
-            <div className="row align-items-stratch h-100">
+            <div className="row align-items-stratch h-100" data-reveal="group">
               <div className="col-12">
-                <h4 className="mb-40">Contact</h4>
-                <p>
+                <h4 className="mb-40" data-reveal="item">Contact</h4>
+                <p data-reveal="item">
                   Based in Lahore, Pakistan
                   <br />
                   PH: 0092 321 6400806
                 </p>
               </div>
               <div className="col-12 mt-auto">
-                <a href="mailto:hello@aftabkhalid.com">hello@aftabkhalid.com</a>              
+                <a href="mailto:hello@aftabkhalid.com" data-reveal="item">hello@aftabkhalid.com</a>              
               </div>
             </div>
 
@@ -49,13 +49,14 @@ export default function Footer() {
           
           <div className="col-3 ms-auto">
             <div className="row align-items-end h-100">
-              <div className="col social-icons">
+              <div className="col social-icons" data-reveal="group">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
                     title={social.label}
+                    data-reveal="item"
                   >
                     {social.shortLabel}
                   </a>

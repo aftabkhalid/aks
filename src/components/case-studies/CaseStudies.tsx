@@ -25,18 +25,21 @@ const caseStudies = [
     category: "Brand Identity",
     year: "2026",
     image: "/portfolio/eficiente-cs.jpg",
+    link: "#"
   },
   {
-    title: "Project Three",
-    category: "SaaS Product",
+    title: "Brownkind",
+    category: "Brand Identity",
     year: "2024",
-    image: "/project-1.jpg",
+    image: "/portfolio/brownkind-cs.jpg",
+    link: "#"
   },
   {
-    title: "Project Four",
+    title: "Taskpay",
     category: "UX / UI Design",
     year: "2023",
-    image: "/project-1.jpg",
+    image: "/portfolio/taskpay-cs.jpg",
+    link: "#"
   },
 ];
 
@@ -77,9 +80,9 @@ const CaseStudies = () => {
     <section ref={sectionRef} className="case-studies-section pt-120" id="case-studies">
       <div className="container">
         <div className="row mb-5">
-          <div className="col-12 col-lg-5">
-            <span className="ak-badge">/ Case Studies</span>
-            <h2>
+          <div className="col-12 col-lg-5" data-reveal="group">
+            <span className="ak-badge" data-reveal="item">/ Case Studies</span>
+            <h2 data-reveal="item">
               A selection of products, <span className="font-rubik">experiences,</span> and <span className="font-rubik">systems</span> I've helped bring to life.
             </h2>
           </div>

@@ -21,10 +21,10 @@ export default function HeroShader() {
 
         <ChromaFlow
           baseColor="#ffffff"
-          downColor="#4642ff"
-          leftColor="#56c2fc"
-          rightColor="#5b4fff"
-          upColor="#7f66ff"
+          downColor="#EF6954"
+          leftColor="#EFAE54"
+          rightColor="#EF8354"
+          upColor="#F29D7C"
           momentum={13}
           radius={3.5}
         />
