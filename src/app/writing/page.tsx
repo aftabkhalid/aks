@@ -28,7 +28,7 @@ export default function WritingListingPage() {
       <div className="container px-30 text-dark pt-120 pb-300">
         {/* Header Section */}
         <section className="row justify-content-center mb-5 pt-4">
-          <div className="col-8">
+          <div className="col-12 col-lg-8 col-md-10">
             <span className="ak-badge">
               Writing / {count}
             </span>
@@ -40,7 +40,7 @@ export default function WritingListingPage() {
 
         {/* Minimal Listing */}
         <section className="row justify-content-center">
-          <div className="col-8">
+          <div className="col-12 col-lg-8 col-md-10">
             {posts.map((post) => (
               <Link
                 key={post.slug}

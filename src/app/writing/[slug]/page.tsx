@@ -29,35 +29,41 @@ export default async function PostDetailPage({
         </div>
       </div>
 
-      <article className="py-160 mx-auto" style={{ maxWidth: "680px" }}>
-        {/* Navigation back */}
-        {/* <Link
-          href="/writing"
-          className="text-secondary text-decoration-none small d-inline-block mb-5"
-        >
-          ← Back to Writing
-        </Link> */}
+      <div className="container px-30">
+        <div className="row">
+          <div className="col-12">
+            <article className="py-160 mx-auto" style={{ maxWidth: "680px" }}>
+              {/* Navigation back */}
+              {/* <Link
+                href="/writing"
+                className="text-secondary text-decoration-none small d-inline-block mb-5"
+              >
+                ← Back to Writing
+              </Link> */}
 
-        {/* Article Meta Header */}
-        <header className="mb-5">
-          <div className="d-flex align-items-center gap-3 text-secondary small mb-3">
-            <span className="ak-badge px-2 py-1">
-              / {post.category}
-            </span>
+              {/* Article Meta Header */}
+              <header className="mb-5">
+                <div className="d-flex align-items-center gap-3 text-secondary small mb-3">
+                  <span className="ak-badge px-2 py-1">
+                    / {post.category}
+                  </span>
+                </div>
+                <h1 className="display-4 fw-normal lh-sm mb-0">{post.title}</h1>
+                <span className="fs-14">By {post.author}</span>  - <span className="fs-14"><time>{post.date}</time></span>
+              </header>
+
+              <hr className="my-5 opacity-10" />
+
+              {/* Body Content */}
+              <div
+                className="article-body fs-18 fw-lighter text-secondary"
+                style={{ lineHeight: "1.8" }}
+                dangerouslySetInnerHTML={{ __html: post.contentHtml || "" }}
+              />
+            </article>
           </div>
-          <h1 className="display-4 fw-normal lh-sm mb-0">{post.title}</h1>
-          <span className="fs-14">By {post.author}</span>  - <span className="fs-14"><time>{post.date}</time></span>
-        </header>
-
-        <hr className="my-5 opacity-10" />
-
-        {/* Body Content */}
-        <div
-          className="article-body fs-18 fw-lighter text-secondary"
-          style={{ lineHeight: "1.8" }}
-          dangerouslySetInnerHTML={{ __html: post.contentHtml || "" }}
-        />
-      </article>
+        </div>
+      </div>
     </main>
   );
 }

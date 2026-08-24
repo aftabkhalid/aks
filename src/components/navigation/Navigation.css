@@ -17,33 +17,49 @@
 
 @media (max-width: 991.98px) {
 
+  /* Keep the entire navigation above the overlay */
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2000;
+  }
+
   .desktop-navigation {
     display: none;
   }
 
 
   /* --------------------------------
-     Mobile Menu Toggle
+     Mobile Toggle
   -------------------------------- */
 
   .mobile-menu-toggle {
     position: relative;
-    z-index: 1100;
+    z-index: 4000;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
     gap: 6px;
 
     width: 40px;
     height: 40px;
 
     padding: 0;
+    margin: 0;
+
     border: 0;
     background: transparent;
 
     color: inherit;
     cursor: pointer;
+
+    appearance: none;
   }
 
   .mobile-menu-toggle span {
@@ -79,9 +95,10 @@
 
   .mobile-menu-overlay {
     position: fixed;
+
     inset: 0;
 
-    z-index: 100;
+    z-index: 1000;
 
     display: block;
 
@@ -127,7 +144,7 @@
     display: flex;
     flex-direction: column;
 
-    gap: 12px;
+    gap: 16px;
   }
 
   .mobile-menu-content nav a {
