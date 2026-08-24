@@ -14,7 +14,7 @@ export default function ResumePage() {
         </div>
       </div>
 
-      <div className="container-fluid text-dark pb-120">
+      <div className="container-fluid px-30 text-dark pb-120">
 
         <section className="row mb-5 py-80" data-reveal="group">
           <div className="col-12 col-md-9 ms-auto">
@@ -36,7 +36,7 @@ export default function ResumePage() {
         </section>
 
         {/* Experience Section */}
-        <section className="row border-top py-4 align-items-start px-30 fs-16">
+        <section className="row border-top py-4 align-items-start fs-16">
           <div className="col-12 col-md-3 mb-3 mb-md-0">
             <h2 className="fs-12 text-uppercase">Experience</h2>
           </div>
@@ -189,7 +189,7 @@ export default function ResumePage() {
         </section>
 
         {/* Skills Section */}
-        <section className="row border-top py-4 align-items-start px-30 fs-16">
+        <section className="row border-top py-4 align-items-start fs-16">
           <div className="col-12 col-md-3 mb-3 mb-md-0">
             <h2 className="fs-12 text-uppercase">Skills</h2>
           </div>
@@ -222,7 +222,7 @@ export default function ResumePage() {
         </section>
 
         {/* Details Section */}
-        <section className="row border-top py-4 align-items-start px-30 fs-16">
+        <section className="row border-top py-4 align-items-start fs-16">
           <div className="col-12 col-md-3 mb-3 mb-md-0">
             <h2 className="fs-12 text-uppercase">Details</h2>
           </div>

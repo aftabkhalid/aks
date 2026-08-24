@@ -33,7 +33,7 @@ export default function AboutPage() {
               <div className="col-12 col-md-6">
                 <div className="ratio ak-ratio rounded-3 overflow-hidden bg-light">
                   <Image
-                    src="/ak-profile.png" // Replace with your image path in public/
+                    src="/ak-profile.png"
                     alt="Aftab Khalid"
                     fill
                     className="object-fit-cover"
@@ -78,7 +78,7 @@ export default function AboutPage() {
           </div>
           <div className="col-12 col-md-9">
             <div className="row g-4">
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <p className="extra-small text-muted mb-2 uppercase tracking-wide">Experience</p>
                 <ul className="list-unstyled small text-secondary d-flex flex-column gap-1">
                   <li>/ Vaival Technologies</li>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                   <li><a className="" href="/resume">See resume</a></li>
                 </ul>
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <p className="extra-small text-muted mb-2 uppercase tracking-wide">Client Involvements</p>
                 <ul className="list-unstyled small text-secondary d-flex flex-column gap-1">
                   <li>/ Taskify AI</li>
@@ -98,7 +98,7 @@ export default function AboutPage() {
                   <li><a className="" href="/">See work</a></li>
                 </ul>
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <p className="extra-small text-muted mb-2 uppercase tracking-wide">Languages</p>
                 <ul className="list-unstyled small text-secondary d-flex flex-column gap-1">
                   <li>/ English</li>
@@ -117,7 +117,7 @@ export default function AboutPage() {
           </div>
           <div className="col-12 col-md-9">
             <div className="row g-4">
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <p className="extra-small text-muted mb-2 uppercase tracking-wide">UX Research & Strategy</p>
                 <ul className="list-unstyled small text-secondary d-flex flex-column gap-1">
                   <li>/ User-Centered Design</li>
@@ -129,7 +129,7 @@ export default function AboutPage() {
                   <li>/ A/B Testing</li>
                 </ul>
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <p className="extra-small text-muted mb-2 uppercase tracking-wide">Visual & UI Design</p>
                 <ul className="list-unstyled small text-secondary d-flex flex-column gap-1">
                   <li>/ Design System</li>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                   <li>/ Design Tokens</li>
                 </ul>
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <p className="extra-small text-muted mb-2 uppercase tracking-wide">Tools</p>
                 <ul className="list-unstyled small text-secondary d-flex flex-column gap-1">
                   <li>/ Figma</li>
@@ -150,7 +150,7 @@ export default function AboutPage() {
                   <li>/ Webflow</li>
                 </ul>
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-md-3">
                 <p className="extra-small text-muted mb-2 uppercase tracking-wide">AI-Driven Design</p>
                 <ul className="list-unstyled small text-secondary d-flex flex-column gap-1">
                   <li>/ Claude Code</li>

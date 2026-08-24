@@ -7,32 +7,10 @@ import { useGSAP } from "@gsap/react";
 import "./Engagement.css";
 import Image from "next/image";
 
-const engagements = [
-  {
-    number: "01",
-    title: "Sprints",
-    description:
-      "Focused engagements for moments that need clarity fast. We explore a specific challenge, test ideas, and turn uncertainty into a practical direction you can build on.",
-    image: "/images/engagements/sprints-placeholder.png",
-    variant: "dark",
-  },
-  {
-    number: "02",
-    title: "Projects",
-    description:
-      "End-to-end product design for ambitious ideas that need more than a few screens. I work across strategy, UX, UI, interaction, and systems to shape the product from first brief to launch.",
-    image: "/images/engagements/projects-placeholder.png",
-    variant: "orange",
-  },
-  {
-    number: "03",
-    title: "Partnerships",
-    description:
-      "A long-term design partnership for teams that need an experienced product designer embedded in the work. We solve problems as they emerge, improve the product continuously, and build the systems needed to scale.",
-    image: "/images/engagements/partnerships-placeholder.png",
-    variant: "light",
-  },
-];
+const imageStyle = {
+  width: '100%',
+  height: 'auto',
+}
 
 export default function Engagement() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -74,9 +52,9 @@ export default function Engagement() {
           <div className="col-12 col-lg-6 col-md-6 ms-auto">
             <div className="row g-2 mt-5 align-items-end">
               <div className="col-12 col-lg-6 col-md-6">
-                <Image className="w-100" src="/ak-profile.png" alt="" width={600} height={410} data-reveal="item"/>
+                <Image style={imageStyle} src="/ak-profile.png" alt="" width={600} height={410} data-reveal="item"/>
               </div>
-              <div className="col-12 col-lg-6 col-md-6">
+              <div className="col-12 col-lg-6 col-md-6 d-none d-md-block">
                 <Image className="w-100" src="/flux.avif" alt="" width={498} height={650} data-reveal="item"/>
               </div>
             </div>

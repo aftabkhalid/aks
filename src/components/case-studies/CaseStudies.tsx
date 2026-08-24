@@ -39,7 +39,7 @@ const caseStudies = [
     category: "UX / UI Design",
     year: "2023",
     image: "/portfolio/taskpay-cs.jpg",
-    link: "#"
+    link: "https://www.figma.com/design/e8Iugt6WrkXYa7dAJ6BYaU/Taskpay-Design--PP-?node-id=43-192&t=sFcFzF5YiIVhMUM6-1"
   },
 ];
 
@@ -57,7 +57,7 @@ const CaseStudies = () => {
         const nextCard = cards[index + 1];
 
         gsap.to(card, {
-          scale: 0.4,
+          scale: 0.8,
           opacity: 1,
           transformOrigin: "top center",
           ease: "none",
@@ -88,7 +88,7 @@ const CaseStudies = () => {
           </div>
         </div>
 
-        <div className="row case-studies-stack">
+        <div className="row case-studies-stack d-none d-lg-block">
           {caseStudies.map((project, index) => (
             <div
               className="col-12 case-study-wrapper"
@@ -116,10 +116,43 @@ const CaseStudies = () => {
             </div>
           ))}
         </div>
+
       </div>
-      <div className="w-100 py-100"></div>
-      <div className="section-blur-overlay">
+
+      <div className="w-100 py-100 d-none d-md-block"></div>
+      <div className="section-blur-overlay d-none d-md-block">
         <GradualBlur position="bottom" strength={1.5} height="120px" />
+      </div>
+
+      <div className="container d-lg-none">
+        {/* Mobile */}
+        <div className="row">
+          {caseStudies.map((project) => (
+            <div
+              className="col-12"
+              key={project.title}
+            >
+              <article className="mt-60">
+                <a href={project.link} target="_blank" className="case-study-link">
+                  <div className="case-study-image">
+                    <img src={project.image} alt={project.title} />
+                  </div>
+
+                  <div className="case-study-info">
+                    <h3>
+                      {project.title}
+                      <span>↗</span>
+                    </h3>
+
+                    <div className="case-study-meta">
+                      {project.category} — {project.year}
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
