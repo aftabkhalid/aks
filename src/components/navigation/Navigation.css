@@ -21,9 +21,14 @@
     display: none;
   }
 
+
+  /* --------------------------------
+     Mobile Menu Toggle
+  -------------------------------- */
+
   .mobile-menu-toggle {
     position: relative;
-    z-index: 1002;
+    z-index: 1100;
 
     display: flex;
     flex-direction: column;
@@ -37,6 +42,7 @@
     border: 0;
     background: transparent;
 
+    color: inherit;
     cursor: pointer;
   }
 
@@ -53,7 +59,10 @@
       opacity 0.25s ease;
   }
 
-  /* Hamburger → X */
+
+  /* --------------------------------
+     Hamburger → X
+  -------------------------------- */
 
   .mobile-menu-toggle.is-open span:first-child {
     transform: translateY(3.75px) rotate(45deg);
@@ -70,12 +79,14 @@
 
   .mobile-menu-overlay {
     position: fixed;
-
     inset: 0;
 
-    z-index: 1000;
+    z-index: 100;
 
     display: block;
+
+    width: 100%;
+    height: 100dvh;
 
     background: #f5f5f2;
 
@@ -103,6 +114,7 @@
   -------------------------------- */
 
   .mobile-menu-content {
+    width: 100%;
     height: 100dvh;
 
     display: flex;
@@ -135,7 +147,10 @@
       transform 0.5s ease;
   }
 
-  /* Animate links after overlay opens */
+
+  /* --------------------------------
+     Animate Menu Links
+  -------------------------------- */
 
   .mobile-menu-overlay.is-open
   .mobile-menu-content nav a {
@@ -162,4 +177,5 @@
   .mobile-menu-content nav a:nth-child(4) {
     transition-delay: 0.26s;
   }
+
 }
