@@ -8,7 +8,7 @@ import { useGSAP } from "@gsap/react";
 
 import GradualBlur from "./GradualBlur";
 
-import "./CaseStudies.css";
+import "./CaseStudies.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,7 +57,7 @@ const CaseStudies = () => {
         const nextCard = cards[index + 1];
 
         gsap.to(card, {
-          scale: 0.8,
+          scale: 0.4,
           opacity: 1,
           transformOrigin: "top center",
           ease: "none",
@@ -82,7 +82,7 @@ const CaseStudies = () => {
         <div className="row mb-5">
           <div className="col-12 col-lg-5" data-reveal="group">
             <span className="ak-badge" data-reveal="item">/ Case Studies</span>
-            <h2 data-reveal="item">
+            <h2 className="fs-44" data-reveal="item">
               A selection of products, <span className="font-rubik">experiences,</span> and <span className="font-rubik">systems</span> I've helped bring to life.
             </h2>
           </div>

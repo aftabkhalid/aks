@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import PreFooter from "../pre-footer/PreFooter";
 import Footer from "./Footer";
-import "./Footer.css";
+import "./Footer.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 

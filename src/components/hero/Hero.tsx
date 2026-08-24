@@ -65,7 +65,7 @@ export default function Hero() {
 
               <div className="col-12 col-lg-3 ms-auto">
                 <div className="hero-side">
-                  <div className="hero-side-copy">
+                  <div className="fs-32">
                     Leave the <span className="font-rubik">rest to me</span>
                   </div>
                   <p>

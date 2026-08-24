@@ -1,27 +1,32 @@
 $font-sizes: (
-  12: 12px,
-  14: 14px,
-  16: 16px,
-  18: 18px,
-  20: 20px,
-  24: 24px,
-  28: 28px,
-  32: 32px,
-  40: 40px,
-  48: 48px,
-  56: 56px,
-  64: 64px,
-  72: 72px,
-  80: 80px,
-  96: 96px,
-  120: 120px,
-  160: 160px
+  
+  12: clamp(12px, 0.75rem, 12px),
+  14: clamp(14px, 0.875rem, 14px),
+  16: clamp(16px, 1rem, 16px),
+  18: clamp(16px, 1.125rem, 18px),
+  20: clamp(18px, 1.25rem, 20px),
+  24: clamp(20px, 1.5rem, 24px),
+  28: clamp(24px, 2vw, 28px),
+  32: clamp(26px, 2.5vw, 32px),
+  40: clamp(32px, 3vw, 40px),
+  44: clamp(34px, 3vw, 44px),
+  48: clamp(36px, 4vw, 48px),
+  56: clamp(40px, 4.5vw, 56px),
+  64: clamp(44px, 5vw, 64px),
+  72: clamp(40px, 6vw, 72px),
+  80: clamp(52px, 7vw, 80px),
+  96: clamp(56px, 8vw, 96px),
+  120: clamp(64px, 10vw, 120px),
+  160: clamp(80px, 13vw, 160px)
+
 );
 
 @each $name, $value in $font-sizes {
+
   .fs-#{$name} {
     font-size: $value;
   }
+
 }
 
 .display-xl {

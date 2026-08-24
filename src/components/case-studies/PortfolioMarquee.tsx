@@ -172,9 +172,9 @@ export default function PortfolioMarquee() {
     <section className="portfolio-marquee-section py-5">
       <div className="container py-4">
         <div className="row mb-5">
-          <div className="col-5" data-reveal="group">
+          <div className="col-12 col-lg-5 col-md-5" data-reveal="group">
             <span className="ak-badge" data-reveal="item">/ Recent Projects</span>
-            <h2 data-reveal="item">
+            <h2 className="fs-44" data-reveal="item">
               I turn <span className="font-rubik">complex problem</span> into clear, purposeful digital products
             </h2>
           </div>

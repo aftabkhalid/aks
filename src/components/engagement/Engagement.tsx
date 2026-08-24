@@ -63,7 +63,7 @@ export default function Engagement() {
     <section className="section br-top">
       <div className="container">
         <div className="row align-items-center" data-reveal="group">
-          <div className="col-5">
+          <div className="col-12 col-lg-5 col-md-6">
             <span className="ak-badge" data-reveal="item">/ About me</span>
             <h2 className="fs-48" data-reveal="item">Aftab Khalid is a Lahore-based <span className="font-rubik">UX designer</span> working across branidng, <span className="font-rubik">interaction design,</span> and AI workflows.</h2>
             <p data-reveal="item">I design and build fully custom web experiences end to end. Recent client involvements include NeutoAI, TomeAI, FinMin and OceanMoney.</p>
@@ -71,12 +71,12 @@ export default function Engagement() {
               View Linkedin
             </MagneticButton>
           </div>
-          <div className="col-6 ms-auto">
-            <div className="row gx-2 align-items-end">
-              <div className="col-6">
+          <div className="col-12 col-lg-6 col-md-6 ms-auto">
+            <div className="row g-2 mt-5 align-items-end">
+              <div className="col-12 col-lg-6 col-md-6">
                 <Image className="w-100" src="/ak-profile.png" alt="" width={600} height={410} data-reveal="item"/>
               </div>
-              <div className="col-6">
+              <div className="col-12 col-lg-6 col-md-6">
                 <Image className="w-100" src="/flux.avif" alt="" width={498} height={650} data-reveal="item"/>
               </div>
             </div>

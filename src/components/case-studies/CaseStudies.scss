@@ -1,3 +1,7 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
 .case-studies-section {
   position: relative;
 }
@@ -20,7 +24,11 @@
   /* background-color: #fff; */
   border-radius: 8px;
   overflow: hidden;
+  @include media-breakpoint-down(md) {
+    min-height: 10px;
+  }
 }
+
 
 .case-study-link {
   display: flex;
@@ -35,6 +43,9 @@
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 1.5rem;
+  @include media-breakpoint-down(md) {
+    height: 162px;
+  }
 }
 
 .case-study-image img {

@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./Footer.scss";
 
 const footerLinks = [
   { label: "Home", href: "/" },
@@ -18,7 +18,7 @@ export default function Footer() {
    <footer className="footer">
       <div className="container">
         <div className="row align-items-stretch">
-          <div className="col-2" data-reveal="group">
+          <div className="col-12 col-lg-2 col-md-6" data-reveal="group">
             
             <h4 className="mb-40" data-reveal="item">Menu</h4>
             <nav className="nav flex-column">
@@ -29,12 +29,12 @@ export default function Footer() {
 
           </div>
 
-          <div className="col-2">
+          <div className="col-12 col-lg-2 col-md-6">
             
             <div className="row align-items-stratch h-100" data-reveal="group">
               <div className="col-12">
-                <h4 className="mb-40" data-reveal="item">Contact</h4>
-                <p data-reveal="item">
+                <h4 className="mb-40 d-none d-lg-block" data-reveal="item">Contact</h4>
+                <p data-reveal="item" className="mt-40">
                   Based in Lahore, Pakistan
                   <br />
                   PH: 0092 321 6400806
@@ -47,7 +47,7 @@ export default function Footer() {
 
           </div>
           
-          <div className="col-3 ms-auto">
+          <div className="col-12 col-lg-3 col-md-12 ms-auto">
             <div className="row align-items-end h-100">
               <div className="col social-icons" data-reveal="group">
                 {socialLinks.map((social) => (
