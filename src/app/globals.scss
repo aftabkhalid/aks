@@ -39,10 +39,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 64px;
+  letter-spacing: -.04em;
 }
 
 h2 {
   font-size: 44px;
+  letter-spacing: -.03em;
+}
+
+h3 {
+  letter-spacing: -.02em;
 }
 
 .section{

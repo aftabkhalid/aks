@@ -88,10 +88,10 @@ const CaseStudies = () => {
           </div>
         </div>
 
-        <div className="row case-studies-stack d-none d-lg-block">
+        <div className="row case-studies-stack">
           {caseStudies.map((project, index) => (
             <div
-              className="col-12 case-study-wrapper"
+              className="col-12 case-study-wrapper d-none d-lg-block"
               key={project.title}
               style={{ top: `calc(100px + ${index * 0}px)` }} // Staggered sticky top offsets
             >
