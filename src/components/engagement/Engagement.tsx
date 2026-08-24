@@ -55,7 +55,7 @@ export default function Engagement() {
                 <Image style={imageStyle} src="/ak-profile.png" alt="" width={600} height={410} data-reveal="item"/>
               </div>
               <div className="col-12 col-lg-6 col-md-6 d-none d-md-block">
-                <Image className="w-100" src="/flux.avif" alt="" width={498} height={650} data-reveal="item"/>
+                <Image style={imageStyle} src="/flux.png" alt="" width={498} height={650} data-reveal="item"/>
               </div>
             </div>
           </div>
