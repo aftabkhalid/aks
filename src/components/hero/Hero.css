@@ -18,7 +18,7 @@
   pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0) 80%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(246, 244, 244, 0) 80%,
+    rgba(246, 244, 244, 1) 100%
   );
 }
