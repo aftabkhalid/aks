@@ -43,7 +43,7 @@ export default function Engagement() {
         <div className="row align-items-center" data-reveal="group">
           <div className="col-12 col-lg-5 col-md-6">
             <span className="ak-badge" data-reveal="item">/ About me</span>
-            <h2 className="fs-48" data-reveal="item">Aftab Khalid is a Lahore-based <span className="font-rubik">UX designer</span> working across branidng, <span className="font-rubik">interaction design,</span> and AI workflows.</h2>
+            <h2 className="fs-48" data-reveal="item">Aftab Khalid is a Lahore-based <span className="font-rubik">UX Designer</span> working across branidng, <span className="font-rubik">interaction design,</span> and AI workflows.</h2>
             <p data-reveal="item">I design and build fully custom web experiences end to end. Recent client involvements include NeutoAI, TomeAI, FinMin and OceanMoney.</p>
             <MagneticButton className="btn btn-lg btn-dark rounded-pill" href="https://linkedin.com/in/aftabkhalid" target="_blank" data-reveal="item">
               View Linkedin

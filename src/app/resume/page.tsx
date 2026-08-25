@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Navigation from "@/components/navigation/Navigation";
 import MagneticButton from "@/components/magnetic-button/MagneticButton";
 
