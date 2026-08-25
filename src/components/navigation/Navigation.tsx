@@ -107,7 +107,7 @@ export default function Navigation() {
 
               <span
                 ref={logoTextRef}
-                className="mt-1 ak-logo"
+                className="mt-1"
                 onMouseEnter={() => scrambleLogo("Aftab Khalid")}
               >
                 Aftab Khalid
