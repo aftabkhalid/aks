@@ -43,7 +43,7 @@ export default function DesignPrinciples() {
 
         <div className="row pt-5 g-0">
           {principles.map((principle, index) => (
-            <div className="col ak-card" key={principle.title} data-reveal="group">
+            <div className="col-12 col-md-4 ak-card" key={principle.title} data-reveal="group">
               <div className="mb-80 mb-lg-200">
                 <Image src={principle.image} alt="" width={110} height={110} data-reveal="item"/>
               </div>

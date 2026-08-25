@@ -1,9 +1,36 @@
-
+/* Mobile First (Stacked Layout) */
 .ak-card {
   padding: 40px;
   border: 1.375px solid #cdcfd7;
-  margin-left: -1px;
   position: relative;
+  border-radius: 10px;   /* 10px radius on all 4 corners */
+  margin-left: 0;
+  margin-bottom: 16px;   /* 16px gap between stacked cards */
+}
+
+/* Remove bottom margin on the final card to avoid unwanted row padding */
+.ak-card:last-child {
+  margin-bottom: 0;
+}
+
+/* Desktop View (Side-by-Side Layout) */
+@media (min-width: 768px) {
+  .ak-card {
+    margin-bottom: 0;    /* Remove mobile vertical gap */
+    margin-left: -1px;   /* Border collapse overlap */
+    border-radius: 0;    /* Default square state for middle card */
+  }
+
+  .ak-card:first-child {
+    margin-left: 0;      /* Keep outer border aligned with grid container */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .ak-card:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
 
 .connector-top {
