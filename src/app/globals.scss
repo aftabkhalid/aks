@@ -103,6 +103,12 @@ h3 {
   color: #fff;
 }
 
+/* Muted subtext (excerpt) must stay readable on the black hover row */
+.hover-row:hover .text-muted,
+.hover-row:hover .text-secondary {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
 /* Article Styling */
 .article-body {
   p {
