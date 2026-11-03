@@ -1,5 +1,5 @@
 ---
-title:  "From Vibe Design to Ready-to-Dev UI: My Figma → Claude Code → React Workflow"
+title:  "From Vibe Design to Ready-to-Dev UI: My Figma, Claude Code, and React Workflow"
 date:   "2026-11-03"
 category: AI Workflows
 author: Aftab Khalid
