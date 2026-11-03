@@ -3,13 +3,6 @@ import Navigation from "@/components/navigation/Navigation";
 import FooterSection from "@/components/footer/FooterSection";
 import { getAllPosts } from "@/lib/posts";
 
-// Helper function to truncate string to exact word count
-function truncateWords(str: string, maxWords: number = 7): string {
-  const words = str.trim().split(/\s+/);
-  if (words.length <= maxWords) return str;
-  return words.slice(0, maxWords).join(" ") + "…";
-}
-
 export default function WritingListingPage() {
   const posts = getAllPosts();
   const count = posts.length.toString().padStart(2, "0");

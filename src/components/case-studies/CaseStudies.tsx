@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -83,7 +82,7 @@ const CaseStudies = () => {
           <div className="col-12 col-lg-5" data-reveal="group">
             <span className="ak-badge" data-reveal="item">/ Case Studies</span>
             <h2 className="fs-44" data-reveal="item">
-              A selection of products, <span className="font-rubik">experiences,</span> and <span className="font-rubik">systems</span> I've helped bring to life.
+              A selection of products, <span className="font-rubik">experiences,</span> and <span className="font-rubik">systems</span> I&apos;ve helped bring to life.
             </h2>
           </div>
         </div>

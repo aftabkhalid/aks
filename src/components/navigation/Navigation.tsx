@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import gsap from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import "./Navigation.css";
@@ -79,7 +80,7 @@ export default function Navigation() {
           data-reveal="item"
         >
           {/* Logo */}
-          <a
+          <Link
             className="fs-16 align-items-center gap-2 d-flex position-relative z-3"
             href="/"
             onClick={closeMenu}
@@ -98,7 +99,7 @@ export default function Navigation() {
             >
               Aftab Khalid
             </span>
-          </a>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -118,21 +119,21 @@ export default function Navigation() {
           <div className="desktop-navigation">
             <ul className="navbar-nav ms-auto fs-14">
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" href="/about">
                   About
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/writing">
+                <Link className="nav-link" href="/writing">
                   Writing
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/resume">
+                <Link className="nav-link" href="/resume">
                   Resume
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
@@ -155,17 +156,17 @@ export default function Navigation() {
         >
           <div className="mobile-menu-content">
             <nav>
-              <a href="/about" onClick={closeMenu}>
+              <Link href="/about" onClick={closeMenu}>
                 About
-              </a>
+              </Link>
 
-              <a href="/writing" onClick={closeMenu}>
+              <Link href="/writing" onClick={closeMenu}>
                 Writing
-              </a>
+              </Link>
 
-              <a href="/resume" onClick={closeMenu}>
+              <Link href="/resume" onClick={closeMenu}>
                 Resume
-              </a>
+              </Link>
 
               <a
                 href="mailto:hello@aftabkhalid.com"

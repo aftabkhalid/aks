@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navigation from "@/components/navigation/Navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";

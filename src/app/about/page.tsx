@@ -95,7 +95,7 @@ export default function AboutPage() {
                   <li>/ Epic Group</li>
                   <li>/ OceanMoney</li>
                   <li>/ Taskpay</li>
-                  <li><a className="" href="/">See work</a></li>
+                  <li><Link href="/">See work</Link></li>
                 </ul>
               </div>
               <div className="col-12 col-md-3">
