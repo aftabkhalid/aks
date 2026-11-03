@@ -86,6 +86,7 @@ When writing or editing blog posts (`content/posts/*.md`):
 5. **SINGLE LENIS INSTANCE**: `<SmoothScroll>` inside `layout.tsx` only.
 6. **STATIC-EXPORT SAFE**: New routes need `generateStaticParams`/plain components; never introduce server-only runtime behavior.
 7. **DO NOT DELETE junk/unused files**: `src/components/*/junk.html`, duplicated `Footer.tsx` vs `FooterSection.tsx` may contain recovered draft code the owner wants to keep. Reference only what is actually imported (e.g. `FooterSection`).
+8. **ALWAYS PROVIDE A PR LINK**: Every time code is pushed to GitHub, create a PR (if one does not already exist for that branch) and send the owner the PR URL in the reply. This is a strict rule, never skip it.
 
 ## CI / Deploy
 
