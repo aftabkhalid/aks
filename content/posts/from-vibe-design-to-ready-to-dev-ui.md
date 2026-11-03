@@ -3,7 +3,7 @@ title:  "From Vibe Design to Ready-to-Dev UI: My Figma → Claude Code → React
 date:   "2026-11-03"
 category: AI Workflows
 author: Aftab Khalid
-draft: true
+draft: false
 description: "How I ship designs that are genuinely ready to dev — prototyping in Figma, building with Claude Code, and handing off React instead of redlines."
 ---
 
