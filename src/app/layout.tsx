@@ -32,7 +32,10 @@ const rubik = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Aftab Khalid",
+  title: {
+    default: "Aftab Khalid",
+    template: "%s — Aftab Khalid",
+  },
   description: "Aftab Khalid - UX Designer",
 };
 
