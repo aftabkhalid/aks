@@ -61,6 +61,15 @@ Imports, in order:
 - **Lenis**: Smooth scrolling handled solely by `src/components/smooth-scroll/SmoothScroll.tsx`, rendered strictly once inside `layout.tsx`. It syncs Lenis with the GSAP ticker and `ScrollTrigger.update`. Do not duplicate in `page.tsx`.
 - **Shaders**: `src/components/hero/HeroShader.tsx` and `src/components/pre-footer/GLSLHills.tsx` use the `shaders` npm package (`shaders/react`: `<Shader>`, `<Swirl>`, `<ChromaFlow>`, `<FlutedGlass>`, `<FilmGrain>` …) — client-only WebGL components. `three` is also present in dependencies for shader work.
 
+## Blog writing workflow
+
+When writing or editing blog posts (`content/posts/*.md`):
+
+- Always run the prose through the installed humanizer skill before committing the post for review or publication. It removes AI writing patterns from the text.
+- If the skill is not already loaded in the session, fetch it with `npx skills use "https://github.com/blader/humanizer" --skill "humanizer"`.
+- The skill's file-mode rules apply unchanged: keep front matter, code blocks, commands, paths, and link targets untouched; only prose gets rewritten.
+- New posts start as `draft: true` and are only flipped to publishable when the owner asks.
+
 ## Component conventions
 
 - All interactive/animated components must include `"use client";` at the top.
