@@ -1,11 +1,34 @@
-import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Navigation from "@/components/navigation/Navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import { getAllPosts, getPostBySlug, formatPostDate } from "@/lib/posts";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({ slug: post.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
+
+  if (!post) return {};
+
+  return {
+    title: post.title,
+    description: post.description,
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: "article",
+      publishedTime: post.date,
+      authors: post.author ? [post.author] : undefined,
+    },
+  };
 }
 
 export default async function PostDetailPage({
@@ -20,7 +43,7 @@ export default async function PostDetailPage({
 
   return (
     <main className="">
-      
+
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
@@ -49,7 +72,13 @@ export default async function PostDetailPage({
                   </span>
                 </div>
                 <h1 className="display-4 fw-normal lh-sm mb-0">{post.title}</h1>
-                <span className="fs-14">By {post.author}</span>  - <span className="fs-14"><time>{post.date}</time></span>
+                <span className="fs-14">By {post.author}</span>
+                {" - "}
+                <span className="fs-14">
+                  <time dateTime={post.date}>{formatPostDate(post.date)}</time>
+                </span>
+                {" · "}
+                <span className="fs-14">{post.readingTime} min read</span>
               </header>
 
               <hr className="my-5 opacity-10" />

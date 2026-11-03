@@ -66,7 +66,7 @@ export default function ResumePage() {
                 <span className="small text-muted">December 2016 – February 2022</span>
                 <ul className="list-unstyled text-secondary small d-flex flex-column mt-3 gap-2">
                   <li>
-                    BlueEast is the technology arm of Orient Group of Companies — Pakistan's leading home appliance corporation. I owned end-to-end UX strategy for BlueBase — Orient's IoT platform connecting ACs, refrigerators, water dispensers, and third-party Wi-Fi devices. A single long-term product with direct commercial stakes.
+                    BlueEast is the technology arm of Orient Group of Companies — Pakistan&apos;s leading home appliance corporation. I owned end-to-end UX strategy for BlueBase — Orient&apos;s IoT platform connecting ACs, refrigerators, water dispensers, and third-party Wi-Fi devices. A single long-term product with direct commercial stakes.
                   </li>
                 </ul>
               </div>

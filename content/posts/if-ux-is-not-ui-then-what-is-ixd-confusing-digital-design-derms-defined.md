@@ -1,8 +1,9 @@
 ---
 title:  "If UX Is Not UI Then What Is IxD? Confusing Digital Design Terms Defined"
-date:   Jan 17, 2021
+date:   "2021-01-17"
 category: UX Design
 author: Aftab Khalid
+description: "Seven commonly confused digital design terms — UX, UI, IxD and more — explained in plain language."
 ---
 
 The digital world is becoming increasingly more complicated, and more confusing. Here are seven terms you are likely to come across and what they mean.

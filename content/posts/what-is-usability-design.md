@@ -1,8 +1,9 @@
 ---
 title:  "What is Usability Design?"
-date:   Jan 18, 2021
+date:   "2021-01-18"
 category: UX Design
 author: Aftab Khalid
+description: "What is usability design, and why does it decide whether a product succeeds? A look at the characteristics of a good user experience."
 ---
 What is Usability Design? Good usability is the hallmark of any successful product. In the new digital world it is more important than ever to keep up with the rapidly changing user experience design field. A good user experience design is essential to the survival of any website or product. Below are some of the most important characteristics of a good user experience design.
 

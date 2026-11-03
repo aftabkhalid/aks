@@ -33,7 +33,7 @@ export default function DesignPrinciples() {
         
         <div className="row justify-content-center text-lg-center" data-reveal="group">
           <div className="col-12 col-lg-5 col-md-6">
-            <h2 data-reveal="item">I don't <span className="font-rubik">design screens.</span> I design how products <span className="font-rubik">make sense.</span></h2>
+            <h2 data-reveal="item">I don&apos;t <span className="font-rubik">design screens.</span> I design how products <span className="font-rubik">make sense.</span></h2>
           </div>
           <div className="w-100"></div>
           <div className="col-12 col-lg-4 col-md-6">
@@ -42,7 +42,7 @@ export default function DesignPrinciples() {
         </div>
 
         <div className="row pt-5 g-0">
-          {principles.map((principle, index) => (
+          {principles.map((principle) => (
             <div className="col-12 col-md-4 ak-card" key={principle.title} data-reveal="group">
               <div className="mb-80 mb-lg-200">
                 <Image src={principle.image} alt="" width={110} height={110} data-reveal="item"/>

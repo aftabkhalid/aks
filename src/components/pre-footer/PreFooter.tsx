@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="row align-items-center justify-content-center text-center my-5">
           <div className="col-12 col-md-8 col-lg-6" data-reveal="group">
             <h2 className="fs-48 mb-3 text-white" data-reveal="item">
-              Let's <span className="font-rubik">discuss</span> what you're <span className="font-rubik">building</span>
+              Let&apos;s <span className="font-rubik">discuss</span> what you&apos;re <span className="font-rubik">building</span>
             </h2>
             <p className="fs-5 opacity-50 mb-4 text-white" data-reveal="item">
               Tell me about your goals and I will reply within a day with a

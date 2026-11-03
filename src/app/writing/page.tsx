@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Navigation from "@/components/navigation/Navigation";
 import FooterSection from "@/components/footer/FooterSection";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, formatPostDate } from "@/lib/posts";
 
-// Helper function to truncate string to exact word count
-function truncateWords(str: string, maxWords: number = 7): string {
-  const words = str.trim().split(/\s+/);
-  if (words.length <= maxWords) return str;
-  return words.slice(0, maxWords).join(" ") + "…";
-}
+export const metadata = {
+  title: "Writing",
+  description:
+    "Writing on design, experiments, and AI workflows by Aftab Khalid.",
+};
 
 export default function WritingListingPage() {
   const posts = getAllPosts();
@@ -16,7 +15,7 @@ export default function WritingListingPage() {
 
   return (
     <main className="">
-    
+
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
@@ -48,14 +47,17 @@ export default function WritingListingPage() {
                 className="row py-4 border-bottom text-decoration-none align-items-center hover-row px-20"
                 style={{ transition: "background-color 0.15s ease" }}
               >
-                <div className="col-12 col-md-7 mb-2 mb-md-0 fs-16">
-                  <span className="">{post.title}</span>
+                <div className="col-12 col-md-7 mb-2 mb-md-0">
+                  <span className="d-block fs-16">{post.title}</span>
+                  <span className="d-block fs-14 text-muted mt-1">
+                    {post.description}
+                  </span>
                 </div>
                 <div className="col-6 col-md-3 fs-12">
-                  {post.category}
+                  {post.category} · {post.readingTime} min read
                 </div>
                 <div className="col-6 col-md-2 text-end fs-12">
-                  {post.date}
+                  <time dateTime={post.date}>{formatPostDate(post.date)}</time>
                 </div>
               </Link>
             ))}
