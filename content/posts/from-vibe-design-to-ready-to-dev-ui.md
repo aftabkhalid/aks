@@ -101,7 +101,7 @@ The output is a token file, then primitives, then composed components, in the la
 AI-generated code is a strong first draft, not a finished system. This is also where "designers should learn to code" stops being an abstract lecture: Claude Code works inside a real project with you, not in a separate AI sandbox. I do the same pass every time:
 
 - Run it where it lives. The components render inside the actual app, with the project's real fonts, data shapes, and breakpoints. A screenshot you can't scroll isn't QA.
-- Review with dev tools, not just a designer's eye. Toggle the state variants, throttle the network to see loading states, and check accessibility. AI drafts drift in ways a picture doesn't show.
+- Review with dev tools as well as a designer's eye. Toggle the state variants, throttle the network to see loading states, and check accessibility. AI drafts drift in ways a picture doesn't show.
 - Treat Claude Code as a pair. Ask it to refactor itself: "extract this grid into a reusable component," "move these one-off colors into the token file," "add a story for the empty state." It'll take a rewrite without complaint.
 
 The first loop took me longer than the old process. Every loop since has been faster, because two things accumulate: the reference stack, and the code conventions Claude learns from the project.
