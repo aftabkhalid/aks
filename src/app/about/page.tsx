@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navigation from "@/components/navigation/Navigation";
 import FooterSection from "@/components/footer/FooterSection";
 import { pageMetadata } from "@/lib/seo";
+import BookCallLink from "@/components/book-call/BookCallLink";
 
 export const metadata = pageMetadata({
   title: "About",
@@ -64,9 +65,9 @@ export default function AboutPage() {
                   <a href="mailto:hello@aftabkhalid.com" className="text-dark text-decoration-none">
                     Email
                   </a>
-                  <a href="mailto:hello@aftabkhalid.com" className="text-dark text-decoration-none">
+                  <BookCallLink className="text-dark text-decoration-none">
                     Book a call
-                  </a>
+                  </BookCallLink>
                   <a href="https://linkedin.com/in/aftabkhalid" target="_blank" rel="noreferrer" className="text-dark text-decoration-none">
                     LinkedIn
                   </a>
