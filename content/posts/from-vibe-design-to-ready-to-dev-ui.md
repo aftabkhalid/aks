@@ -131,4 +131,4 @@ AI won't replace designers. Designers who can drive this pipeline, though, repla
 
 If you design: harden one real screen in Figma, with auto layout, variables, and full states, then run it through this pipeline with Claude Code. If you engineer: hand your designer an MCP connection rather than a Figma inspection cheat sheet. Measure the time from "approved design" to "running code" against your last project. On the work I've run this way, that gap went from days to hours.
 
-If you want to talk through this workflow on your own product, [reach out](mailto:hello@aftabkhalid.com).
+If you want to talk through this workflow on your own product, [reach out](https://cal.com/aftabkhalid/30min).
