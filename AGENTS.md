@@ -40,6 +40,7 @@ Before declaring any task done, run `npm run lint`, `npm run typecheck`, and whe
 | `src/app/tokens/` | SCSS design tokens: `_colors`, `_typography`, `_spacing`, `_layout`, `_breakpoints`, forwarded by `_index.scss` |
 | `src/components/` | One subfolder per page section (hero, navigation, case-studies, services, engagement, footer, etc.) |
 | `src/lib/posts.ts` | Markdown post loader (front matter via `gray-matter`, body via `remark-html`); posts live in `content/posts/*.md` |
+| `src/lib/seo.ts` | `SITE_URL`, `OG_IMAGE`, and `pageMetadata()` helper (title, description, canonical, OG/Twitter) used by every route |
 | `content/posts/` | Blog posts as Markdown with `title`, `category`, `date` (ISO `yyyy-mm-dd`), `author`, optional `description` and `draft: true` front matter |
 | `public/` | Static assets (portfolio images in `public/portfolio/`, résumé PDF, SVGs, `.nojekyll`) |
 

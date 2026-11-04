@@ -97,7 +97,7 @@ const CaseStudies = () => {
               <article className="case-study-card">
                 <a href={project.link} target="_blank" className="case-study-link">
                   <div className="case-study-image">
-                    <img src={project.image} alt={project.title} />
+                    <img src={project.image} alt={project.title} width={1200} height={740} />
                   </div>
 
                   <div className="case-study-info">
@@ -134,7 +134,7 @@ const CaseStudies = () => {
               <article className="mt-60">
                 <a href={project.link} target="_blank" className="case-study-link">
                   <div className="case-study-image">
-                    <img src={project.image} alt={project.title} />
+                    <img src={project.image} alt={project.title} width={1200} height={740} />
                   </div>
 
                   <div className="case-study-info">

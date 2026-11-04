@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="row align-items-stretch">
           <div className="col-12 col-lg-2 col-md-6" data-reveal="group">
             
-            <h4 className="mb-40" data-reveal="item">Menu</h4>
+            <h3 className="mb-40" data-reveal="item">Menu</h3>
             <nav className="nav flex-column">
               {footerLinks.map((link) => (
                 <a className="nav-link p-0 fs-24 active" data-reveal="item" aria-current="page" key={link.label} href={link.href}>{link.label}</a>
@@ -33,7 +33,7 @@ export default function Footer() {
             
             <div className="row align-items-stratch h-100" data-reveal="group">
               <div className="col-12">
-                <h4 className="mb-40 d-none d-lg-block" data-reveal="item">Contact</h4>
+                <h3 className="mb-40 d-none d-lg-block" data-reveal="item">Contact</h3>
                 <p data-reveal="item" className="mt-40">
                   Based in Lahore, Pakistan
                   <br />
