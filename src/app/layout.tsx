@@ -6,6 +6,7 @@ import "./globals.scss";
 
 import SmoothScroll from "@/components/smooth-scroll/SmoothScroll";
 import TextRevealProvider from "@/components/text-reveal/TextRevealProvider";
+import CalInit from "@/components/book-call/CalInit";
 import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const googleSans = Google_Sans({
@@ -111,6 +112,7 @@ export default function RootLayout({
     >
       <body>
         <SmoothScroll />
+        <CalInit />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

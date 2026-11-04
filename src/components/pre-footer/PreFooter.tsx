@@ -1,5 +1,5 @@
 "use client";
-import MagneticButton from "@/components/magnetic-button/MagneticButton";
+import BookCallButton from "@/components/book-call/BookCallButton";
 
 // import { GLSLHills } from "./GLSLHills";
 import "./PreFooter.css";
@@ -23,9 +23,9 @@ export default function Footer() {
               Tell me about your goals and I will reply within a day with a
               clear scope and next steps.
             </p>
-            <MagneticButton className="btn btn-lg btn-bg-secondary rounded-pill" data-reveal="item" href="mailto:hello@aftabkhalid.com" target="_blank">
+            <BookCallButton className="btn btn-lg btn-bg-secondary rounded-pill" reveal>
               Book a Call
-            </MagneticButton>
+            </BookCallButton>
           </div>
         </div>
       </div>

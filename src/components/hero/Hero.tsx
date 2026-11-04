@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import MagneticButton from "@/components/magnetic-button/MagneticButton";
+import BookCallButton from "@/components/book-call/BookCallButton";
 
 import Navigation from "../navigation/Navigation";
 
@@ -73,9 +73,9 @@ export default function Hero() {
                     <br />
                     Designer
                   </p>
-                  <MagneticButton className="btn btn-lg btn-dark rounded-pill" href="mailto:hello@aftabkhalid.com" target="_blank" data-reveal="item">
+                  <BookCallButton className="btn btn-lg btn-dark rounded-pill" reveal>
                     Book a Call
-                  </MagneticButton>
+                  </BookCallButton>
                 </div>
               </div>
             </div>
