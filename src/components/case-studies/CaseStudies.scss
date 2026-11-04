@@ -67,7 +67,8 @@
 }
 
 .case-study-meta {
-  color: #a3a3a3;
+  /* Darker than #a3a3a3: meets WCAG AA on the page background (#f6f4f4) */
+  color: #66696d;
 }
 
 /* Sticky Section-Level Blur Overlay */

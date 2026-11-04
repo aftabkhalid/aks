@@ -181,7 +181,7 @@ export default function Services() {
                 >
                   <div>
 
-                    <span className="fw-semibold text-dark opacity-50 d-block mb-2 fs-6">
+                    <span className="fw-semibold text-dark opacity-75 d-block mb-2 fs-6">
                       {service.number}
                     </span>
 
@@ -270,7 +270,7 @@ export default function Services() {
 
               <div className="mobile-service-content">
 
-                <span className="fw-semibold text-dark opacity-50 d-block mb-2 fs-6">
+                <span className="fw-semibold text-dark opacity-75 d-block mb-2 fs-6">
                   {service.number}
                 </span>
 

@@ -2,12 +2,14 @@ import Link from "next/link";
 import Navigation from "@/components/navigation/Navigation";
 import FooterSection from "@/components/footer/FooterSection";
 import { getAllPosts, formatPostDate } from "@/lib/posts";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Writing",
   description:
     "Writing on design, experiments, and AI workflows by Aftab Khalid.",
-};
+  path: "/writing",
+});
 
 export default function WritingListingPage() {
   const posts = getAllPosts();

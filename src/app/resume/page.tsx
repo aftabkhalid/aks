@@ -1,5 +1,13 @@
 import Navigation from "@/components/navigation/Navigation";
 import MagneticButton from "@/components/magnetic-button/MagneticButton";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Résumé",
+  description:
+    "Aftab Khalid's résumé: experience at BlueEast and across UX leadership, product design, design systems, and AI workflows.",
+  path: "/resume",
+});
 
 export default function ResumePage() {
   return (

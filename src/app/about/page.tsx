@@ -2,6 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/navigation/Navigation";
 import FooterSection from "@/components/footer/FooterSection";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "About",
+  description:
+    "About Aftab Khalid: 24 years across product design, UX, interaction design, and design leadership, with a background in computer science.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
