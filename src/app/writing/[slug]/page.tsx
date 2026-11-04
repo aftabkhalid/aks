@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Navigation from "@/components/navigation/Navigation";
+import ArticleBookingLinks from "@/components/book-call/ArticleBookingLinks";
 import { getAllPosts, getPostBySlug, formatPostDate } from "@/lib/posts";
 import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
@@ -128,10 +129,10 @@ export default async function PostDetailPage({
               <hr className="my-5 opacity-10" />
 
               {/* Body Content */}
-              <div
+              <ArticleBookingLinks
                 className="article-body fs-18 fw-lighter text-secondary"
                 style={{ lineHeight: "1.8" }}
-                dangerouslySetInnerHTML={{ __html: post.contentHtml || "" }}
+                html={post.contentHtml || ""}
               />
             </article>
           </div>

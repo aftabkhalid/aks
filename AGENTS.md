@@ -41,6 +41,7 @@ Before declaring any task done, run `npm run lint`, `npm run typecheck`, and whe
 | `src/components/` | One subfolder per page section (hero, navigation, case-studies, services, engagement, footer, etc.) |
 | `src/lib/posts.ts` | Markdown post loader (front matter via `gray-matter`, body via `remark-html`); posts live in `content/posts/*.md` |
 | `src/lib/seo.ts` | `SITE_URL`, `OG_IMAGE`, and `pageMetadata()` helper (title, description, canonical, OG/Twitter) used by every route |
+| `src/lib/cal.ts` | Cal.com booking config (`CAL_NAMESPACE`, `CAL_LINK`, `CAL_URL`, `CAL_CONFIG`); triggers live in `src/components/book-call/` |
 | `content/posts/` | Blog posts as Markdown with `title`, `category`, `date` (ISO `yyyy-mm-dd`), `author`, optional `description` and `draft: true` front matter |
 | `public/` | Static assets (portfolio images in `public/portfolio/`, résumé PDF, SVGs, `.nojekyll`) |
 
@@ -78,6 +79,20 @@ When writing or editing blog posts (`content/posts/*.md`):
 - Use path aliases when importing: `@/components/...`, `@/lib/...`, `@/app/tokens`.
 - Combine Bootstrap grid (`container`, `row`, `col-*`) and utility classes (`d-flex`, `mb-5`, `.fs-14` …) with custom SCSS/`.ak-*` classes for styling.
 
+### Contact & booking CTAs
+
+Any "contact", "reach out", "book a call" or "schedule a call" link must open the Cal.com booking overlay — never a `mailto:` link and never a plain navigation to cal.com. Reuse the existing pieces; don't wire Cal directly:
+
+| Piece | Use for |
+|---|---|
+| `src/lib/cal.ts` | `CAL_NAMESPACE`, `CAL_LINK`, `CAL_URL`, `CAL_CONFIG` — the only place the booking link is defined |
+| `CalInit` (root layout) | loads the embed and registers the namespace; already mounted, don't re-add |
+| `BookCallButton` | buttons — keeps the magnetic hover styling |
+| `BookCallLink` | inline text links |
+| `ArticleBookingLinks` | post bodies; opens the modal for Markdown links pointing at `CAL_URL` |
+
+Give each element exactly one trigger: `data-cal-*` attributes alone, or a programmatic `cal("modal", …)` call alone. Both on the same element opens two overlays.
+
 ## Gotchas & Strict Rules
 
 1. **NO TAILWIND**: Never generate Tailwind utilities (`flex-col`, `gap-4`, `bg-neutral-900`, `rounded-3xl`, `p-8`). Use Bootstrap 5 utilities/custom SCSS instead.
@@ -99,3 +114,13 @@ When writing or editing blog posts (`content/posts/*.md`):
 
 - `opencode.json` — pins the OpenCode chat model.
 - `AGENTS.md` (this file) is the single source of truth for coding agents.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
